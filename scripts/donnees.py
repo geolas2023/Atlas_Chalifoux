@@ -161,6 +161,11 @@ L('L46', "Brown's Park : la tradition de Baptiste Brown", -109.0, 40.87, '1820~/
   f"{ATH} ; {TEN} ; {LEC}.",
   "Hypothèse disputée : Lecompte tient Baptiste Brown pour un personnage inventé par le colonel Inman (1897). Point au ranch Jarvie (Brown's Park, Utah).")
 
+L('L48', "Fort Uintah : « Jean B. Charlefou » au « rendez-vous de Robidoux » (automne 1839)", -109.98, 40.43, '1839-09/1840-03', 'approximative', 'chaguanosos',
+  "À la fin de l'époque des rendez-vous, tant de trappeurs se réunissent au fort Uintah d'Antoine Robidoux qu'on parle du « rendez-vous de Robidoux ». À l'automne 1839 s'y trouvent Bill Williams, Peg-leg Smith, « Jean B. Charlefou » et Frederick « Cut Nose » ; au printemps 1840, ce groupe d'une dizaine ou d'une quinzaine d'hommes part du fort pour aller voler des chevaux en Californie, la grande razzia de 1840.",
+  "J. Hardee, « \"Taos Trappers\" and the Demise of the Rocky Mountain Rendezvous », dans Proceedings of the 2015 Fur Trade Symposium: Bent's Fort and the Southern Fur Trade (La Junta, 2016), d'après R. Newell, Memoranda, et J. Lecompte, « Levin Mitchell » (Hafen, Mountain Men, t. V).",
+  "Point au fort Uintah (Fort Robidoux), près de Whiterocks (Utah).")
+
 L('L47', "Chicago : Joseph Chalifoux, marin montréalais devenu entrepreneur de pompes funèbres (1867-1893)", -87.6470, 41.8752, '1867/1893', 'approximative', 'homonymes',
   "Né à Montréal en 1841, menuisier puis marin pendant cinq ans, Joseph Chalifoux arrive à Chicago en 1867 avec 75 cents en poche. Il devient entrepreneur de pompes funèbres et propriétaire d'une grande écurie de chevaux de louage, l'un des Canadiens français les mieux établis de la ville. Avec André Leclaire, il offre le tableau des Épousailles à la nouvelle église Notre-Dame.",
   f"{PAQ}.",

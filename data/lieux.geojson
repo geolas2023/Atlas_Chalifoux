@@ -1212,6 +1212,32 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -109.98,
+     40.43
+    ]
+   },
+   "properties": {
+    "id": "L48",
+    "nom": "Fort Uintah : « Jean B. Charlefou » au « rendez-vous de Robidoux » (automne 1839)",
+    "debut": 1839.7055,
+    "fin": 1840.2036,
+    "date_edtf": "1839-09/1840-03",
+    "precision": "mois",
+    "certitude": "approximative",
+    "categorie": "chaguanosos",
+    "description": "À la fin de l'époque des rendez-vous, tant de trappeurs se réunissent au fort Uintah d'Antoine Robidoux qu'on parle du « rendez-vous de Robidoux ». À l'automne 1839 s'y trouvent Bill Williams, Peg-leg Smith, « Jean B. Charlefou » et Frederick « Cut Nose » ; au printemps 1840, ce groupe d'une dizaine ou d'une quinzaine d'hommes part du fort pour aller voler des chevaux en Californie, la grande razzia de 1840.",
+    "sources": "J. Hardee, « \"Taos Trappers\" and the Demise of the Rocky Mountain Rendezvous », dans Proceedings of the 2015 Fur Trade Symposium: Bent's Fort and the Southern Fur Trade (La Junta, 2016), d'après R. Newell, Memoranda, et J. Lecompte, « Levin Mitchell » (Hafen, Mountain Men, t. V).",
+    "note": "Point au fort Uintah (Fort Robidoux), près de Whiterocks (Utah).",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -87.647,
      41.8752
     ]
