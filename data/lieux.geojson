@@ -1258,6 +1258,84 @@
     "images": [],
     "reseau": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.35,
+     44.37
+    ]
+   },
+   "properties": {
+    "id": "L49",
+    "nom": "Haut-Missouri (Dakota) : huit ans d'apprentissage avec son frère Pierre (1804-1812 env.)",
+    "debut": 1804.5,
+    "fin": 1812.5,
+    "date_edtf": "1804~/1812~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "baptiste",
+    "description": "Selon Bouchard et Lévesque, Jean-Baptiste rejoint à treize ans, en 1804, son frère aîné Pierre à Saint-Louis ; celui-ci abandonne alors la vie sédentaire et l'emmène dans les territoires du Dakota, où ils passent au moins huit ans. Jean-Baptiste y apprend le métier des pelleteries. C'est là qu'il aurait subi l'accident qui le fera souffrir toute sa vie : poursuivi par des cavaliers pieds-noirs, il tombe de cheval, se brise les deux jambes et reste caché des jours dans une grotte.",
+    "sources": "S. Bouchard et M.-C. Lévesque, Ils ont couru l'Amérique (Montréal, Lux, 2014), ch. « Hommes des montagnes : Provost, Chalifoux, Robidoux ».",
+    "note": "Point symbolique sur le Missouri (secteur de Pierre, Dakota du Sud) : le livre ne précise pas le lieu. Les auteurs s'appuient en partie sur les entrevues des petites-filles Luz Gonzalez et Genoveva Naranjo (années 1950) ; la date de naissance de 1791 reste discutée.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.188,
+     38.627
+    ]
+   },
+   "properties": {
+    "id": "L50",
+    "nom": "Saint-Louis : au service de la Missouri Fur Company, puis « free men » (1814-1816)",
+    "debut": 1814.5,
+    "fin": 1816.5,
+    "date_edtf": "1814~/1816~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "baptiste",
+    "description": "Revenus du Dakota vers 1812-1814, Jean-Baptiste et Pierre Chalifoux offrent leurs services comme trappeurs et prennent part, pendant deux ans, à plusieurs expéditions vers l'ouest, notamment pour la Missouri Fur Company — peut-être dans la même brigade qu'Étienne Provost. Vers 1816, ils quittent Saint-Louis et rompent avec les Chouteau, Pratte et Lisa pour redevenir traiteurs indépendants ; ils dérivent une dizaine d'années dans les Rocheuses vers le Nouveau-Mexique, où l'on retrouve Provost, Robidoux et Chalifoux à Santa Fe, Embudo et Taos à partir de 1820. Des documents montrent Jean-Baptiste associé à François Robidoux près de Tucson.",
+    "sources": "S. Bouchard et M.-C. Lévesque, Ils ont couru l'Amérique (Montréal, Lux, 2014), ch. « Hommes des montagnes : Provost, Chalifoux, Robidoux ».",
+    "note": "Point au quartier du vieux Saint-Louis. Le lien avec Provost est une conjecture des auteurs.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.93,
+     40.86
+    ]
+   },
+   "properties": {
+    "id": "L52",
+    "nom": "Brown's Hole : Unami et l'enfant adoptif « Bible Back Brown »",
+    "debut": 1830.5,
+    "fin": 1835.5,
+    "date_edtf": "1830~/1835~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "famille",
+    "description": "Dans la version que retiennent Bouchard et Lévesque, Jean-Baptiste vit cinq ou six ans, tranquille, dans la vallée de la Green avec Unami, une Arapaho, au milieu d'une petite communauté de trappeurs et d'Indiens de passage. Le couple adopte un garçon bossu surnommé Bible Back Brown, parce qu'il porte toujours une bible dans un sac posé sur sa bosse. Avant 1835, Chalifoux quitte femme et fils pour reprendre la piste de Californie. Les auteurs reconnaissent qu'il est difficile de départager faits et roman dans la légende de « Baptiste Brown ».",
+    "sources": "S. Bouchard et M.-C. Lévesque, Ils ont couru l'Amérique (Montréal, Lux, 2014), ch. « Hommes des montagnes : Provost, Chalifoux, Robidoux ».",
+    "note": "Même vallée que L07 et L46 ; Lecompte reste sceptique sur l'identification.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
   }
  ]
 }
