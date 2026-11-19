@@ -1,0 +1,331 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.48,
+      31.74
+     ],
+     [
+      -107.9,
+      32.3
+     ],
+     [
+      -109.3,
+      32.3
+     ],
+     [
+      -110.97,
+      32.22
+     ],
+     [
+      -109.6,
+      31.3
+     ],
+     [
+      -108.19,
+      30.89
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T01",
+    "nom": "Avec James Baird, d'El Paso à Tucson puis à Janos",
+    "debut": 1826.7877,
+    "fin": 1827.0397,
+    "date_edtf": "1826-10/1827-01",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "Fin octobre 1826, les frères Chalifoux quittent El Paso avec James Baird vers la Gila ; Baird meurt en route, ils poussent jusqu'à Tucson puis se retrouvent en prison à Janos en janvier 1827.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Tracé reconstitué entre les lieux connus.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -106.32,
+      36.21
+     ],
+     [
+      -107.5,
+      37.2
+     ],
+     [
+      -108.07,
+      38.75
+     ],
+     [
+      -109.29,
+      39.28
+     ],
+     [
+      -109.44,
+      39.56
+     ],
+     [
+      -109.68,
+      40.09
+     ],
+     [
+      -109.92,
+      40.46
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T02",
+    "nom": "De Taos au pays ute avec François Robidoux",
+    "debut": 1827.2014,
+    "fin": 1827.7055,
+    "date_edtf": "1827-03/1827-09",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "En mars 1827, Chalifoux part de Taos avec François Robidoux et Maurice LeDuc vers le pays ute. La route probable suit la branche nord de la Vieille piste espagnole : la Gunnison, les Book Cliffs par Westwater et le Willow Creek, jusqu'à l'Uinta.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7) ; J. W. Nelson, Forgotten Pathfinders Along the North Branch of the Old Spanish Trail, 1650-1850 (2003), p. 31, 50-51.",
+    "note": "Tracé hypothétique par la piste Westwater-Willow Creek, où son nom est gravé en 1835.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -106.32,
+      36.21
+     ],
+     [
+      -108.5,
+      37.4
+     ],
+     [
+      -110.15,
+      38.99
+     ],
+     [
+      -112.1,
+      38.6
+     ],
+     [
+      -113.6,
+      37.6
+     ],
+     [
+      -115.15,
+      36.17
+     ],
+     [
+      -116.6,
+      35.0
+     ],
+     [
+      -117.44,
+      34.32
+     ],
+     [
+      -118.107,
+      34.097
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T03",
+    "nom": "Vers la Californie par la Vieille piste espagnole",
+    "debut": 1836.7883,
+    "fin": 1837.0397,
+    "date_edtf": "1836-10/1837-01",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "À l'automne 1836, Chalifoux mène une trentaine de Néo-Mexicains, de Canadiens, de Shawnees et de Delawares vers la Californie, avec des lainages à troquer contre des chevaux et des mules.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Tracé hypothétique par la Vieille piste espagnole.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -118.107,
+      34.097
+     ],
+     [
+      -118.461,
+      34.273
+     ],
+     [
+      -116.55,
+      33.82
+     ],
+     [
+      -117.87,
+      33.77
+     ],
+     [
+      -117.161,
+      32.716
+     ],
+     [
+      -117.87,
+      33.77
+     ],
+     [
+      -120.664,
+      35.28
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T04",
+    "nom": "La campagne des Chaguanosos",
+    "debut": 1837.0397,
+    "fin": 1837.8726,
+    "date_edtf": "1837-01/1837-11",
+    "certitude": "approximative",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "Enrôlés par Osio contre Alvarado, les Chaguanosos vont de San Gabriel à San Fernando, campent à Agua Caliente où Janssens les retrouve, marchent sur San Diego, puis, démobilisés sans solde, se paient en chevaux jusqu'à San Luis Obispo.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7) ; A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison et F. Price (Huntington Library, 1953).",
+    "note": "",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.664,
+      35.28
+     ],
+     [
+      -118.107,
+      34.097
+     ],
+     [
+      -117.44,
+      34.32
+     ],
+     [
+      -116.32,
+      35.63
+     ],
+     [
+      -115.15,
+      36.17
+     ],
+     [
+      -113.6,
+      37.6
+     ],
+     [
+      -110.15,
+      38.99
+     ],
+     [
+      -108.5,
+      37.4
+     ],
+     [
+      -105.573,
+      36.407
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T05",
+    "nom": "La grande razzia de 1840 et le retour",
+    "debut": 1840.2883,
+    "fin": 1840.5369,
+    "date_edtf": "1840-04/1840-07",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "Au printemps 1840, la bande, renforcée de Bill Williams et de Pegleg Smith, enlève des milliers de chevaux aux missions et file par le col Cajon et Agua de Tomasa vers le Nouveau-Mexique.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Retour par la Vieille piste espagnole, tracé hypothétique.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.96,
+      36.21
+     ],
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -105.43,
+      37.08
+     ],
+     [
+      -105.0,
+      37.6
+     ],
+     [
+      -104.27,
+      38.2
+     ],
+     [
+      -104.45,
+      37.2
+     ],
+     [
+      -104.508,
+      37.169
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T06",
+    "nom": "D'Embudo à la Huerfano puis à Trinidad",
+    "debut": 1852.5,
+    "fin": 1860.873,
+    "date_edtf": "1852/1860-11",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "Dans les années 1850, Chalifoux quitte Embudo pour les établissements de la Huerfano, auprès de Charles Autobees, puis bâtit en 1859-1860 les premières maisons de Trinidad sur la Purgatoire.",
+    "sources": "J. Lecompte, « Jean-Baptiste Chalifoux », dans L. R. Hafen (dir.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7) ; F. W. Cragin, Early Far West Notebooks (1902-1923), transcription dactylographiée.",
+    "note": "Tracé hypothétique entre les lieux connus.",
+    "type": "trajet",
+    "images": []
+   }
+  }
+ ]
+}

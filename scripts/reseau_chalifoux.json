@@ -1,0 +1,707 @@
+[
+ {
+  "rid": "C011",
+  "nom": "Saint-Louis : naissance de Charles Autobees (1812)",
+  "coords": [
+   -90.1848,
+   38.627
+  ],
+  "edtf": "1812",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Charles Autobees naît à Saint-Louis en 1812. À 16 ans (1828), il remonte le Missouri avec l'American Fur Company, en compagnie de Jim Bridger, Kit Carson, Laforet, Bordeaux, Charles Nadeau, Chat Dubray, le vieux Chalifoux, Beaubien et Joseph Barnoy dit Levanway.",
+  "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 11; 14.",
+  "note": "Tom Autobees mentionne aussi 1831 comme première remontée du Missouri.",
+  "pages_pdf": "11; 14"
+ },
+ {
+  "rid": "C014",
+  "nom": "Village Doyle-Wootton : Français et Mexicains (1853)",
+  "coords": [
+   -104.35,
+   38.235
+  ],
+  "edtf": "1853",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Petit village de placitas en jacal, sur la rive sud de l'Arkansas, à environ un mille en amont de l'embouchure de la Huerfano (1853). Le vieux Chalifoux vivait derrière la maison de Doyle, dans un abri creusé, et au nord-est se trouvaient « beaucoup de Mexicains et de Français » vivant dans des abris semblables. Charles Autobees y avait sa placita.",
+  "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 12; 17.",
+  "note": "",
+  "pages_pdf": "12; 17"
+ },
+ {
+  "rid": "C108",
+  "nom": "Trinidad : Chalifoux et Clermont, premiers bâtisseurs (1860)",
+  "coords": [
+   -104.508,
+   37.169
+  ],
+  "edtf": "1860-11",
+  "precision": "mois",
+  "certitude": "certaine",
+  "description": "En novembre 1860, A. W. Archibald trouve le vieux Charlefoux (Chalifoux) et Auguste Clermont campés sur le site actuel de Trinidad, au sud de la Purgatoire, en train de bâtir deux maisons de rondins pour Felipe Baca. Le Dr Beshoar (1882) nomme Jean-B. Charlefou parmi les colons de 1859. Chalifoux serait mort près du ranch Autobees dans les années 1860.",
+  "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 131; 133; 134.",
+  "note": "",
+  "pages_pdf": "131; 133; 134"
+ },
+ {
+  "rid": "C146",
+  "nom": "Taos : les vieux Français vers 1842",
+  "coords": [
+   -105.573,
+   36.4072
+  ],
+  "edtf": "1842~",
+  "precision": "circa",
+  "certitude": "approximative",
+  "description": "Quand Juan Santistevan avait neuf ans (vers 1842), vivaient à Taos de vieux Français mariés et pères de famille : Abraham Ledoux, Jeantet (parti en Californie), Blanchard (dont les enfants allèrent à Ocate), Chalifoux (qui vivait à Embudo), les traiteurs Augustin et John Lacombe (John fut tué) et Grignier. En 1908, les fils du vieux trappeur Jeantet, Filiberto et Placido Jantete, vivent à La Loma de Taos.",
+  "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 159; 162; 164.",
+  "note": "",
+  "pages_pdf": "159; 162; 164"
+ },
+ {
+  "rid": "F-chalifoux-01",
+  "nom": "Charlesbourg (près de Québec) : naissance (v. 1791-1792)",
+  "coords": [
+   -71.27,
+   46.86
+  ],
+  "edtf": "1791~",
+  "precision": "",
+  "certitude": "approximative",
+  "description": "Né au Canada français vers 1791-1792 selon ses petits-enfants ; son frère Pierre, de vingt ans son aîné, est de Charlesbourg, fils de Pierre et de Marie Bertrand. Illettrés, les frères ne savent pas écrire leur nom ; les descendants signent Charlefou, Charilifou, Charlefoux.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 61 — note de l'auteur : lettres de Genovera C. Naranjo (1934) et de Luz Gonzales (1937), coll. Hafen ; U.S. Census 1860, comté de Taos, précinct de Culebra",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-02",
+  "nom": "Saint-Louis : contrat de mariage du frère Pierre (27 oct. 1792)",
+  "coords": [
+   -90.199,
+   38.627
+  ],
+  "edtf": "1792-10-27",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Pierre « Chalifoure » épouse Victoire Coussot ; en 1818, il déclare connaître depuis vingt ans le confluent de l'Osage et du Missouri. Un Joseph et un Jean-Baptiste Challifoux vivent aussi près de Saint-Louis et Saint-Charles.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 62 — note de l'auteur : contrat de mariage, St. Louis Archives, MHS ; déposition de « Peter Charlevoo », 30 juin 1818, Carter, Territorial Papers xv, p. 338",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-03",
+  "nom": "Sources chaudes du Wyoming : la légende des deux cents Français (1812)",
+  "coords": [
+   -108.21,
+   43.65
+  ],
+  "edtf": "1812/1822",
+  "precision": "",
+  "certitude": "hypothetique",
+  "description": "Selon sa petite-fille Luz Gonzales, deux cents trappeurs partis de Québec en 1812 cherchent le Pacifique ; les deux tiers meurent avant des sources chaudes du Wyoming ; les survivants descendent par la vallée de San Luis jusqu'à Rio Colorado (Questa) et se marient au Nouveau-Mexique. Genovera Naranjo le fait partir à 13 ans en 1804 et vivre sept ans chez les Indiens près de Denver.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 63 — note de l'auteur : Luz Gonzales à Hafen, 10 mars 1941",
+  "note": "Lecompte rapproche ces récits familiaux des partis de Philibert (1814) ou de Chouteau-De Mun (1815-1816).",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-04",
+  "nom": "El Paso del Norte : engagé par James Baird (oct. 1826)",
+  "coords": [
+   -106.48,
+   31.74
+  ],
+  "edtf": "1826-10",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Fin octobre 1826, Baptiste et Pierre partent d'El Paso avec James Baird vers le Gila ; Baird tombe malade à 35 milles et meurt. Les deux frères poussent jusqu'à Tucson.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 64 — note de l'auteur : R. W. Strickland, « James Baird », Mountain Men III, p. 33-36",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-05",
+  "nom": "Tucson (hiver 1826-1827)",
+  "coords": [
+   -110.97,
+   32.22
+  ],
+  "edtf": "1826/1827",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Point extrême de la campagne des frères Chalifoux vers l'ouest.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 64",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-06",
+  "nom": "Janos : en prison (janv. 1827)",
+  "coords": [
+   -108.19,
+   30.89
+  ],
+  "edtf": "1827-01",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Fin janvier, ils sont en prison à Janos, interrogés par les administrateurs de la succession Baird au sujet d'animaux ayant appartenu à Baird.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 64",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-07",
+  "nom": "Brown's Hole : était-il « Baptiste Brown » ?",
+  "coords": [
+   -108.85,
+   40.85
+  ],
+  "edtf": "1827~/1843",
+  "precision": "",
+  "certitude": "hypothetique",
+  "description": "La vallée de la Green, refuge des Utes, des Shoshones et des trappeurs, porte le nom d'un trappeur Brown. Le colonel Inman (1897) en fait « Baptiste Brown », Canadien marié à l'Arapaho Unami, récit truffé d'emprunts ; Hafen et Burroughs l'ont identifié à Chalifoux. Lecompte reste sceptique.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 58 — note de l'auteur : Amos Cook (1839), dans Hafen, To the Rockies and Oregon (1955), p. 136-137 ; Sage, Scenes, II, p. 135 ; Powell, Chicago Tribune, 1869 ; H. Inman, The Old Santa Fe Trail (1897), p. 269-276 ; J. R. Burroughs, Where the Old West Stayed Young (1962), p. 7, 35",
+  "note": "Identification contestée.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-08",
+  "nom": "Taos : départ avec François Robidoux vers le pays ute (mars 1827)",
+  "coords": [
+   -105.573,
+   36.407
+  ],
+  "edtf": "1827-03/1836",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "« Bautista Chalifou » part avec François Robidoux, dans le même parti que Maurice LeDuc. En 1829, il signe une reconnaissance de 60 $ trouvée dans les papiers de Sylvestre Pratte. Son frère Pierre épouse María Dolores Apodaca à Taos le 29 décembre 1829. Baptiste épouse María Anita Lucero à Taos en 1836.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 64 — note de l'auteur : Manuel Martín, Taos, 7 avril 1827, MANM no 1348 ; Pratte Papers, MHS ; Chávez, El Palacio 64 (1957), p. 300",
+  "note": "Croise les salles LeDuc et Pratte.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-09",
+  "nom": "Willow Creek : « B. Chalifou » gravé sur la roche (1835)",
+  "coords": [
+   -109.6,
+   39.9
+  ],
+  "edtf": "1835",
+  "precision": "",
+  "certitude": "approximative",
+  "description": "Sur la piste des trappeurs entre le Nouveau-Mexique et la Green, son nom est gravé près de Willow Creek, d'une écriture espagnole soignée, sans doute de la main de Juan Valdez, qui inscrit à côté « Paso 8 & 9 N 9 1835 ».",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 65",
+  "note": "Position de l'inscription estimée.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-10",
+  "nom": "Mission San Gabriel : « Monsier Shalifu » et ses trente Néo-Mexicains (janv. 1837)",
+  "coords": [
+   -118.107,
+   34.097
+  ],
+  "edtf": "1837-01",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Les missions signalent des bandes d'Indiens et de Blancs venus du Nouveau-Mexique troquer des lainages et voler chevaux et mules. Ces « Chaguanosos » (Shawnees), Canadiens, Mexicains, Shawnees et Delawares, deviennent célèbres.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 66 — note de l'auteur : E. Lawrence, « Mexican Trade between Santa Fe and Los Angeles », CHSQ x (1931), p. 31 ; « Horse Thieves on the Spanish Trail », Touring Topics (1931), p. 23",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-11",
+  "nom": "Mission San Fernando : mercenaires sans solde (21 janv. 1837)",
+  "coords": [
+   -118.461,
+   34.273
+  ],
+  "edtf": "1837-01-21",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Antonio María Osio les enrôle contre Alvarado, en échange du droit de trapper sans taxe et de rations. Armés de fusils, dagues, tomahawks et arcs, ils rejoignent les troupes à San Fernando ; à l'arrivée d'Alvarado, les soldats mexicains se rendent aussitôt.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 66 — note de l'auteur : A. M. Osio, « Historia de California », ms., p. 321-340, Bancroft Library",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-12",
+  "nom": "Agua Caliente : Janssens dans le camp des Chaguanosos (mai 1837)",
+  "coords": [
+   -116.55,
+   33.82
+  ],
+  "edtf": "1837-05",
+  "precision": "",
+  "certitude": "hypothetique",
+  "description": "Le Belge Augustin Janssens, envoyé parce qu'il parle français, est mis en joue à l'orée de la forêt ; il prononce le nom de Chalifoux et l'on baisse les armes. Le capitaine, « un peu boiteux », accepte d'aider la contre-révolution pour la nourriture seulement.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 67 — note de l'auteur : Augustin Janssens, « Vida y Aventuras », ms., p. 90-121, Bancroft Library",
+  "note": "Boiterie peut-être liée aux jambes brisées dans une fuite devant les Pieds-Noirs (récit de Wootton). Emplacement d'Agua Caliente incertain.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-13",
+  "nom": "San Diego et Rancho Santa Ana : l'armée des ivrognes (juin 1837)",
+  "coords": [
+   -117.87,
+   33.77
+  ],
+  "edtf": "1837-06/1837-08",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "En route vers San Diego, la moitié des Chaguanosos s'enivrent d'aguardiente et sont jetés dans deux charrettes. Passé le Rancho Santa Ana, l'ennemi s'enfuit jusqu'à Los Angeles sans combattre. Démobilisés en août, ils menacent de faire leur propre révolution faute de solde ; Alvarado les paie et leur ordonne de partir.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 68 — note de l'auteur : Janssens ; G. Tays, « Captain Andres Castillero », CHSQ xiv (1935), p. 252",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-14",
+  "nom": "Mission San Luis Obispo : 1 400 chevaux volés (oct.-nov. 1837)",
+  "coords": [
+   -120.664,
+   35.28
+  ],
+  "edtf": "1837-10/1837-11",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Au lieu de partir, ils volent des chevaux à Santa Inés et dans les ranchs, puis trois ou quatre cents bêtes à San Luis Obispo : 1 400 à 1 500 animaux hivernés dans la vallée des Tulares avant le Nouveau-Mexique.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 68 — note de l'auteur : Lawrence, « Horse Thieves », p. 23",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-15",
+  "nom": "Vallée de San Joaquin : le « fameux chef bandit Califa » capturé (1839-1840)",
+  "coords": [
+   -120.5,
+   37.3
+  ],
+  "edtf": "1839-11/1840-02",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Les troupes de Vallejo, à la recherche de chevaux et de captives, prennent quatorze voleurs, dont le « fameux chef bandit Califa ».",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 69 — note de l'auteur : G. Tays, « Mariano Guadalupe Vallejo and Sonoma », CHSQ xvii (1938), p. 149",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-16",
+  "nom": "Cajon Pass et Agua de Tomasa : la grande razzia (avril-mai 1840)",
+  "coords": [
+   -116.32,
+   35.63
+  ],
+  "edtf": "1840-04-26/1840-05-23",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Renforcée de Bill Williams, Pegleg Smith, Dick Owens et d'autres, la bande enlève mille juments à San Luis Obispo et trois troupeaux à San Gabriel, bat trente et un volontaires et file par le col Cajon dans le désert de Mojave, soulevant la poussière de trois mille chevaux. À Agua de Tomasa (Salt Springs), les soldats laissent leurs bêtes ; Calvin Jones et Bill Williams les volent, puis les rendent contre l'abandon de la poursuite et la selle du commandant. Les Indiens volent ensuite tous les chevaux, et les hommes rentrent à pied à Santa Fe.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 69 — note de l'auteur : Departmental State Papers, Archivo de California, Bancroft Library, Angeles iv, p. 88-92 ; Cragin, entretien avec Albert W. Archibald, 25 déc. 1907 ; J. C. Van Tramp, Prairie and Rocky Mountain Adventures (1868), p. 183-184",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-17",
+  "nom": "Embudo : le petit ranchero chez qui dîne Ruxton (déc. 1846)",
+  "coords": [
+   -105.96,
+   36.21
+  ],
+  "edtf": "1846/1850",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Ruxton dort chez un vieux trappeur canadien devenu paisible ranchero ; sa jolie fille sert six petits dés de porc gras flottant dans le chili rouge. Barclay (22 nov. 1848) et Kroenig (1849) y logent aussi. Il cultive aussi du maïs sur la Cucharas en 1845.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 72 — note de l'auteur : Ruxton, Adventures in Mexico and the Rocky Mountains (1848), p. 197 ; Barclay Diary, 22 nov. 1848 ; « William Kronig », NMHR xix (1944), p. 199",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-18",
+  "nom": "Taos : Ursula chez le padre Martínez et le juré endormi (1847)",
+  "coords": [
+   -105.569,
+   36.407
+  ],
+  "edtf": "1847-01/1847-04",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Pendant la révolte, sa fille Ursula, 7 ans, est cachée par le padre Martínez ; selon la famille, il porte la nouvelle à San Juan d'où Autobees file prévenir Santa Fe. Juré au procès d'avril (« Baptiste Charleyfoe »), il réclame la pendaison : Garrard le dit sans deux idées au-delà du boire et du manger ; Wootton raconte qu'endormi pendant tout le procès, il répondit « pendez-le ; s'il n'est pas coupable maintenant, il le sera ».",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur : F. T. Cheetham, « The First Term of the American Court at Taos », NMHR i (1926), p. 29-34 ; Garrard, Wah-to-Yah (1938), p. 248-249 ; Conard, Wootton, p. 75-76",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-19",
+  "nom": "Embouchure de la Huerfano : la grotte et la tombe creusée (1854-1855)",
+  "coords": [
+   -104.27,
+   38.2
+  ],
+  "edtf": "1854/1855-01",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Chez Charles Autobees, il vit dans une sorte de grotte creusée dans la berge. En décembre 1854, il aide à enterrer les victimes du massacre du Pueblo par les Utes ; en janvier 1855, un employé de Wootton creusant une tombe « pour le pauvre vieux Charlefoux » s'y cache au passage des Indiens.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur : Lecompte, « Charles Autobees », Colorado Magazine xxxv (1958), p. 51, 63 ; Conard, p. 303",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-20",
+  "nom": "Gray's Creek et la Purgatoire : maisons pour Felipe Baca (1859-1860)",
+  "coords": [
+   -104.45,
+   37.2
+  ],
+  "edtf": "1859/1860-11",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "En 1859, il bâtit une maison sur Gray's Creek, quatre milles sous l'actuel Trinidad, avec Joaquín Young et Juan Cristóbal Tafoya ; en novembre 1860, avec Auguste Clermont, deux maisons de rondins pour Felipe Baca, futur fondateur de Trinidad, laissées sans toit.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 74 — note de l'auteur : DeBusk Memorial, Colorado Historical Society ; Cragin, entretien avec A. W. Archibald, 26 déc. 1907 ; F. Hall, History of the State of Colorado (1895), iv, p. 191",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-21",
+  "nom": "Costilla (comté de Taos) : « Batis Chalifoux » au recensement de 1860",
+  "coords": [
+   -105.43,
+   37.08
+  ],
+  "edtf": "1860",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "60 ans, né au Canada, fermier, 500 $ de terre et 500 $ de biens, illettré ; bureau de poste Fernando de Taos, logement no 1440. L'index ne liste que lui dans le ménage.",
+  "sources": "Ancestry.com (consulté le 13 nov. 2026) : 1860 United States Federal Census, NARA M653, Costilla, Taos, N.-M., bobine 715, p. 127",
+  "note": "Lecompte cite le précinct de Culebra avec sa femme Mariana et deux fils : vérifier sur l'image les lignes voisines.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-22",
+  "nom": "San Luis (Culebra) : recensement de 1860",
+  "coords": [
+   -105.42,
+   37.2
+  ],
+  "edtf": "1860",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "« Batis Chalifoux », fermier, 60 ans, vit avec Mariana Lucero (41 ans) et leurs fils Leon et John B. ; 500 $ de terres et 500 $ de biens.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 74 — note de l'auteur : U.S. Census 1860, comté de Taos, précinct de Culebra",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-chalifoux-23",
+  "nom": "Huerfano : mort chez Autobees (12 déc. 1860)",
+  "coords": [
+   -104.3,
+   38.18
+  ],
+  "edtf": "1860-12-12",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Il meurt lors d'une dernière visite au ranch d'Autobees, dans le second établissement fondé deux milles en amont sur la Huerfano, et repose au petit cimetière sans stèle ; ses descendants savent quelle tombe est la sienne.",
+  "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur : Luz Gonzales à Sterling Cawlfield, 27 avril 1937",
+  "note": "",
+  "pages_pdf": null
+ },
+ {
+  "rid": "F-elucier-15",
+  "nom": "Saint-Paul : l'église de brique et la mort (18 mars 1853)",
+  "coords": [
+   -122.973,
+   45.211
+  ],
+  "edtf": "1846/1853-03-18",
+  "precision": "",
+  "certitude": "certaine",
+  "description": "Il aide à financer l'église de brique de 1846, se remarie avec Marie Marguerite, devient citoyen américain en 1851. Infirme et à la canne vers soixante ans, il est soigné par le Dr William Bailey (132 $). Il meurt le 18 mars 1853 et repose au vieux cimetière, sous la grande croix commune ; une plaque y nomme les premiers colons : Gervais, Chalifoux, Lucier, LaBonté, Laframboise, LaCourse, Picard, McLoughlin.",
+  "sources": "Harriet D. Munnick, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 206 — note de l'auteur : C. C. Dobbs, Men of Champoeg (1932), p. 17 ; Mme Stanton Frisbie à l'auteure, 1960",
+  "note": "On le disait « petit, trapu et brun », parlant « un peu l'anglais ».",
+  "pages_pdf": null
+ },
+ {
+  "rid": "TA-chalifoux-pierre-green-bay",
+  "nom": "La Baie (Green Bay) : Pierre Chalifoux",
+  "coords": [
+   -88.02,
+   44.513
+  ],
+  "edtf": "1822",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "La Baie (Green Bay), 1822. Pierre Chalifoux témoigne devant la commission des terres. D'après Tassé (1878).",
+  "sources": "Tassé, Joseph (1878), Les Canadiens de l'Ouest, Montréal, Compagnie d'imprimerie canadienne, 2 tomes, t. I, p. 97 ; texte intégral : archive.org, lescanadiensdelo01tassuoft.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "DG-chalifoux-x-pembina",
+  "nom": "Pembina : Chalifoux",
+  "coords": [
+   -97.243,
+   48.966
+  ],
+  "edtf": "1807",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Pembina, 1807. Chalifoux se joint à l'expédition vers la Saskatchewan. D'après Dugas (1883). Autres lieux de l'entrée : pays des Sarcis.",
+  "sources": "Dugas, Georges (1883), La première Canadienne du Nord-Ouest, ou biographie de Marie-Anne Gaboury, Montréal, Librairie Saint-Joseph, p. 33, 60 ; texte intégral : archive.org, lapremirecanadi00duga.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "DG-chalifoux-x-sarcee-cou",
+  "nom": "Pays des Sarcis : Chalifoux",
+  "coords": [
+   -114.3,
+   51.0
+  ],
+  "edtf": "1809",
+  "precision": "annee",
+  "certitude": "hypothetique",
+  "description": "Pays des Sarcis, 1809. Chalifoux voit sa femme massacrée par les Sarcis. D'après Dugas (1883). Autres lieux de l'entrée : Pembina.",
+  "sources": "Dugas, Georges (1883), La première Canadienne du Nord-Ouest, ou biographie de Marie-Anne Gaboury, Montréal, Librairie Saint-Joseph, p. 33, 60 ; texte intégral : archive.org, lapremirecanadi00duga.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "HK-chalifoux-jean-baptiste-miss-district-d",
+  "nom": "District de Saint-Louis (Haute-Louisiane) : Jean-Baptiste Chalifoux",
+  "coords": [
+   -90.45,
+   38.75
+  ],
+  "edtf": "1799",
+  "precision": "annee",
+  "certitude": "hypothetique",
+  "description": "District de Saint-Louis (Haute-Louisiane), 1799. Jean-Baptiste Chalifoux reçoit une concession dans le district. D'après Houck (1908), vol. 2.",
+  "sources": "Houck, Louis (1908), A History of Missouri from the Earliest Explorations and Settlements until the Admission of the State into the Union, Chicago, R. R. Donnelley, vol. 2, p. 100-102 ; texte intégral : archive.org, historyofmissour02houc.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "MA-chalifoux-michel-haut-de-la",
+  "nom": "Département du Haut-de-la-Rivière-Rouge (fort Espérance, Qu'Appelle) : Michel Chalifoux",
+  "coords": [
+   -101.9,
+   50.45
+  ],
+  "edtf": "1804",
+  "precision": "annee",
+  "certitude": "hypothetique",
+  "description": "Département du Haut-de-la-Rivière-Rouge (fort Espérance, Qu'Appelle), 1804. Michel Chalifoux est inscrit parmi les engagés et voyageurs du département du Haut-de-la-Rivière-Rouge sur la liste de la Compagnie du Nord-Ouest dressée après la fusion de 1804. D'après Masson (1889).",
+  "sources": "Masson, Louis-Rodrigue (1889), Les Bourgeois de la Compagnie du Nord-Ouest, Québec, A. Côté, vol. 1, « Liste des bourgeois, commis, engagés et voyageurs de la Compagnie du Nord-Ouest après la fusion de 1804 », p. 395-413 ; texte intégral : archive.org, cihm_30414.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "VU-chalifoux-batiste-santa-fe",
+  "nom": "Santa Fe : Batiste Chalifoux",
+  "coords": [
+   -105.938,
+   35.687
+  ],
+  "edtf": "1847",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Santa Fe, 1847. Batiste Chalifoux simple soldat de la compagnie de St. Vrain. D'après Prince, Historical Sketches of New Mexico (1883).",
+  "sources": "L. Bradford Prince, Historical Sketches of New Mexico from the Earliest Records to the American Occupation, New York, Leggat Brothers, 1883, App. I ; texte intégral : archive.org, histnewmexico00prin.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "YY-charlefoux-los-angele",
+  "nom": "Los Angeles : Charlefoux",
+  "coords": [
+   -118.243,
+   34.052
+  ],
+  "edtf": "1837/1840",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Los Angeles, 1837-1840. Charlefoux « Canadian from N. Mex. », conduit un parti de trappeurs et de traiteurs au secours de Bandini et des sureños contre Alvarado. D'après Bancroft, California II (1885).",
+  "sources": "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, Pioneer Register (entrée « Charlefoux ») ; texte intégral : archive.org, worksofhuberthow19bancrich.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "BB-chalifoux-andre-champoeg-o",
+  "nom": "Champoeg (Campement de Sable, Oregon) : Andre Chalifoux",
+  "coords": [
+   -122.88,
+   45.25
+  ],
+  "edtf": "1843",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Champoeg (Campement de Sable, Oregon), 1843. Andre Chalifoux vote contre l'organisation d'un gouvernement provisoire le 2 mai, avec les colons français. D'après Gaston, Centennial History I (1912).",
+  "sources": "Gaston, Joseph (1912), The Centennial History of Oregon, 1811-1912, vol. I, Chicago, S. J. Clarke Publishing Company, p. 177 ; texte intégral : archive.org, centennialhistor01gast.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-baptiste-chaulifou-nisqually",
+  "nom": "Nisqually : Baptiste Chalifoux (« Chaulifoux »)",
+  "coords": [
+   -122.7,
+   47.07
+  ],
+  "edtf": "1850",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Nisqually, 1850. Baptiste Chalifoux (« Chaulifoux ») serviteur du fort : granges, charrettes, radeaux de bois depuis Newmarket. D'après Washington Historical Quarterly, 1906-1928 (articles choisis).",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), XI-XV, passim (Nisqually Journal) ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-baptiste-chaulifou-nisqually-2",
+  "nom": "Nisqually : Baptiste Chalifoux (« Chaulifoux »)",
+  "coords": [
+   -122.7,
+   47.07
+  ],
+  "edtf": "1851",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Nisqually, 1851. Baptiste Chalifoux (« Chaulifoux ») nouvelle cuisine, maison de Tlithlow, écuries. D'après Washington Historical Quarterly, 1906-1928 (articles choisis).",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), XI-XV, passim (Nisqually Journal) ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-baptiste-chaulifou-nisqually-3",
+  "nom": "Nisqually : Baptiste Chalifoux (« Chaulifoux »)",
+  "coords": [
+   -122.7,
+   47.07
+  ],
+  "edtf": "1852",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Nisqually, 1852. Baptiste Chalifoux (« Chaulifoux ») toitures, chariots, boutique de traite. D'après Washington Historical Quarterly, 1906-1928 (articles choisis).",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), XI-XV, passim (Nisqually Journal) ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-chilifaux-spokane-ho",
+  "nom": "Spokane House : Chalifoux (« Chilifaux »)",
+  "coords": [
+   -117.55,
+   47.78
+  ],
+  "edtf": "1826",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Spokane House, 1826. Chalifoux (« Chilifaux ») au fort et à la fourche, 7-8 mars. D'après Washington Historical Quarterly, 1906-1928 (articles choisis). Autres lieux de l'entrée : lac Pend Oreille (Idaho), fort Colville (Washington), fort Okanagan.",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), V, p. 277, 281 ; VI, p. 42-43 ; XI (John Work, journal de 1828), p. 105-106, 113-114 ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-chilifaux-fort-colvi",
+  "nom": "Fort Colville (Washington) : Chalifoux (« Chilifaux »)",
+  "coords": [
+   -118.07,
+   48.63
+  ],
+  "edtf": "1828",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Fort Colville (Washington), 1828. Chalifoux (« Chilifaux ») « Chatefaux », probablement J. B. Chalifaux ; bateau inachevé, 20 mai. D'après Washington Historical Quarterly, 1906-1928 (articles choisis). Autres lieux de l'entrée : Spokane House, lac Pend Oreille (Idaho), fort Okanagan.",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), V, p. 277, 281 ; VI, p. 42-43 ; XI (John Work, journal de 1828), p. 105-106, 113-114 ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CA-chalifoux-chilifaux-fort-okana",
+  "nom": "Fort Okanagan : Chalifoux (« Chilifaux »)",
+  "coords": [
+   -119.68,
+   48.1
+  ],
+  "edtf": "1828",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Fort Okanagan, 1828. Chalifoux (« Chilifaux ») « Chatifaux », mal aux yeux, 23 mai ; blessé à la main, 14 août. D'après Washington Historical Quarterly, 1906-1928 (articles choisis). Autres lieux de l'entrée : Spokane House, lac Pend Oreille (Idaho), fort Colville (Washington).",
+  "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 (journals.lib.washington.edu/index.php/WHQ), V, p. 277, 281 ; VI, p. 42-43 ; XI (John Work, journal de 1828), p. 105-106, 113-114 ; transcription en ligne : https://journals.lib.washington.edu/index.php/WHQ.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CL-charlefoux-charlefou-san-juan-p",
+  "nom": "Pueblo de San Juan (Ohkay Owingeh), Nouveau-Mexique : Charlefoux (« Charlefou »)",
+  "coords": [
+   -106.07,
+   36.05
+  ],
+  "edtf": "1847",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Pueblo de San Juan (Ohkay Owingeh), Nouveau-Mexique, 1847. Charlefoux (« Charlefou ») apporte la nouvelle du massacre de Taos, janvier. D'après Colorado Magazine XXXI-XXXVI (1954-1959). Autres lieux de l'entrée : Embudo (Nouveau-Mexique), ruisseau Huerfano.",
+  "sources": "The Colorado Magazine, vol. XXXI-XXXVI, Denver, State Historical Society of Colorado, 1954-1959 (PDF : historycolorado.org), XXXIV, s. p. ; XXXV, s. p. ; transcription en ligne : https://www.historycolorado.org/back-issues.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CL-charlefoux-charlefou-embudo-nou",
+  "nom": "Embudo (Nouveau-Mexique) : Charlefoux (« Charlefou »)",
+  "coords": [
+   -105.96,
+   36.21
+  ],
+  "edtf": "1849",
+  "precision": "annee",
+  "certitude": "certaine",
+  "description": "Embudo (Nouveau-Mexique), 1849. Charlefoux (« Charlefou ») y vit encore lors du passage de Kroenig. D'après Colorado Magazine XXXI-XXXVI (1954-1959). Autres lieux de l'entrée : Pueblo de San Juan (Ohkay Owingeh), Nouveau-Mexique, ruisseau Huerfano.",
+  "sources": "The Colorado Magazine, vol. XXXI-XXXVI, Denver, State Historical Society of Colorado, 1954-1959 (PDF : historycolorado.org), XXXIV, s. p. ; XXXV, s. p. ; transcription en ligne : https://www.historycolorado.org/back-issues.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "CL-charlefoux-charlefou-huerfano",
+  "nom": "Ruisseau Huerfano : Charlefoux (« Charlefou »)",
+  "coords": [
+   -104.8,
+   37.7
+  ],
+  "edtf": "1852",
+  "precision": "annee",
+  "certitude": "approximative",
+  "description": "Ruisseau Huerfano, 1852. Charlefoux (« Charlefou ») commence un fossé et une ferme sur le Huerfano avec Kroenig, Levanway et Shelton. D'après Colorado Magazine XXXI-XXXVI (1954-1959). Autres lieux de l'entrée : Pueblo de San Juan (Ohkay Owingeh), Nouveau-Mexique, Embudo (Nouveau-Mexique).",
+  "sources": "The Colorado Magazine, vol. XXXI-XXXVI, Denver, State Historical Society of Colorado, 1954-1959 (PDF : historycolorado.org), XXXIV, s. p. ; XXXV, s. p. ; transcription en ligne : https://www.historycolorado.org/back-issues.",
+  "note": "Repérage dans la transcription en ligne du livre, à vérifier dans l'original ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "GY-chalifoux-pierre-green-bay",
+  "nom": "La Baie (Green Bay) : Pierre Chalifoux",
+  "coords": [
+   -88.02,
+   44.513
+  ],
+  "edtf": "1810~",
+  "precision": "circa",
+  "certitude": "certaine",
+  "description": "La Baie (Green Bay), vers 1810. Pierre Chalifoux chef de famille établi avant 1812. D'après Grignon, Seventy-two Years Recollections of Wisconsin (WHC III, 1857).",
+  "sources": "Augustin Grignon, Seventy-two Years' Recollections of Wisconsin, dans Collections of the State Historical Society of Wisconsin, vol. III, Madison, 1857 (réimpr. 1904)., p. 242 ; texte intégral : archive.org, collectionsstat03unkngoog.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ },
+ {
+  "rid": "HF-chalifoux-pierre-green-bay",
+  "nom": "La Baie (Green Bay) : Pierre Chalifoux",
+  "coords": [
+   -88.02,
+   44.513
+  ],
+  "edtf": "1818~",
+  "precision": "circa",
+  "certitude": "certaine",
+  "description": "La Baie (Green Bay), vers 1818. Pierre Chalifoux liste non datée des colons de la Baie, de la même période; rive sud. D'après Habitants de Green Bay en 1818 (WHC X).",
+  "sources": "Lawe and Grignon Papers, 1794-1821, dans Collections of the State Historical Society of Wisconsin, vol. X, Madison, 1888 (réimpr. 1909)., p. 138-139 ; texte intégral : archive.org, collectionsofsta0000lyma.",
+  "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+  "pages_pdf": null
+ }
+]
