@@ -12,16 +12,16 @@
    },
    "properties": {
     "id": "L24",
-    "nom": "Saint-Louis : naissance de Charles Autobees (1812)",
-    "debut": 1812.5,
-    "fin": 1812.5,
-    "date_edtf": "1812",
+    "nom": "Saint-Louis : « le vieux Charlefou » parmi les compagnons d'Autobees (1828 ?)",
+    "debut": 1828.5,
+    "fin": 1828.5,
+    "date_edtf": "1828",
     "precision": "annee",
     "certitude": "hypothetique",
     "categorie": "compagnons",
     "description": "Charles Autobees naît à Saint-Louis en 1812. À 16 ans (1828), il remonte le Missouri avec l'American Fur Company, en compagnie de Jim Bridger, Kit Carson, Laforet, Bordeaux, Charles Nadeau, Chat Dubray, le vieux Chalifoux, Beaubien et Joseph Barnoy dit Levanway.",
-    "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 11; 14. (PDF p. 11; 14)",
-    "note": "Tom Autobees mentionne aussi 1831 comme première remontée du Missouri. Liste de compagnons dressée de mémoire par la famille Autobees ; la présence de Chalifoux sur le Missouri en 1828 n'est confirmée par aucune autre source.",
+    "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 11; 14. ; J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur) (PDF p. 11; 14)",
+    "note": "Tom Autobees mentionne aussi 1831 comme première remontée du Missouri. Liste de compagnons dressée de mémoire par Tom Autobees, fils de Charles. En examinant chaque nom, Janet Lecompte montre que beaucoup de ces hommes n'ont pas pu partir de Saint-Louis avec Autobees en 1828 : ils furent ses compagnons plus tard. Pour Chalifoux, c'est l'ami des années 1850 sur la Huerfano.",
     "type": "lieu",
     "images": [],
     "reseau": "C011"
@@ -675,8 +675,8 @@
     "certitude": "certaine",
     "categorie": "baptiste",
     "description": "Il meurt lors d'une dernière visite au ranch d'Autobees, dans le second établissement fondé deux milles en amont sur la Huerfano, et repose au petit cimetière sans stèle ; ses descendants savent quelle tombe est la sienne.",
-    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur : Luz Gonzales à Sterling Cawlfield, 27 avril 1937",
-    "note": "",
+    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur : Luz Gonzales à Sterling Cawlfield, 27 avril 1937 ; J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur)",
+    "note": "En 1957, Lecompte le faisait encore mourir au ranch d'Autobees « à la fin des années 1860 » et lui attribuait « probablement la première maison » de Trinidad (1860) ; sa notice ultérieure des Mountain Men (vol. 7) fixe la mort au 12 décembre 1860.",
     "type": "lieu",
     "images": [
      {

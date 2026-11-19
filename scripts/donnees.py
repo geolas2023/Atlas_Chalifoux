@@ -24,6 +24,7 @@ ATH = "M. Athearn, An Isolated Empire: A History of Northwest Colorado (BLM, Col
 TEN = "W. L. Tennent, John Jarvie of Brown's Park (BLM, Utah, 1981), p. 13-14 et n. 9"
 CRA = "F. W. Cragin, Early Far West Notebooks (1902-1923), transcription dactylographiée"
 BAN = "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, entrée « Charlefoux »"
+CM = "J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur)"
 JAN = "A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison et F. Price (Huntington Library, 1953)"
 
 
@@ -98,8 +99,10 @@ REPRISES = {
   'F-chalifoux-20': ('L20', 'baptiste', {'note_plus': " A. W. Archibald, interrogé par Cragin, les trouve campés sur le site de Trinidad en novembre 1860 ; le Dr Beshoar (1882) nomme « Jean-B. Charlefou » parmi les colons de 1859 (Cragin, PDF p. 131-134). W. L. Tennent date à tort de 1869 « la première maison de Trinidad »."}),
   'F-chalifoux-21': ('L21', 'famille', {}),
   'F-chalifoux-22': ('L22', 'famille', {}),
-  'F-chalifoux-23': ('L23', 'baptiste', {}),
-  'C011': ('L24', 'compagnons', {'certitude': 'hypothetique', 'note_plus': " Liste de compagnons dressée de mémoire par la famille Autobees ; la présence de Chalifoux sur le Missouri en 1828 n'est confirmée par aucune autre source."}),
+  'F-chalifoux-23': ('L23', 'baptiste', {'sources_plus': f" ; {CM}", 'note_plus': " En 1957, Lecompte le faisait encore mourir au ranch d'Autobees « à la fin des années 1860 » et lui attribuait « probablement la première maison » de Trinidad (1860) ; sa notice ultérieure des Mountain Men (vol. 7) fixe la mort au 12 décembre 1860."}),
+  'C011': ('L24', 'compagnons', {'certitude': 'hypothetique', 'edtf': '1828', 'nom': "Saint-Louis : « le vieux Charlefou » parmi les compagnons d'Autobees (1828 ?)",
+      'sources_plus': f" ; {CM}",
+      'note_plus': " Liste de compagnons dressée de mémoire par Tom Autobees, fils de Charles. En examinant chaque nom, Janet Lecompte montre que beaucoup de ces hommes n'ont pas pu partir de Saint-Louis avec Autobees en 1828 : ils furent ses compagnons plus tard. Pour Chalifoux, c'est l'ami des années 1850 sur la Huerfano."}),
   'C014': ('L25', 'baptiste', {}),
   'C146': ('L26', 'baptiste', {}),
   'VU-chalifoux-batiste-santa-fe': ('L27', 'baptiste', {}),
@@ -136,7 +139,7 @@ for r in json.load(open(os.path.join(ICI, 'reseau_chalifoux.json'), encoding='ut
     sources = r['sources'] + ch.get('sources_plus', '')
     if r.get('pages_pdf'):
         sources += f" (PDF p. {r['pages_pdf']})"
-    L(nid, ch.get('nom', r['nom']), lon, lat, r['edtf'], ch.get('certitude', r['certitude']), cat,
+    L(nid, ch.get('nom', r['nom']), lon, lat, ch.get('edtf', r['edtf']), ch.get('certitude', r['certitude']), cat,
       r['description'], sources, note, reseau=r['rid'], images=IMAGES.get(nid))
 
 # ------------------------------------------------------------------ 2. Fiches propres à cet atlas
