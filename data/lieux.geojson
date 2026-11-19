@@ -1206,6 +1206,32 @@
     "images": [],
     "reseau": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.647,
+     41.8752
+    ]
+   },
+   "properties": {
+    "id": "L47",
+    "nom": "Chicago : Joseph Chalifoux, marin montréalais devenu entrepreneur de pompes funèbres (1867-1893)",
+    "debut": 1867.5,
+    "fin": 1893.5,
+    "date_edtf": "1867/1893",
+    "precision": "annee",
+    "certitude": "approximative",
+    "categorie": "homonymes",
+    "description": "Né à Montréal en 1841, menuisier puis marin pendant cinq ans, Joseph Chalifoux arrive à Chicago en 1867 avec 75 cents en poche. Il devient entrepreneur de pompes funèbres et propriétaire d'une grande écurie de chevaux de louage, l'un des Canadiens français les mieux établis de la ville. Avec André Leclaire, il offre le tableau des Épousailles à la nouvelle église Notre-Dame.",
+    "sources": "E. Paquin, La colonie canadienne-française de Chicago (Chicago, Stromberg, Allen & Cie, 1893), biographie de Joseph Chalifoux (epub Wikisource du Drive de l'auteur).",
+    "note": "Homonyme sans lien établi avec Jean-Baptiste Chalifoux. Point placé au premier emplacement de Notre-Dame de Chicago (Halsted et Congress).",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
   }
  ]
 }

@@ -25,6 +25,7 @@ TEN = "W. L. Tennent, John Jarvie of Brown's Park (BLM, Utah, 1981), p. 13-14 et
 CRA = "F. W. Cragin, Early Far West Notebooks (1902-1923), transcription dactylographiée"
 BAN = "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, entrée « Charlefoux »"
 CM = "J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur)"
+PAQ = "E. Paquin, La colonie canadienne-française de Chicago (Chicago, Stromberg, Allen & Cie, 1893), biographie de Joseph Chalifoux (epub Wikisource du Drive de l'auteur)"
 PHG = "Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press"
 JAN = "A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison et F. Price (Huntington Library, 1953)"
 
@@ -159,6 +160,11 @@ L('L46', "Brown's Park : la tradition de Baptiste Brown", -109.0, 40.87, '1820~/
   "La tradition locale fait d'un « Baptiste Brown » le premier Blanc établi dans la vallée de la Green qu'on appelle Brown's Hole, puis Brown's Park. Pour M. Athearn, ce Brown n'est autre que Jean-Baptiste Chalifoux, qui y aurait trappé dès 1820. Le ranch de John Jarvie, au cœur de la vallée, est aujourd'hui un site historique du BLM.",
   f"{ATH} ; {TEN} ; {LEC}.",
   "Hypothèse disputée : Lecompte tient Baptiste Brown pour un personnage inventé par le colonel Inman (1897). Point au ranch Jarvie (Brown's Park, Utah).")
+
+L('L47', "Chicago : Joseph Chalifoux, marin montréalais devenu entrepreneur de pompes funèbres (1867-1893)", -87.6470, 41.8752, '1867/1893', 'approximative', 'homonymes',
+  "Né à Montréal en 1841, menuisier puis marin pendant cinq ans, Joseph Chalifoux arrive à Chicago en 1867 avec 75 cents en poche. Il devient entrepreneur de pompes funèbres et propriétaire d'une grande écurie de chevaux de louage, l'un des Canadiens français les mieux établis de la ville. Avec André Leclaire, il offre le tableau des Épousailles à la nouvelle église Notre-Dame.",
+  f"{PAQ}.",
+  "Homonyme sans lien établi avec Jean-Baptiste Chalifoux. Point placé au premier emplacement de Notre-Dame de Chicago (Halsted et Congress).")
 
 # ------------------------------------------------------------------ Routes
 TAOS = [-105.573, 36.407]
