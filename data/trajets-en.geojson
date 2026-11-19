@@ -1,0 +1,331 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -106.48,
+      31.74
+     ],
+     [
+      -107.9,
+      32.3
+     ],
+     [
+      -109.3,
+      32.3
+     ],
+     [
+      -110.97,
+      32.22
+     ],
+     [
+      -109.6,
+      31.3
+     ],
+     [
+      -108.19,
+      30.89
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T01",
+    "nom": "With James Baird, from El Paso to Tucson and then Janos",
+    "debut": 1826.7877,
+    "fin": 1827.0397,
+    "date_edtf": "1826-10/1827-01",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "At the end of October 1826, the Chalifoux brothers leave El Paso with James Baird for the Gila; Baird dies on the way, they push on to Tucson and then find themselves in jail at Janos in January 1827.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Route reconstructed between the known places.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -106.32,
+      36.21
+     ],
+     [
+      -107.5,
+      37.2
+     ],
+     [
+      -108.07,
+      38.75
+     ],
+     [
+      -109.29,
+      39.28
+     ],
+     [
+      -109.44,
+      39.56
+     ],
+     [
+      -109.68,
+      40.09
+     ],
+     [
+      -109.92,
+      40.46
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T02",
+    "nom": "From Taos to the Ute country with François Robidoux",
+    "debut": 1827.2014,
+    "fin": 1827.7055,
+    "date_edtf": "1827-03/1827-09",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "In March 1827, Chalifoux leaves Taos with François Robidoux and Maurice LeDuc for the Ute country. The probable route follows the north branch of the Old Spanish Trail: the Gunnison, the Book Cliffs by Westwater and Willow Creek, to the Uinta.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7); J. W. Nelson, Forgotten Pathfinders Along the North Branch of the Old Spanish Trail, 1650-1850 (2003), p. 31, 50-51.",
+    "note": "Hypothetical route by the Westwater-Willow Creek trail, where his name was carved in 1835.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -106.32,
+      36.21
+     ],
+     [
+      -108.5,
+      37.4
+     ],
+     [
+      -110.15,
+      38.99
+     ],
+     [
+      -112.1,
+      38.6
+     ],
+     [
+      -113.6,
+      37.6
+     ],
+     [
+      -115.15,
+      36.17
+     ],
+     [
+      -116.6,
+      35.0
+     ],
+     [
+      -117.44,
+      34.32
+     ],
+     [
+      -118.107,
+      34.097
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T03",
+    "nom": "To California by the Old Spanish Trail",
+    "debut": 1836.7883,
+    "fin": 1837.0397,
+    "date_edtf": "1836-10/1837-01",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "In the fall of 1836, Chalifoux leads some thirty New Mexicans, Canadians, Shawnee and Delaware to California, with woolens to trade for horses and mules.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Hypothetical route by the Old Spanish Trail.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -118.107,
+      34.097
+     ],
+     [
+      -118.461,
+      34.273
+     ],
+     [
+      -116.55,
+      33.82
+     ],
+     [
+      -117.87,
+      33.77
+     ],
+     [
+      -117.161,
+      32.716
+     ],
+     [
+      -117.87,
+      33.77
+     ],
+     [
+      -120.664,
+      35.28
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T04",
+    "nom": "The Chaguanosos' campaign",
+    "debut": 1837.0397,
+    "fin": 1837.8726,
+    "date_edtf": "1837-01/1837-11",
+    "certitude": "approximative",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "Enlisted by Osio against Alvarado, the Chaguanosos go from San Gabriel to San Fernando, camp at Agua Caliente where Janssens finds them, march on San Diego, then, demobilized without pay, pay themselves in horses as far as San Luis Obispo.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7); A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison and F. Price (Huntington Library, 1953).",
+    "note": "",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.664,
+      35.28
+     ],
+     [
+      -118.107,
+      34.097
+     ],
+     [
+      -117.44,
+      34.32
+     ],
+     [
+      -116.32,
+      35.63
+     ],
+     [
+      -115.15,
+      36.17
+     ],
+     [
+      -113.6,
+      37.6
+     ],
+     [
+      -110.15,
+      38.99
+     ],
+     [
+      -108.5,
+      37.4
+     ],
+     [
+      -105.573,
+      36.407
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T05",
+    "nom": "The great raid of 1840 and the return",
+    "debut": 1840.2883,
+    "fin": 1840.5369,
+    "date_edtf": "1840-04/1840-07",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "chaguanosos",
+    "description": "In the spring of 1840, the band, reinforced by Bill Williams and Pegleg Smith, carries off thousands of horses from the missions and makes off through Cajon Pass and Agua de Tomasa toward New Mexico.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7).",
+    "note": "Return by the Old Spanish Trail, hypothetical route.",
+    "type": "trajet",
+    "images": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -105.96,
+      36.21
+     ],
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -105.43,
+      37.08
+     ],
+     [
+      -105.0,
+      37.6
+     ],
+     [
+      -104.27,
+      38.2
+     ],
+     [
+      -104.45,
+      37.2
+     ],
+     [
+      -104.508,
+      37.169
+     ]
+    ]
+   },
+   "properties": {
+    "id": "T06",
+    "nom": "From Embudo to the Huerfano and then Trinidad",
+    "debut": 1852.5,
+    "fin": 1860.873,
+    "date_edtf": "1852/1860-11",
+    "certitude": "hypothetique",
+    "mode": "terre",
+    "membre": "baptiste",
+    "description": "In the 1850s, Chalifoux leaves Embudo for the Huerfano settlements, near Charles Autobees, then in 1859-1860 builds the first houses of Trinidad on the Purgatoire.",
+    "sources": "J. Lecompte, “Jean-Baptiste Chalifoux”, in L. R. Hafen (ed.), French Fur Traders and Voyageurs in the American West (1995), p. 58-75 (repris de The Mountain Men and the Fur Trade of the Far West, vol. 7); F. W. Cragin, Early Far West Notebooks (1902-1923), typed transcription.",
+    "note": "Hypothetical route between the known places.",
+    "type": "trajet",
+    "images": []
+   }
+  }
+ ]
+}

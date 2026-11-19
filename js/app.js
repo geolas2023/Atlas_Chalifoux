@@ -6,20 +6,31 @@
 //   - 1780 à 1825, par année (origines, frères, Nord-Ouest), en segment compressé ;
 //   - 1826 à 1889, par mois (Taos, Californie, Huerfano, Culebra).
 // La dernière position (max) = « toutes les dates ».
+// Langue de la page : <html lang="en"> (index-en.html) affiche l'interface et les données en anglais.
+const EN = document.documentElement.lang === 'en';
+const L = (fr, en) => EN ? en : fr;
 const AN_DEBUT = 1780, AN_DETAIL = 1826, AN_FIN = 1890;
 const NB_ANNEES = AN_DETAIL - AN_DEBUT;                       // 46 positions annuelles
 const POS_MAX = NB_ANNEES + (AN_FIN - AN_DETAIL) * 12;        // 46 + 768 = 814
-const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const MOIS = EN ? ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+             : ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 function lirePosition(v) {
   v = Number(v);
-  if (v >= POS_MAX) return { libelle: 'Toutes les dates', borne: null };
+  if (v >= POS_MAX) return { libelle: L('Toutes les dates', 'All dates'), borne: null };
   if (v < NB_ANNEES) return { libelle: `${AN_DEBUT + v}`, borne: AN_DEBUT + v + 1 };
   const m = v - NB_ANNEES;
   return { libelle: `${MOIS[m % 12]} ${AN_DETAIL + Math.floor(m / 12)}`, borne: AN_DETAIL + (m + 1) / 12 };
 }
 
 // Les époques de la vie de Chalifoux, pour situer chaque entrée du journal
-const CHAPITRES = [
+const CHAPITRES = EN ? [
+  [1826, 'I · Charlesbourg, St. Louis and the North'],
+  [1836.9, 'II · Taos, the Gila and the Ute country'],
+  [1841, 'III · The Chaguanosos in California'],
+  [1853, 'IV · Embudo, Taos and the war of 1847'],
+  [9999, 'V · The Huerfano, Trinidad and the Culebra']
+]
+  : [
   [1826, 'I · Charlesbourg, Saint-Louis et le Nord'],
   [1836.9, 'II · Taos, la Gila et le pays ute'],
   [1841, 'III · Les Chaguanosos en Californie'],
@@ -49,15 +60,17 @@ new ResizeObserver(() => carte.resize()).observe(document.getElementById('carte'
 // Couleurs d'encre par membre de la famille
 const COULEURS = { baptiste: '#9a3322', chaguanosos: '#5b3f6b', famille: '#3f5a2a', compagnons: '#2f4d63', homonymes: '#8a6a12' };
 const couleurCategorie = ['match', ['get', 'categorie'], ...Object.entries(COULEURS).flat(), '#1f2f3a'];
-const NOMS_CATEGORIE = { baptiste: 'Jean-Baptiste Chalifoux', chaguanosos: 'les Chaguanosos', famille: 'la famille', compagnons: 'compagnons et associés', homonymes: 'autres Chalifoux' };
-const NOMS_MODE = { mer: 'route maritime', cote: 'cabotage', terre: 'à cheval, en caravane', fleuve: 'en bateau' };
+const NOMS_CATEGORIE = EN ? { baptiste: 'Jean-Baptiste Chalifoux', chaguanosos: 'the Chaguanosos', famille: 'the family', compagnons: 'companions and partners', homonymes: 'other Chalifouxes' }
+  : { baptiste: 'Jean-Baptiste Chalifoux', chaguanosos: 'les Chaguanosos', famille: 'la famille', compagnons: 'compagnons et associés', homonymes: 'autres Chalifoux' };
+const NOMS_MODE = EN ? { mer: 'sea route', cote: 'coastal voyage', terre: 'on horseback, by caravan', fleuve: 'by boat' }
+  : { mer: 'route maritime', cote: 'cabotage', terre: 'à cheval, en caravane', fleuve: 'en bateau' };
 const ENCRE_MER = '#9a3322', ENCRE_TERRE = '#1f2f3a';
 const estMer = ['in', ['get', 'mode'], ['literal', ['mer', 'cote']]];
 
 carte.on('load', async () => {
   const [lieux, trajets] = await Promise.all([
-    fetch(`data/lieux.geojson?v=${VERSION}`).then(r => r.json()),
-    fetch(`data/trajets.geojson?v=${VERSION}`).then(r => r.json())
+    fetch(`data/lieux${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json()),
+    fetch(`data/trajets${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json())
   ]);
   window.DONNEES = { lieux, trajets }; // utilisé par la visite animée (visite.js)
   const couchesDeBase = carte.getStyle().layers.map(l => l.id);
@@ -68,7 +81,7 @@ carte.on('load', async () => {
   carte.addSource('satellite', {
     type: 'raster', tileSize: 256, maxzoom: 19,
     tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
-    attribution: 'Imagerie © Esri, Maxar, Earthstar Geographics et contributeurs'
+    attribution: L('Imagerie © Esri, Maxar, Earthstar Geographics et contributeurs', 'Imagery © Esri, Maxar, Earthstar Geographics and contributors')
   });
   carte.addLayer({ id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: 'none' } });
 
@@ -187,14 +200,14 @@ curseur.addEventListener('input', () => appliquerDate(curseur.value));
   const annee = (v, texte) => {
     const a = document.createElement('span');
     a.className = 'annee'; a.textContent = texte; a.style.left = position(v);
-    a.title = `Aller à ${texte}`;
+    a.title = L(`Aller à ${texte}`, `Go to ${texte}`);
     a.addEventListener('click', () => { curseur.value = v; appliquerDate(v); });
     g.appendChild(a);
   };
   const bande = document.createElement('span');
   bande.className = 'segment-compresse'; bande.style.left = position(0);
   bande.style.width = `calc(${(NB_ANNEES - 0.5) / POS_MAX} * (100% - ${POUCE}px))`;
-  bande.title = '1780-1825 : échelle compressée (une position par année)';
+  bande.title = L('1780-1825 : échelle compressée (une position par année)', '1780-1825: compressed scale (one step per year)');
   g.appendChild(bande);
   for (let v = 0; v < NB_ANNEES; v++) if ((AN_DEBUT + v) % 5 === 0) trait(v, (AN_DEBUT + v) % 10 === 0 ? 'trait' : 'trait mineur');
   annee(0, '1780'); annee(20, '1800');
@@ -232,14 +245,15 @@ document.getElementById('c-trajets').addEventListener('change', e => {
 
 // ---------- Journal de bord (panneau documentaire) ----------
 const echapper = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const NOMS_CERTITUDE = { certaine: 'localisation certaine', approximative: 'approximative', hypothetique: 'hypothétique' };
+const NOMS_CERTITUDE = EN ? { certaine: 'location certain', approximative: 'approximate', hypothetique: 'hypothetical' }
+                         : { certaine: 'localisation certaine', approximative: 'approximative', hypothetique: 'hypothétique' };
 // Date EDTF -> date lisible (« 1697-09-05 » -> « 5 septembre 1697 » ; « ~ » = vers)
 function dateLisible(edtf) {
   if (!edtf) return '';
   return String(edtf).split('/').map(d => {
     const approx = /[~?]/.test(d), [a, m, j] = d.replace(/[~?]/g, '').split('-').map(Number);
-    const txt = j ? `${j === 1 ? '1er' : j} ${MOIS[m - 1]} ${a}` : m ? `${MOIS[m - 1]} ${a}` : `${a}`;
-    return approx ? `vers ${txt}` : txt;
+    const txt = j ? (EN ? `${MOIS[m - 1]} ${j}, ${a}` : `${j === 1 ? '1er' : j} ${MOIS[m - 1]} ${a}`) : m ? `${MOIS[m - 1]} ${a}` : `${a}`;
+    return approx ? `${L('vers', 'c.')} ${txt}` : txt;
   }).join(' – ');
 }
 
@@ -260,7 +274,7 @@ function afficherFiche(p, geom) {
   const genre = estTrajet ? (NOMS_MODE[p.mode] || 'route') : (NOMS_CATEGORIE[p.categorie] || '');
   const panneau = document.getElementById('panneau');
   panneau.innerHTML = `
-    <button type="button" class="fermer" aria-label="Fermer le journal" title="Fermer (Échap)">✕</button>
+    <button type="button" class="fermer" aria-label="${L('Fermer le journal', 'Close the journal')}" title="${L('Fermer (Échap)', 'Close (Esc)')}">✕</button>
     <p class="chapitre">${echapper(chapitre(Number(p.debut)))}</p>
     <h2>${echapper(p.nom)}</h2>
     <div class="filet" aria-hidden="true">✦</div>
@@ -271,8 +285,8 @@ function afficherFiche(p, geom) {
     </p>
     ${galerie(p)}
     ${p.description ? `<p class="description">${echapper(p.description)}</p>` : ''}
-    ${p.note ? `<p class="note"><strong>Note critique :</strong> ${echapper(p.note)}</p>` : ''}
-    <div class="sources"><strong>Source :</strong> ${echapper(p.sources)}</div>`;
+    ${p.note ? `<p class="note"><strong>${L('Note critique :', 'Critical note:')}</strong> ${echapper(p.note)}</p>` : ''}
+    <div class="sources"><strong>${L('Source :', 'Source:')}</strong> ${echapper(p.sources)}</div>`;
   panneau.querySelector('.fermer').addEventListener('click', fermerFiche);
   imagesFiche = lireImages(p);
   panneau.querySelectorAll('.vignette').forEach(b => b.addEventListener('click', () => ouvrirImage(Number(b.dataset.i))));
@@ -290,7 +304,7 @@ function galerie(p) {
   const im = lireImages(p);
   if (!im.length) return '';
   return `<div class="galerie">${im.map((d, i) =>
-    `<figure><button type="button" class="vignette" data-i="${i}" title="Agrandir"><img src="${echapper(d.src)}" alt="${echapper(d.legende || '')}" loading="lazy"></button>
+    `<figure><button type="button" class="vignette" data-i="${i}" title="${L('Agrandir', 'Enlarge')}"><img src="${echapper(d.src)}" alt="${echapper(d.legende || '')}" loading="lazy"></button>
      <figcaption>${echapper(d.legende || '')}</figcaption></figure>`).join('')}</div>`;
 }
 let imagesFiche = [], imageCourante = 0;
@@ -301,7 +315,7 @@ function ouvrirImage(i) {
   document.getElementById('lb-image').alt = d.legende || '';
   document.getElementById('lb-legende').textContent = d.legende || '';
   document.getElementById('lb-ouvrir').href = d.lien || d.src;
-  document.getElementById('lb-ouvrir').textContent = d.lien ? 'Page de l\'image et licence ↗' : 'Ouvrir en taille réelle ↗';
+  document.getElementById('lb-ouvrir').textContent = d.lien ? L('Page de l\'image et licence ↗', 'Image page and license ↗') : L('Ouvrir en taille réelle ↗', 'Open full size ↗');
   document.querySelectorAll('.lb-nav').forEach(b => b.hidden = imagesFiche.length < 2);
   document.getElementById('lightbox').hidden = false;
 }
@@ -321,7 +335,16 @@ document.addEventListener('keydown', e => {
 function afficherApropos() {
   if (carte.getLayer('trajet-actif')) carte.setFilter('trajet-actif', ['==', ['get', 'id'], '']);
   const panneau = document.getElementById('panneau');
-  panneau.innerHTML = `
+  panneau.innerHTML = EN ? `
+    <button type="button" class="fermer" aria-label="Close" title="Close (Esc)">✕</button>
+    <h2>Logbook</h2>
+    <div class="filet" aria-hidden="true">✦</div>
+    <p class="description">Born near Quebec around 1791, Jean-Baptiste Chalifoux follows his brother Pierre to St. Louis, then moves on to New Mexico. A Taos trapper on the Gila and in the Ute country, he becomes in 1837 the chief of the “Chaguanosos,” a band of Canadians, New Mexicans, Shawnee and Delaware who hire out their rifles to the Californian revolutions and sweep thousands of horses from the missions. Back home, he keeps a small ranch at Embudo, sits as a juror at the trial of the Taos insurgents in 1847, lives in a cave in the riverbank at Charles Autobees's place on the Huerfano, builds the first houses of Trinidad and dies in 1860. His family puts down roots in the Culebra valley, where the Chalifu acequia still bears his name.</p>
+    <p>Click a place or a route to open its logbook entry. The color of the dot shows the thread: Chalifoux himself, the Chaguanosos, the family, the companions, or other Chalifouxes of the West who have sometimes been confused with him. The timeline moves by year from 1780 to 1825, then by month from 1826 to 1889. The ▶ button starts the tour.</p>
+    <p class="avertissement">Chalifoux was illiterate: his name is spelled Chalifou, Charlefoux, Charlifou, Shalifu, Califa… The sources contradict each other (birth in 1791 or 1798, identity with the “Baptiste Brown” of Brown's Hole): each entry says so. The “other Chalifouxes” points (Green Bay, the Northwest, Oregon, Nisqually) concern namesakes and are not attributed to Jean-Baptiste. The descriptions are translated from the French.</p>
+    <p class="avertissement">Main sources: J. Lecompte, “Jean-Baptiste Chalifoux,” in L. R. Hafen (ed.), <em>The Mountain Men and the Fur Trade of the Far West</em>, vol. 7, reprinted in <em>French Fur Traders and Voyageurs in the American West</em> (1995), p. 58-75; A. Janssens, <em>The Life and Adventures in California of Don Agustín Janssens, 1834-1856</em> (Huntington Library, 1953); F. W. Cragin's notebooks; J. W. Nelson, <em>Forgotten Pathfinders</em> (2003); H. H. Bancroft, <em>History of California</em>, vol. II-IV; V. Sanchez, “Chalifu Ditch No. 10” (2012). Full bibliography in the repository README.</p>
+    <p class="lien-lettres"><a class="btn-sv" href="inscriptions-en.html">The inscriptions of the Willow Creek trail →</a></p>
+    <div class="sources">Olivier J. Caron, Department of Geography, UQAM.</div>` : `
     <button type="button" class="fermer" aria-label="Fermer" title="Fermer (Échap)">✕</button>
     <h2>Journal de bord</h2>
     <div class="filet" aria-hidden="true">✦</div>

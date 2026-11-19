@@ -144,7 +144,7 @@ function installerFonds(carte, base, avant) {
   carte.addSource('relief-mnt', {
     type: 'raster-dem', encoding: 'terrarium', tileSize: 256, maxzoom: 12,
     tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
-    attribution: 'Relief : Mapzen, AWS Terrain Tiles'
+    attribution: document.documentElement.lang === 'en' ? 'Relief: Mapzen, AWS Terrain Tiles' : 'Relief : Mapzen, AWS Terrain Tiles'
   });
   carte.addLayer({ id: 'relief', type: 'hillshade', source: 'relief-mnt', layout: { visibility: masque },
     paint: { 'hillshade-shadow-color': PARCHEMIN.relief.ombre, 'hillshade-highlight-color': PARCHEMIN.relief.lumiere,
