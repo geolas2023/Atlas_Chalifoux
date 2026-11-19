@@ -25,6 +25,7 @@ TEN = "W. L. Tennent, John Jarvie of Brown's Park (BLM, Utah, 1981), p. 13-14 et
 CRA = "F. W. Cragin, Early Far West Notebooks (1902-1923), transcription dactylographiée"
 BAN = "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, entrée « Charlefoux »"
 CM = "J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur)"
+PHG = "Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press"
 JAN = "A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison et F. Price (Huntington Library, 1953)"
 
 
@@ -94,7 +95,8 @@ REPRISES = {
   'F-chalifoux-15': ('L15', 'chaguanosos', {}),
   'F-chalifoux-16': ('L16', 'chaguanosos', {}),
   'F-chalifoux-17': ('L17', 'baptiste', {'note_plus': " En 1849, Kroenig le trouve encore à Embudo (Colorado Magazine, vol. XXXIV-XXXV)."}),
-  'F-chalifoux-18': ('L18', 'famille', {}),
+  'F-chalifoux-18': ('L18', 'famille', {'sources_plus': f" ; {PHG}, p. 196",
+      'note_plus': " Janet Lecompte (1978) range « Jean-Baptiste Charlefou » parmi les jurés du procès d'avril 1847 venus des établissements de l'Arkansas, avec Lucien Maxwell, Charles Town, Robert Fisher, Charles Autobees, John L. Hatcher et Asa Estes."}),
   'F-chalifoux-19': ('L19', 'baptiste', {}),
   'F-chalifoux-20': ('L20', 'baptiste', {'note_plus': " A. W. Archibald, interrogé par Cragin, les trouve campés sur le site de Trinidad en novembre 1860 ; le Dr Beshoar (1882) nomme « Jean-B. Charlefou » parmi les colons de 1859 (Cragin, PDF p. 131-134). W. L. Tennent date à tort de 1869 « la première maison de Trinidad »."}),
   'F-chalifoux-21': ('L21', 'famille', {}),
@@ -103,9 +105,11 @@ REPRISES = {
   'C011': ('L24', 'compagnons', {'certitude': 'hypothetique', 'edtf': '1828', 'nom': "Saint-Louis : « le vieux Charlefou » parmi les compagnons d'Autobees (1828 ?)",
       'sources_plus': f" ; {CM}",
       'note_plus': " Liste de compagnons dressée de mémoire par Tom Autobees, fils de Charles. En examinant chaque nom, Janet Lecompte montre que beaucoup de ces hommes n'ont pas pu partir de Saint-Louis avec Autobees en 1828 : ils furent ses compagnons plus tard. Pour Chalifoux, c'est l'ami des années 1850 sur la Huerfano."}),
-  'C014': ('L25', 'baptiste', {}),
+  'C014': ('L25', 'baptiste', {'sources_plus': f" ; {PHG}, p. 234-235",
+      'note_plus': " Lecompte (1978) précise que les cinq placitas (Doyle, Wootton, Autobees, Kroenig, Juan « Guero » Pais) sont dispersées dans la plaine boisée, et que Jean-Baptiste Charlefou vit, comme d'autres journaliers français et mexicains, dans un « dug-out » creusé dans la berge de la rivière, près de John Smith et de sa femme cheyenne."}),
   'C146': ('L26', 'baptiste', {}),
-  'VU-chalifoux-batiste-santa-fe': ('L27', 'baptiste', {}),
+  'VU-chalifoux-batiste-santa-fe': ('L27', 'baptiste', {'sources_plus': f" ; {PHG}, p. 195",
+      'note_plus': " Selon Lecompte (1978), « Baptiste Charlefou » sert comme simple soldat dans la compagnie de volontaires levée par Ceran St. Vrain à Santa Fe pour réprimer la révolte de Taos (janvier 1847), avec d'autres hommes de l'Arkansas : Metcalf, Charles et Tom Autobees, Antoine Cournoyer, Baptiste Sabowrain et Charles Town."}),
   'YY-charlefoux-los-angele': ('L28', 'chaguanosos', {}),
   'CL-charlefoux-charlefou-san-juan-p': ('L29', 'baptiste', {}),
   'CL-charlefoux-charlefou-huerfano': ('L30', 'baptiste', {}),

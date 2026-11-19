@@ -46,8 +46,8 @@
     "certitude": "approximative",
     "categorie": "baptiste",
     "description": "Petit village de placitas en jacal, sur la rive sud de l'Arkansas, à environ un mille en amont de l'embouchure de la Huerfano (1853). Le vieux Chalifoux vivait derrière la maison de Doyle, dans un abri creusé, et au nord-est se trouvaient « beaucoup de Mexicains et de Français » vivant dans des abris semblables. Charles Autobees y avait sa placita.",
-    "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 12; 17. (PDF p. 12; 17)",
-    "note": "",
+    "sources": "Cragin, Francis Whittemore, Early Far West Notebooks (1902-1923), Starsmore Center for Local History, Colorado Springs Pioneers Museum ; transcription dactylographiée (Mrs. Shaw), PDF « Cragin notebooks searchable », p. 12; 17. ; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 234-235 (PDF p. 12; 17)",
+    "note": "Lecompte (1978) précise que les cinq placitas (Doyle, Wootton, Autobees, Kroenig, Juan « Guero » Pais) sont dispersées dans la plaine boisée, et que Jean-Baptiste Charlefou vit, comme d'autres journaliers français et mexicains, dans un « dug-out » creusé dans la berge de la rivière, près de John Smith et de sa femme cheyenne.",
     "type": "lieu",
     "images": [],
     "reseau": "C014"
@@ -540,8 +540,8 @@
     "certitude": "certaine",
     "categorie": "famille",
     "description": "Pendant la révolte, sa fille Ursula, 7 ans, est cachée par le padre Martínez ; selon la famille, il porte la nouvelle à San Juan d'où Autobees file prévenir Santa Fe. Juré au procès d'avril (« Baptiste Charleyfoe »), il réclame la pendaison : Garrard le dit sans deux idées au-delà du boire et du manger ; Wootton raconte qu'endormi pendant tout le procès, il répondit « pendez-le ; s'il n'est pas coupable maintenant, il le sera ».",
-    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur : F. T. Cheetham, « The First Term of the American Court at Taos », NMHR i (1926), p. 29-34 ; Garrard, Wah-to-Yah (1938), p. 248-249 ; Conard, Wootton, p. 75-76",
-    "note": "",
+    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur : F. T. Cheetham, « The First Term of the American Court at Taos », NMHR i (1926), p. 29-34 ; Garrard, Wah-to-Yah (1938), p. 248-249 ; Conard, Wootton, p. 75-76 ; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 196",
+    "note": "Janet Lecompte (1978) range « Jean-Baptiste Charlefou » parmi les jurés du procès d'avril 1847 venus des établissements de l'Arkansas, avec Lucien Maxwell, Charles Town, Robert Fisher, Charles Autobees, John L. Hatcher et Asa Estes.",
     "type": "lieu",
     "images": [],
     "reseau": "F-chalifoux-18"
@@ -862,8 +862,8 @@
     "certitude": "certaine",
     "categorie": "baptiste",
     "description": "Santa Fe, 1847. Batiste Chalifoux simple soldat de la compagnie de St. Vrain. D'après Prince, Historical Sketches of New Mexico (1883).",
-    "sources": "L. Bradford Prince, Historical Sketches of New Mexico from the Earliest Records to the American Occupation, New York, Leggat Brothers, 1883, App. I ; texte intégral : archive.org, histnewmexico00prin.",
-    "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas.",
+    "sources": "L. Bradford Prince, Historical Sketches of New Mexico from the Earliest Records to the American Occupation, New York, Leggat Brothers, 1883, App. I ; texte intégral : archive.org, histnewmexico00prin. ; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 195",
+    "note": "Repérage dans le texte intégral (OCR) d'archive.org, à vérifier dans le livre ; localisation attribuée par l'atlas. Selon Lecompte (1978), « Baptiste Charlefou » sert comme simple soldat dans la compagnie de volontaires levée par Ceran St. Vrain à Santa Fe pour réprimer la révolte de Taos (janvier 1847), avec d'autres hommes de l'Arkansas : Metcalf, Charles et Tom Autobees, Antoine Cournoyer, Baptiste Sabowrain et Charles Town.",
     "type": "lieu",
     "images": [],
     "reseau": "VU-chalifoux-batiste-santa-fe"
