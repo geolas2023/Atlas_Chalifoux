@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The inscriptions — Atlas Chalifoux</title>
+<meta name="author" content="Olivier J. Caron, Department of Geography, UQAM">
+<link rel="icon" href="images/coureur-des-bois.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #2b2620; background: #f4efe6; }
+.barre { display: flex; align-items: center; gap: 1rem; padding: .5rem 1rem; background: #3b3328; color: #f4efe6; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
+.barre img { height: 40px; }
+.barre h1 { font-family: "IM Fell English", Georgia, serif; font-size: 1.25rem; margin: 0; font-weight: normal; letter-spacing: .02em; }
+.barre h1 span { opacity: .7; }
+.barre a { color: #f0d9a8; font-size: .9rem; }
+.barre .esp { flex: 1; }
+main { max-width: 72rem; margin: 0 auto; padding: 1.2rem 1.4rem 3rem; }
+h2 { font-family: "IM Fell English", Georgia, serif; font-weight: normal; font-size: 1.7rem; margin: 1.6rem 0 .4rem; }
+h2:first-child { margin-top: .4rem; }
+h3 { font-family: "IM Fell English SC", Georgia, serif; font-weight: normal; font-size: 1.15rem; margin: 0 0 .2rem; }
+p { line-height: 1.6; }
+.chapo { font-size: 1.08rem; font-style: italic; border-left: 3px solid #c8903e; padding: .2rem 0 .2rem .9rem; max-width: 56rem; }
+.chiffres { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1rem 0; }
+.chiffres div { font-size: .85rem; color: #6b604f; }
+.chiffres b { display: block; font-size: 1.7rem; color: #3b3328; font-family: "IM Fell English", Georgia, serif; font-weight: normal; }
+#carte { height: 520px; border: 1px solid #c9bba3; box-shadow: 0 2px 8px rgba(0,0,0,.12); background: #e8e0cf; }
+.legende { display: flex; gap: 1.2rem; flex-wrap: wrap; font-size: .85rem; color: #4d4436; margin: .5rem 0 0; align-items: center; }
+.legende i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; vertical-align: -1px; margin-right: .3rem; border: 2px solid; }
+.i-rob { background: #9a3322; border-color: #9a3322; }
+.i-louis { background: #7a4f1d; border-color: #7a4f1d; }
+.i-jul { background: #2f4d63; border-color: #2f4d63; }
+.i-approx { background: #f4efe6; border-color: #6b604f; }
+.fiches { display: grid; gap: 1rem; margin-top: 1rem; }
+.fiche { display: grid; grid-template-columns: 180px 1fr; gap: 1.1rem; background: #fffdf8; border: 1px solid #e0d5c2; padding: .9rem 1rem; scroll-margin-top: 70px; }
+.fiche.sans-image { grid-template-columns: 1fr; }
+.fiche.active { outline: 2px solid #c8903e; }
+.fiche img { width: 100%; border: 1px solid #c9bba3; cursor: zoom-in; display: block; margin-bottom: .4rem; }
+.fiche .date { font-size: .85rem; color: #6b604f; display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+.badge { font-size: .7rem; padding: .05rem .4rem; border-radius: 3px; background: #e6dccb; white-space: nowrap; }
+.b-certaine { background: #cfe3c8; } .b-approximative { background: #f3e3c3; } .b-hypothetique { background: #e8d3cf; }
+.fiche .texte { margin: .35rem 0; line-height: 1.55; }
+.fiche .note { font-size: .85rem; background: #efe9dd; border-left: 3px solid #c8903e; padding: .35rem .6rem; }
+.fiche .src { font-size: .8rem; color: #6b604f; margin-top: .4rem; }
+p.photos { font-size: .85rem; margin: .5rem 0 .1rem; color: #4d4436; }
+ul.photos { font-size: .85rem; margin: 0 0 .3rem; padding-left: 1.2rem; line-height: 1.5; }
+ul.photos a { color: #2f4d63; }
+.fiche .actions { margin-top: .4rem; font-size: .85rem; display: flex; gap: .8rem; flex-wrap: wrap; }
+.fiche .actions a { color: #7a4f1d; }
+.encart { background: #efe9dd; border-left: 3px solid #c8903e; padding: .6rem .9rem; max-width: 60rem; }
+ul.biblio { line-height: 1.55; padding-left: 1.2rem; }
+ul.biblio li { margin-bottom: .3rem; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; background: #fffdf8; }
+th, td { border-bottom: 1px solid #e0d5c2; padding: .35rem .5rem; text-align: left; vertical-align: top; }
+th { background: #e6dccb; font-weight: normal; font-family: "IM Fell English SC", Georgia, serif; }
+.lightbox { position: fixed; inset: 0; z-index: 1100; background: rgba(25, 18, 10, .88); display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.lightbox[hidden] { display: none; }
+.lightbox img { max-width: 94vw; max-height: 86vh; background: #fff; border: 4px double #c8b48c; }
+.lightbox figcaption { color: #f1e4c4; font-style: italic; text-align: center; margin-top: .5rem; max-width: 80ch; }
+.lightbox figure { margin: 0; display: flex; flex-direction: column; align-items: center; }
+.lightbox button { position: absolute; top: .6rem; right: .9rem; background: transparent; border: 0; color: #f1e4c4; font-size: 1.6rem; cursor: pointer; }
+.maplibregl-popup-content { font-family: Georgia, serif; font-size: .85rem; background: #fffdf8; }
+footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; border-top: 1px solid #d6cbb8; }
+@media (max-width: 700px) { .fiche { grid-template-columns: 1fr; } #carte { height: 380px; } }
+</style>
+</head>
+<body>
+<header class="barre">
+  <img src="images/coureur-des-bois-clair.svg" alt="" width="29" height="40">
+  <h1>Atlas Chalifoux <span>· The inscriptions</span></h1>
+  <span class="esp"></span>
+  <a href="inscriptions.html" hreflang="fr" lang="fr" title="Version française">Français</a>
+  <a href="index-en.html">🗺 Atlas map</a>
+  <a href="https://geolas2023.github.io/Les-Robidoux/inscriptions.html">🪨 Inscriptions of the Robidoux and Denis Julien (in French)</a>
+  <a href="https://geolas2023.github.io/Atlas-Les-Canadiens-Fran-ais-de-l-Ouest/index-en.html">⚜ Atlas of French America</a>
+</header>
+
+<main>
+  <h2>“B. Chalifou,” 1835: a name carved by another hand</h2>
+  <p class="chapo">Jean-Baptiste Chalifoux could not write. Yet his name appears on a rock face along Willow Creek, in Utah's Book Cliffs, in a careful Spanish hand, next to that of Juan Valdez, who probably carved it. These few letters are one of the rare dated traces of his trapping years in the Ute country.</p>
+  <div class="chiffres" id="chiffres"></div>
+
+  <div id="carte" aria-label="Map of the inscriptions"></div>
+  <p class="legende">
+    <span><i class="i-rob"></i>Valdez and Chalifou (1835)</span>
+    <span><i class="i-jul"></i>Antoine Leroux (1835)</span>
+    <span><i class="i-approx"></i>outline only: approximate or hypothetical position</span>
+    <span>— probable route of 1827, from Taos to the Ute country</span>
+  </p>
+
+  <h2>A carved trail</h2>
+  <p>The Westwater-Willow Creek trail, the north branch of the Old Spanish Trail, climbed from the Westwater canyons by Hay Canyon, crossed the Book Cliffs near present-day Three Pines, then went down Wire Fence Canyon to Willow Creek, which the trail followed for some seventy kilometers to the Green, near Ouray. It was the route of the Taos traders to Antoine Robidoux's Fort Uintah. J. W. Nelson records a series of inscriptions along it: Antoine Robidoux at Westwater (1837), Louis Robidoux at the mouth of Wire Fence Canyon (1841), “ARobidoux,” A' Leroux (1835) and, below the Pine Springs access, “Juan Valdez Paso 8 &amp; 9 N 9 1835,” “F.R.B.” and “B. Chalifou.”</p>
+
+  <h2>The entries</h2>
+  <div class="fiches" id="fiches"></div>
+
+  <h2>Why the positions are approximate</h2>
+  <p class="encart">The exact locations of these inscriptions are not published. The points are placed according to Nelson's descriptions and the official place names (GNIS): the mouth of Pine Spring Canyon for Valdez and Chalifou, a little downstream for Leroux. The inscriptions of the Robidoux and of Denis Julien are gathered on the page of the <a href="https://geolas2023.github.io/Les-Robidoux/inscriptions.html">Robidoux Atlas</a> (in French).</p>
+
+  <h2>Further reading</h2>
+  <ul class="biblio">
+    <li>J. W. Nelson, <i>Forgotten Pathfinders Along the North Branch of the Old Spanish Trail, 1650-1850</i>, 2003, p. 31, 50-51.</li>
+    <li>J. Lecompte, “Jean-Baptiste Chalifoux,” in L. R. Hafen (ed.), <i>French Fur Traders and Voyageurs in the American West</i>, 1995, p. 58-75.</li>
+    <li>Missouri Historical Society, Western Travel Collection, A1734-00001: photographs of inscriptions (Leroux, “F. R. B. Chalifou,” Louis Robidoux), 1968.</li>
+    <li>J. H. Knipmeyer, <i>Butch Cassidy Was Here: Historic Inscriptions of the Colorado Plateau</i>, 2002.</li>
+  </ul>
+</main>
+
+<footer>Atlas Chalifoux · Olivier J. Caron, Department of Geography, UQAM</footer>
+
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged photo">
+  <button type="button" id="lb-fermer" aria-label="Close">✕</button>
+  <figure><img id="lb-image" src="" alt=""><figcaption id="lb-legende"></figcaption></figure>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+<script src="js/inscriptions.js?v=1"></script>
+</body>
+</html>

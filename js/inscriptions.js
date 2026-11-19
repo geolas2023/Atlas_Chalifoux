@@ -1,18 +1,23 @@
 // Page thématique « Les inscriptions » de l'Atlas Chalifoux.
 // Les données viennent de data/lieux.geojson (généré par scripts/donnees.py) : une seule source pour la carte et la page.
 
+// Langue de la page : <html lang="en"> (inscriptions-en.html) affiche la page et les données en anglais.
+const EN = document.documentElement.lang === 'en';
+const L = (fr, en) => EN ? en : fr;
 const IDS = ['L09', 'L44'];
 const PERSONNE = { L09: 'chalifoux', L44: 'leroux' };
 const COULEUR = { chalifoux: '#9a3322', leroux: '#2f4d63', julien: '#2f4d63' };
-const NOM = { chalifoux: 'Juan Valdez et B. Chalifou', leroux: 'Antoine Leroux', julien: '' };
-const CERTITUDE = { certaine: 'position précise', approximative: 'position approximative', hypothetique: 'position hypothétique' };
-const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const NOM = { chalifoux: L('Juan Valdez et B. Chalifou', 'Juan Valdez and B. Chalifou'), leroux: 'Antoine Leroux', julien: '' };
+const CERTITUDE = EN ? { certaine: 'precise position', approximative: 'approximate position', hypothetique: 'hypothetical position' }
+                     : { certaine: 'position précise', approximative: 'position approximative', hypothetique: 'position hypothétique' };
+const MOIS = EN ? ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+             : ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 
 // Photos d'archives et de terrain qu'on ne peut pas reproduire ici (droits réservés) : liens vers leur page.
 const UOU = 'Utah State Historical Society / Marriott Library';
-const ADVP = { titre: 'Photographies de terrain (adventr.co)', url: 'https://adventr.co/microposts/denis-julien-inscriptions/' };
+const ADVP = { titre: L('Photographies de terrain (adventr.co)', 'Field photographs (adventr.co)'), url: 'https://adventr.co/microposts/denis-julien-inscriptions/' };
 const PHOTOS = {
-  L44: [{ titre: 'Photographie de 1968 des inscriptions de Leroux et de « F. R. B. Chalifou » (Missouri Historical Society, Western Travel Collection, A1734-00001)', url: 'https://mohistory.org/collections' }]
+  L44: [{ titre: L('Photographie de 1968 des inscriptions de Leroux et de « F. R. B. Chalifou » (Missouri Historical Society, Western Travel Collection, A1734-00001)', '1968 photograph of the inscriptions of Leroux and “F. R. B. Chalifou” (Missouri Historical Society, Western Travel Collection, A1734-00001)'), url: 'https://mohistory.org/collections' }]
 };
 
 const echapper =s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -22,11 +27,11 @@ function dateLisible(edtf) {
   const [a, b] = edtf.split('/');
   const un = d => {
     const p = d.replace(/[~?]/g, '').split('-').map(Number);
-    if (p.length === 3) return `${p[2] === 1 ? '1er' : p[2]} ${MOIS[p[1] - 1]} ${p[0]}`;
+    if (p.length === 3) return EN ? `${MOIS[p[1] - 1]} ${p[2]}, ${p[0]}` : `${p[2] === 1 ? '1er' : p[2]} ${MOIS[p[1] - 1]} ${p[0]}`;
     if (p.length === 2) return `${MOIS[p[1] - 1]} ${p[0]}`;
     return String(p[0]);
   };
-  return b ? `entre ${un(a)} et ${un(b)}` : un(a);
+  return b ? L(`entre ${un(a)} et ${un(b)}`, `between ${un(a)} and ${un(b)}`) : un(a);
 }
 
 function ouvrirImage(src, legende) {
@@ -55,10 +60,10 @@ function fiche(f) {
         <span class="badge b-${echapper(p.certitude)}">${CERTITUDE[p.certitude] || ''}</span></div>
       <p class="texte">${echapper(p.description.replace(/^Denis Julien, traiteur[^.]*\.\s*/, ''))}</p>
       ${p.note ? `<p class="note">${echapper(p.note)}</p>` : ''}
-      ${(PHOTOS[p.id] || []).length ? `<p class="photos">📷 Photos d'archives et de terrain (droits réservés, à consulter sur place) :</p><ul class="photos">${PHOTOS[p.id].map(x => `<li><a href="${echapper(x.url)}" target="_blank" rel="noopener">${echapper(x.titre)} ↗</a></li>`).join('')}</ul>` : ''}
-      <p class="src">Sources : ${echapper(p.sources)}</p>
-      <p class="actions"><a href="index.html#lieu=${p.id}">Voir dans l'atlas →</a>
-        <a href="#" data-zoom="${p.id}">Centrer la carte</a>
+      ${(PHOTOS[p.id] || []).length ? `<p class="photos">${L('📷 Photos d\'archives et de terrain (droits réservés, à consulter sur place) :', '📷 Archival and field photos (rights reserved, view them at the source):')}</p><ul class="photos">${PHOTOS[p.id].map(x => `<li><a href="${echapper(x.url)}" target="_blank" rel="noopener">${echapper(x.titre)} ↗</a></li>`).join('')}</ul>` : ''}
+      <p class="src">${L('Sources :', 'Sources:')} ${echapper(p.sources)}</p>
+      <p class="actions"><a href="${L('index.html', 'index-en.html')}#lieu=${p.id}">${L('Voir dans l\'atlas →', 'See in the atlas →')}</a>
+        <a href="#" data-zoom="${p.id}">${L('Centrer la carte', 'Center the map')}</a>
         <span>${f.geometry.coordinates[1].toFixed(4)}, ${f.geometry.coordinates[0].toFixed(4)}</span></p>
     </div>`;
   el.querySelectorAll('img').forEach(img => {
@@ -67,7 +72,7 @@ function fiche(f) {
   return el;
 }
 
-Promise.all([fetch('data/lieux.geojson').then(r => r.json()), fetch('data/trajets.geojson').then(r => r.json())])
+Promise.all([fetch(`data/lieux${L('', '-en')}.geojson`).then(r => r.json()), fetch(`data/trajets${L('', '-en')}.geojson`).then(r => r.json())])
   .then(([lieux, trajets]) => {
     const feats = lieux.features.filter(f => IDS.includes(f.properties.id))
       .sort((a, b) => (a.properties.date_edtf.includes('/') - b.properties.date_edtf.includes('/')) || a.properties.debut - b.properties.debut);
@@ -75,12 +80,13 @@ Promise.all([fetch('data/lieux.geojson').then(r => r.json()), fetch('data/trajet
 
     const nb = q => feats.filter(f => f.properties.qui === q).length;
     document.getElementById('chiffres').innerHTML =
-      `<div><b>${feats.length}</b>inscriptions placées</div><div><b>1835</b>l'année de « B. Chalifou »</div><div><b>Willow Creek</b>branche nord de la Vieille piste espagnole</div>`;
+      EN ? `<div><b>${feats.length}</b>inscriptions mapped</div><div><b>1835</b>the year of “B. Chalifou”</div><div><b>Willow Creek</b>north branch of the Old Spanish Trail</div>`
+         : `<div><b>${feats.length}</b>inscriptions placées</div><div><b>1835</b>l'année de « B. Chalifou »</div><div><b>Willow Creek</b>branche nord de la Vieille piste espagnole</div>`;
 
     const liste = document.getElementById('fiches');
     feats.forEach(f => liste.appendChild(fiche(f)));
     if (typeof maplibregl === 'undefined') {
-      document.getElementById('carte').innerHTML = '<p class="encart">La carte n\'a pas pu être chargée.</p>';
+      document.getElementById('carte').innerHTML = L('<p class="encart">La carte n\'a pas pu être chargée.</p>', '<p class="encart">The map could not be loaded.</p>');
       return;
     }
 
@@ -115,7 +121,7 @@ Promise.all([fetch('data/lieux.geojson').then(r => r.json()), fetch('data/trajet
       carte.on('click', 'insc', e => {
         const p = e.features[0].properties;
         new maplibregl.Popup({ offset: 10 }).setLngLat(e.features[0].geometry.coordinates)
-          .setHTML(`<b>${echapper(p.nom)}</b><br>${echapper(dateLisible(p.date_edtf))} · ${CERTITUDE[p.certitude] || ''}<br><a href="#fiche-${p.id}">Lire la fiche ↓</a>`)
+          .setHTML(`<b>${echapper(p.nom)}</b><br>${echapper(dateLisible(p.date_edtf))} · ${CERTITUDE[p.certitude] || ''}<br><a href="#fiche-${p.id}">${L('Lire la fiche ↓', 'Read the entry ↓')}</a>`)
           .addTo(carte);
         document.querySelectorAll('.fiche.active').forEach(x => x.classList.remove('active'));
         document.getElementById('fiche-' + p.id)?.classList.add('active');
@@ -123,5 +129,5 @@ Promise.all([fetch('data/lieux.geojson').then(r => r.json()), fetch('data/trajet
     });
   })
   .catch(err => {
-    document.getElementById('fiches').innerHTML = `<p class="encart">Impossible de charger les données (${echapper(err.message)}). Ouvrez la page depuis le site ou un serveur local.</p>`;
+    document.getElementById('fiches').innerHTML = L(`<p class="encart">Impossible de charger les données (${echapper(err.message)}). Ouvrez la page depuis le site ou un serveur local.</p>`, `<p class="encart">Could not load the data (${echapper(err.message)}). Open the page from the website or a local server.</p>`);
   });

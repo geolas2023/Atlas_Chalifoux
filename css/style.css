@@ -274,3 +274,7 @@ body:not(.fond-parchemin) .parchemin { display: none; }
 #panneau .lien-lettres { margin: .8rem 0; }
 #panneau .btn-sv { display: inline-block; background: var(--velin); border: 1px solid var(--sepia); border-radius: 3px; padding: .3rem .7rem; color: var(--encre); text-decoration: none; font-size: .92rem; }
 #panneau .btn-sv:hover { background: #ead9b9; }
+
+/* Lien de langue English / Français (pages jumelles index.html / index-en.html) */
+.barre .lien-reseau + .lien-langue { margin-left: .6rem; }
+.barre .lien-langue + .credit { margin-left: .9rem; }
