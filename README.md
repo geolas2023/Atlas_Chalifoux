@@ -5,7 +5,7 @@ Atlas géohistorique de Jean-Baptiste Chalifoux, trappeur canadien-français de 
 Membre du réseau [Atlas de l'Amérique française](https://geolas2023.github.io/Atlas-Les-Canadiens-Fran-ais-de-l-Ouest/). Atlas voisin : [Atlas Robidoux](https://geolas2023.github.io/Les-Robidoux/). En ligne : https://geolas2023.github.io/Atlas_Chalifoux/ (une fois GitHub Pages activé : *Settings → Pages → main / root*).
 
 ## Contenu
-- 46 lieux et 6 routes, chacun avec une date (EDTF), une certitude de localisation, une description et ses sources.
+- 51 lieux et 6 routes, chacun avec une date (EDTF), une certitude de localisation, une description et ses sources.
 - Cinq fils, chacun sa couleur : Jean-Baptiste Chalifoux ; les Chaguanosos ; la famille et les descendants ; les compagnons ; les autres Chalifoux de l'Ouest (homonymes : Green Bay, Nord-Ouest, Oregon, Nisqually), placés pour éviter les confusions mais non attribués à Jean-Baptiste.
 - Une page « Les inscriptions » (`inscriptions.html`) : « B. Chalifou » et Juan Valdez (1835), A' Leroux (1835), sur la piste Westwater-Willow Creek.
 - La timeline va par année de 1780 à 1825, puis par mois de 1826 à 1889. Les liens directs `#lieu=L12` et `#trajet=T03` ouvrent une fiche.

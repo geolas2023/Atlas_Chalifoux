@@ -27,6 +27,7 @@ BAN = "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, 
 CM = "J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur)"
 PAQ = "E. Paquin, La colonie canadienne-française de Chicago (Chicago, Stromberg, Allen & Cie, 1893), biographie de Joseph Chalifoux (epub Wikisource du Drive de l'auteur)"
 PHG = "Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press"
+BOU = "S. Bouchard et M.-C. Lévesque, Ils ont couru l'Amérique (Montréal, Lux, 2014), ch. « Hommes des montagnes : Provost, Chalifoux, Robidoux »"
 JAN = "A. Janssens, The Life and Adventures in California of Don Agustín Janssens, 1834-1856, éd. W. H. Ellison et F. Price (Huntington Library, 1953)"
 
 
@@ -197,6 +198,17 @@ T('T06', "D'Embudo à la Huerfano puis à Trinidad", [[-105.96, 36.21], TAOS, [-
   '1852/1860-11', 'hypothetique', 'terre', 'baptiste',
   "Dans les années 1850, Chalifoux quitte Embudo pour les établissements de la Huerfano, auprès de Charles Autobees, puis bâtit en 1859-1860 les premières maisons de Trinidad sur la Purgatoire.",
   f"{LEC} ; {CRA}.", "Tracé hypothétique entre les lieux connus.")
+
+# --- Bouchard et Lévesque (2014), « Hommes des montagnes » ---
+L('L49', "Haut-Missouri (Dakota) : huit ans d'apprentissage avec son frère Pierre (1804-1812 env.)", -100.35, 44.37, '1804~/1812~', 'hypothetique', 'baptiste',
+  "Selon Bouchard et Lévesque, Jean-Baptiste rejoint à treize ans, en 1804, son frère aîné Pierre à Saint-Louis ; celui-ci abandonne alors la vie sédentaire et l'emmène dans les territoires du Dakota, où ils passent au moins huit ans. Jean-Baptiste y apprend le métier des pelleteries. C'est là qu'il aurait subi l'accident qui le fera souffrir toute sa vie : poursuivi par des cavaliers pieds-noirs, il tombe de cheval, se brise les deux jambes et reste caché des jours dans une grotte.",
+  f"{BOU}.", "Point symbolique sur le Missouri (secteur de Pierre, Dakota du Sud) : le livre ne précise pas le lieu. Les auteurs s'appuient en partie sur les entrevues des petites-filles Luz Gonzalez et Genoveva Naranjo (années 1950) ; la date de naissance de 1791 reste discutée.")
+L('L50', "Saint-Louis : au service de la Missouri Fur Company, puis « free men » (1814-1816)", -90.1880, 38.6270, '1814~/1816~', 'hypothetique', 'baptiste',
+  "Revenus du Dakota vers 1812-1814, Jean-Baptiste et Pierre Chalifoux offrent leurs services comme trappeurs et prennent part, pendant deux ans, à plusieurs expéditions vers l'ouest, notamment pour la Missouri Fur Company — peut-être dans la même brigade qu'Étienne Provost. Vers 1816, ils quittent Saint-Louis et rompent avec les Chouteau, Pratte et Lisa pour redevenir traiteurs indépendants ; ils dérivent une dizaine d'années dans les Rocheuses vers le Nouveau-Mexique, où l'on retrouve Provost, Robidoux et Chalifoux à Santa Fe, Embudo et Taos à partir de 1820. Des documents montrent Jean-Baptiste associé à François Robidoux près de Tucson.",
+  f"{BOU}.", "Point au quartier du vieux Saint-Louis. Le lien avec Provost est une conjecture des auteurs.")
+L('L52', "Brown's Hole : Unami et l'enfant adoptif « Bible Back Brown »", -108.93, 40.86, '1830~/1835~', 'hypothetique', 'famille',
+  "Dans la version que retiennent Bouchard et Lévesque, Jean-Baptiste vit cinq ou six ans, tranquille, dans la vallée de la Green avec Unami, une Arapaho, au milieu d'une petite communauté de trappeurs et d'Indiens de passage. Le couple adopte un garçon bossu surnommé Bible Back Brown, parce qu'il porte toujours une bible dans un sac posé sur sa bosse. Avant 1835, Chalifoux quitte femme et fils pour reprendre la piste de Californie. Les auteurs reconnaissent qu'il est difficile de départager faits et roman dans la légende de « Baptiste Brown ».",
+  f"{BOU}.", "Même vallée que L07 et L46 ; Lecompte reste sceptique sur l'identification.")
 
 os.makedirs('data', exist_ok=True)
 for nom, feats in (('lieux', LIEUX), ('trajets', TRAJETS)):

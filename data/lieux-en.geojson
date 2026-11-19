@@ -1258,6 +1258,84 @@
     "images": [],
     "reseau": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.35,
+     44.37
+    ]
+   },
+   "properties": {
+    "id": "L49",
+    "nom": "Upper Missouri (Dakota): eight years' apprenticeship with his brother Pierre (c. 1804-1812)",
+    "debut": 1804.5,
+    "fin": 1812.5,
+    "date_edtf": "1804~/1812~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "baptiste",
+    "description": "According to Bouchard and Lévesque, Jean-Baptiste joins his elder brother Pierre in St. Louis in 1804, at thirteen; Pierre then gives up settled life and takes him into the Dakota territories, where they spend at least eight years. There Jean-Baptiste learns the fur trade. This is where he is said to have suffered the accident that would pain him all his life: pursued by Blackfoot riders, he falls from his horse, breaks both legs and stays hidden for days in a cave.",
+    "sources": "S. Bouchard and M.-C. Lévesque, Ils ont couru l'Amérique (Montreal, Lux, 2014), ch. “Hommes des montagnes: Provost, Chalifoux, Robidoux”.",
+    "note": "Symbolic point on the Missouri (Pierre, South Dakota, area): the book does not specify the place. The authors rely in part on interviews with the granddaughters Luz Gonzalez and Genoveva Naranjo (1950s); the 1791 birth date remains debated.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.188,
+     38.627
+    ]
+   },
+   "properties": {
+    "id": "L50",
+    "nom": "St. Louis: in the service of the Missouri Fur Company, then “free men” (1814-1816)",
+    "debut": 1814.5,
+    "fin": 1816.5,
+    "date_edtf": "1814~/1816~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "baptiste",
+    "description": "Back from Dakota around 1812-1814, Jean-Baptiste and Pierre Chalifoux hire out as trappers and, for two years, take part in several expeditions to the West, notably for the Missouri Fur Company — perhaps in the same brigade as Étienne Provost. Around 1816 they leave St. Louis and break with the Chouteaus, Prattes and Lisa to become independent traders again; they drift for some ten years through the Rockies toward New Mexico, where Provost, Robidoux and Chalifoux are found in Santa Fe, Embudo and Taos from 1820 on. Documents show Jean-Baptiste in partnership with François Robidoux near Tucson.",
+    "sources": "S. Bouchard and M.-C. Lévesque, Ils ont couru l'Amérique (Montreal, Lux, 2014), ch. “Hommes des montagnes: Provost, Chalifoux, Robidoux”.",
+    "note": "Point in the old St. Louis district. The link with Provost is the authors' conjecture.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.93,
+     40.86
+    ]
+   },
+   "properties": {
+    "id": "L52",
+    "nom": "Brown's Hole: Unami and the adopted child “Bible Back Brown”",
+    "debut": 1830.5,
+    "fin": 1835.5,
+    "date_edtf": "1830~/1835~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "famille",
+    "description": "In the version Bouchard and Lévesque adopt, Jean-Baptiste lives quietly for five or six years in the valley of the Green with Unami, an Arapaho woman, amid a small community of trappers and passing Indians. The couple adopts a hunchbacked boy nicknamed Bible Back Brown, because he always carries a Bible in a bag resting on his hump. Before 1835, Chalifoux leaves wife and son to take the California trail again. The authors admit that it is hard to separate fact from fiction in the legend of “Baptiste Brown.”",
+    "sources": "S. Bouchard and M.-C. Lévesque, Ils ont couru l'Amérique (Montreal, Lux, 2014), ch. “Hommes des montagnes: Provost, Chalifoux, Robidoux”.",
+    "note": "Same valley as L07 and L46; Lecompte remains skeptical about the identification.",
+    "type": "lieu",
+    "images": [],
+    "reseau": null
+   }
   }
  ]
 }
