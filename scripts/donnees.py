@@ -210,6 +210,57 @@ L('L52', "Brown's Hole : Unami et l'enfant adoptif « Bible Back Brown »", -108
   "Dans la version que retiennent Bouchard et Lévesque, Jean-Baptiste vit cinq ou six ans, tranquille, dans la vallée de la Green avec Unami, une Arapaho, au milieu d'une petite communauté de trappeurs et d'Indiens de passage. Le couple adopte un garçon bossu surnommé Bible Back Brown, parce qu'il porte toujours une bible dans un sac posé sur sa bosse. Avant 1835, Chalifoux quitte femme et fils pour reprendre la piste de Californie. Les auteurs reconnaissent qu'il est difficile de départager faits et roman dans la légende de « Baptiste Brown ».",
   f"{BOU}.", "Même vallée que L07 et L46 ; Lecompte reste sceptique sur l'identification.")
 
+
+# --- Presse ancienne (Newspapers.com, dépouillement du 20 novembre 2026 ; voir salle-de-lecture.html#journaux) ---
+NP = "Newspapers.com (abonnement de l'auteur), consulté le 20 novembre 2026"
+def JX(fichier, legende, page):
+    return {"src": f"images/journaux/{fichier}", "legende": legende, "lien": f"https://www.newspapers.com/image/{page}/"}
+L('L54', "Fort Bent : départ de la grande expédition de Wootton, où « Charlefou » tient le calendrier (automne 1838)", -103.430, 38.040, '1838-09/1840', 'hypothetique', 'compagnons',
+  "Selon les souvenirs d'Uncle Dick Wootton, résumés en 1952 par le Pueblo Chieftain, vingt trappeurs partent de Fort Bent à l'automne 1838 pour une campagne de deux ans qui les mène jusqu'au Pacifique. Un Français nommé Charlefou tient le compte des jours sur un bâton carré à encoches ; il le perd le jour où, poursuivi par des Pieds-Noirs, son cheval s'écrase dans un arroyo. Les jambes brisées, il est porté deux mois sur une litière.",
+  f"Pueblo Star-Journal and Sunday Chieftain, 6 janv. 1952, p. 8 (R. C. Taylor, « Colorful Colorado »), d'après H. L. Conard, « Uncle Dick » Wootton (1890) ; {NP}.",
+  "Le parcours passe par le pays ute et la Californie, ce qui cadre avec Chalifoux au fort Uintah à l'automne 1839 (L48) et en Californie à l'hiver 1839-1840 (L15). La tradition familiale place l'accident des jambes au Dakota (L49).",
+  images=[JX("1952-01-06-pueblo-chieftain-wootton-charlefou.jpg", "Pueblo Chieftain, 6 janv. 1952 : l'expédition de 1838, le calendrier de Charlefou et le juré endormi", 1251818427)])
+L('L55', "Rancho San Bernardino : une troupe contre les « Indiens Chaguanosos » du col Cajon (1851)", -117.219, 34.047, '1851-05', 'certaine', 'chaguanosos',
+  "Dans ses souvenirs, José del Carmen Lugo raconte qu'en mai 1851 un détachement est posté sur son ranch de San Bernardino pour garder la vallée contre « les Indiens Chaguanosos » et les autres voleurs qui entrent par le col Cajon. Onze ans après la grande razzia, le nom de la bande de Chalifoux désigne encore les voleurs de chevaux venus du désert.",
+  f"Redlands Daily Facts, 4 avril 1951, p. 6, et 11 mars 1961, p. 10 (F. et B. Moore, « With a Grain of Salt ») ; {NP}.",
+  "Point à l'Asistencia de San Bernardino (chemin Barton, Redlands), où vivait Lugo. Seules mentions du mot « Chaguanosos » dans Newspapers.com.",
+  images=[JX("1951-04-04-redlands-daily-facts-lugo-chaguanosos.jpg", "Redlands Daily Facts, 4 avril 1951 : Lugo et les Indiens Chaguanosos", 995121274)])
+L('L56', "La Veta : mort de Don Leo Chalifu, fils du trappeur (déc. 1917)", -105.008, 37.505, '1917-12', 'certaine', 'famille',
+  "Le Santa Fe New Mexican du 3 janvier 1918 annonce, d'après un journal de Walsenburg, la mort récente de Don Leo Chalifu, de La Veta : né à Embudo en 1846, fils d'un Canadien français, il avait accompagné son père en 1858 sur le site de l'actuelle Trinidad.",
+  f"Santa Fe New Mexican, 3 janv. 1918, p. 5 (« New Mexico Old-Timer ») ; {NP}.",
+  "Il s'agit de José León Chalifoux (1846-1917). Le journal de Walsenburg cité n'a pas été retrouvé.",
+  images=[JX("1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg", "Santa Fe New Mexican, 3 janv. 1918 : « New Mexico Old-Timer »", 583672848)])
+L('L57', "Alamosa et la vallée de San Luis : les Charlifu (1944-1962)", -105.870, 37.469, '1944/1962', 'approximative', 'famille',
+  "Au XXe siècle, les descendants de José León écrivent leur nom « Charlifu ». Le Pueblo Chieftain mentionne Donald Charlifu d'Alamosa (1948), Jake Charlifu, peintre à l'Adams State College (1956), Ursulita Charlifu de La Veta (1959-1960), Daniel et Ellen Charlifu d'Alamosa et Henry Charlifu de Pueblo (1962).",
+  f"Pueblo Chieftain, 26 août 1948 ; 16 juillet 1956 ; 7 juillet 1959 ; 30 nov. 1960 ; 9 et 13 juin, 21 août 1962 ; {NP}.",
+  "Point sur Alamosa ; les mentions portent aussi sur La Veta et Pueblo.",
+  images=[JX("1948-08-26-pueblo-chieftain-donald-charlifu.jpg", "Pueblo Chieftain, 26 août 1948 : Donald Charlifu, d'Alamosa", 1251812458)])
+
+# Découpures ajoutées aux fiches existantes, avec une phrase de note.
+PRESSE = {
+  'L18': ([JX("1952-01-06-pueblo-chieftain-wootton-charlefou.jpg", "Pueblo Chieftain, 6 janv. 1952 : le juré endormi de Taos, d'après Wootton", 1251818427)],
+          " Le Pueblo Chieftain du 6 janvier 1952 reprend l'anecdote de Wootton : Charlefou dort pendant tout le procès et, réveillé, répond qu'il faut pendre l'accusé."),
+  'L20': ([JX("1916-06-24-denver-labor-bulletin-trinidad-charlefou.jpg", "Denver Labor Bulletin, 24 juin 1916 : la première cabane, à l'embouchure du Gray's Creek", 897888797),
+           JX("1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg", "Santa Fe New Mexican, 3 janv. 1918 : León accompagne son père à Trinidad en 1858", 583672848)],
+          " La presse confirme : « Charlefou, un vieux trappeur canadien » a bâti la première cabane à l'embouchure du Gray's Creek l'année avant 1860 (Denver Labor Bulletin, 24 juin 1916) ; son fils León l'y accompagne en 1858 (Santa Fe New Mexican, 3 janv. 1918). Le Gray Creek se jette dans la Purgatoire en aval de Trinidad (USGS, 37,2067 N, 104,4675 O)."),
+  'L23': ([JX("1963-03-10-pueblo-chieftain-autobees-charlefou.jpg", "Pueblo Chieftain, 10 mars 1963 : Jean-Baptiste Charlefou parmi les amis d'Autobees", 1252703016)],
+          " Le Pueblo Chieftain du 10 mars 1963 le range parmi les amis de Charles Autobees, avec Carson, Bridger, Beaubien et Beckwourth."),
+  'L27': ([JX("1894-08-03-santa-fe-new-mexican-volontaires-st-vrain.jpg", "Santa Fe New Mexican, 3 août 1894 : « Tardy Justice » et le rôle de la compagnie St. Vrain", 600359556)],
+          " Le Santa Fe New Mexican du 3 août 1894 publie le rôle de la compagnie St. Vrain (23 janv.-20 févr. 1847 ; batailles de La Cañada, d'Embudo et de Taos), avec « Batiste Chalifoux », à l'occasion d'un projet de loi qui accorde enfin solde et pension à ces volontaires."),
+  'L28': ([JX("1891-11-15-los-angeles-herald-charlefoux-fusiliers.jpg", "Los Angeles Herald, 15 nov. 1891 : vingt-cinq fusiliers américains sous Charlefoux", 42218920)],
+          " Le Los Angeles Herald du 15 novembre 1891 (B. A. Stephens, « North and South ») raconte que Los Angeles lève en mai 1837 vingt-cinq fusiliers américains sous le commandement de Charlefoux."),
+  'L45': ([JX("1917-11-16-revista-de-taos-juan-b-chalifu-garcia.jpg", "La Revista de Taos, 16 nov. 1917 : Don Juan B. Chalifu, de Garcia (Colorado)", 168100122),
+           JX("1913-11-07-revista-de-taos-suscripcion-juan-b-chalifu.jpg", "La Revista de Taos, 7 nov. 1913 : Juan B. Chalifu dans une souscription", 168081474)],
+          " La Revista de Taos nomme « Don Juan B. Chalifu, de Garcia, Colo. », voisin immédiat de Costilla, en 1917, et le compte parmi les donateurs d'une souscription en 1913. En 1917, Don Jesús M. Varela, de Pina, est dit son frère : un demi-frère, ce qui suggère un remariage de Mariana Lucero."),
+}
+for f_ in LIEUX:
+    p = f_['properties']
+    if p['id'] in PRESSE:
+        ims, txt = PRESSE[p['id']]
+        p['images'] = (p.get('images') or []) + ims
+        p['note'] = (p['note'] + txt).strip()
+        p['sources'] = p['sources'] + f" ; presse : {NP}"
+
 os.makedirs('data', exist_ok=True)
 for nom, feats in (('lieux', LIEUX), ('trajets', TRAJETS)):
     json.dump({"type": "FeatureCollection", "features": feats}, open(f'data/{nom}.geojson', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

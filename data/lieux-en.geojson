@@ -540,10 +540,16 @@
     "certitude": "certaine",
     "categorie": "famille",
     "description": "During the revolt, his daughter Ursula, aged 7, is hidden by Padre Martínez; according to the family, he carries the news to San Juan, from where Autobees rides off to warn Santa Fe. A juror at the April trial (“Baptiste Charleyfoe”), he calls for hanging: Garrard says he had not two ideas beyond eating and drinking; Wootton tells how, having slept through the whole trial, he answered “hang him; if he isn't guilty now, he will be.”",
-    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur: F. T. Cheetham, “The First Term of the American Court at Taos”, NMHR i (1926), p. 29-34; Garrard, Wah-to-Yah (1938), p. 248-249; Conard, Wootton, p. 75-76; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 196",
-    "note": "Janet Lecompte (1978) counts “Jean-Baptiste Charlefou” among the jurors at the April 1847 trial who came from the Arkansas settlements, with Lucien Maxwell, Charles Town, Robert Fisher, Charles Autobees, John L. Hatcher and Asa Estes.",
+    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 73 — note de l'auteur: F. T. Cheetham, “The First Term of the American Court at Taos”, NMHR i (1926), p. 29-34; Garrard, Wah-to-Yah (1938), p. 248-249; Conard, Wootton, p. 75-76; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 196 ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "Janet Lecompte (1978) counts “Jean-Baptiste Charlefou” among the jurors at the April 1847 trial who came from the Arkansas settlements, with Lucien Maxwell, Charles Town, Robert Fisher, Charles Autobees, John L. Hatcher and Asa Estes. The Pueblo Chieftain of January 6, 1952 repeats Wootton's anecdote: Charlefou slept through the whole trial and, once awakened, said the accused should hang.",
     "type": "lieu",
-    "images": [],
+    "images": [
+     {
+      "src": "images/journaux/1952-01-06-pueblo-chieftain-wootton-charlefou.jpg",
+      "legende": "Pueblo Chieftain, Jan. 6, 1952: the sleeping juror of Taos, after Wootton",
+      "lien": "https://www.newspapers.com/image/1251818427/"
+     }
+    ],
     "reseau": "F-chalifoux-18"
    }
   },
@@ -597,10 +603,21 @@
     "certitude": "certaine",
     "categorie": "baptiste",
     "description": "In 1859 he builds a house on Gray's Creek, four miles below present-day Trinidad, with Joaquín Young and Juan Cristóbal Tafoya; in November 1860, with Auguste Clermont, two log houses for Felipe Baca, the future founder of Trinidad, left without roofs.",
-    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 74 — note de l'auteur: DeBusk Memorial, Colorado Historical Society; Cragin, entretien avec A. W. Archibald, 26 déc. 1907; F. Hall, History of the State of Colorado (1895), iv, p. 191",
-    "note": "A. W. Archibald, interviewed by Cragin, finds them camped on the site of Trinidad in November 1860; Dr. Beshoar (1882) names “Jean-B. Charlefou” among the settlers of 1859 (Cragin, PDF p. 131-134). W. L. Tennent wrongly dates “the first house in Trinidad” to 1869.",
+    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 74 — note de l'auteur: DeBusk Memorial, Colorado Historical Society; Cragin, entretien avec A. W. Archibald, 26 déc. 1907; F. Hall, History of the State of Colorado (1895), iv, p. 191 ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "A. W. Archibald, interviewed by Cragin, finds them camped on the site of Trinidad in November 1860; Dr. Beshoar (1882) names “Jean-B. Charlefou” among the settlers of 1859 (Cragin, PDF p. 131-134). W. L. Tennent wrongly dates “the first house in Trinidad” to 1869. The press confirms it: “Charlefou, an old Canadian and Rocky Mountain trapper” built the first cabin at the mouth of Gray's Creek the year before 1860 (Denver Labor Bulletin, June 24, 1916); his son León went with him in 1858 (Santa Fe New Mexican, Jan. 3, 1918). Gray Creek joins the Purgatoire below Trinidad (USGS, 37.2067 N, 104.4675 W).",
     "type": "lieu",
-    "images": [],
+    "images": [
+     {
+      "src": "images/journaux/1916-06-24-denver-labor-bulletin-trinidad-charlefou.jpg",
+      "legende": "Denver Labor Bulletin, June 24, 1916: the first cabin, at the mouth of Gray's Creek",
+      "lien": "https://www.newspapers.com/image/897888797/"
+     },
+     {
+      "src": "images/journaux/1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg",
+      "legende": "Santa Fe New Mexican, Jan. 3, 1918: León goes with his father to Trinidad in 1858",
+      "lien": "https://www.newspapers.com/image/583672848/"
+     }
+    ],
     "reseau": "F-chalifoux-20"
    }
   },
@@ -675,13 +692,18 @@
     "certitude": "certaine",
     "categorie": "baptiste",
     "description": "He dies during a last visit to Autobees's ranch, in the second settlement founded two miles upstream on the Huerfano, and lies in the small cemetery without a headstone; his descendants know which grave is his.",
-    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur: Luz Gonzales à Sterling Cawlfield, 27 April 1937; J. Lecompte, “Charles Autobees”, The Colorado Magazine, vol. XXXIV, no. 3 (July 1957), p. 167-168, n. 28-29 (folder de l'auteur)",
-    "note": "In 1957, Lecompte still had him dying at Autobees's ranch “in the late 1860s” and credited him with “probably the first house” in Trinidad (1860); her later sketch in The Mountain Men (vol. 7) sets the death on December 12, 1860.",
+    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur: Luz Gonzales à Sterling Cawlfield, 27 April 1937; J. Lecompte, “Charles Autobees”, The Colorado Magazine, vol. XXXIV, no. 3 (July 1957), p. 167-168, n. 28-29 (folder de l'auteur) ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "In 1957, Lecompte still had him dying at Autobees's ranch “in the late 1860s” and credited him with “probably the first house” in Trinidad (1860); her later sketch in The Mountain Men (vol. 7) sets the death on December 12, 1860. The Pueblo Chieftain of March 10, 1963 lists him among the friends of Charles Autobees, with Carson, Bridger, Beaubien and Beckwourth.",
     "type": "lieu",
     "images": [
      {
       "src": "images/photos/charles-autobees-portrait.jpg",
       "legende": "Charles Autobees, Chalifoux's host in his last years (author's files)"
+     },
+     {
+      "src": "images/journaux/1963-03-10-pueblo-chieftain-autobees-charlefou.jpg",
+      "legende": "Pueblo Chieftain, Mar. 10, 1963: Jean-Baptiste Charlefou among Autobees's friends",
+      "lien": "https://www.newspapers.com/image/1252703016/"
      }
     ],
     "reseau": "F-chalifoux-23"
@@ -862,10 +884,16 @@
     "certitude": "certaine",
     "categorie": "baptiste",
     "description": "Santa Fe, 1847. Batiste Chalifoux, private in St. Vrain's company. According to Prince, Historical Sketches of New Mexico (1883).",
-    "sources": "L. Bradford Prince, Historical Sketches of New Mexico from the Earliest Records to the American Occupation, New York, Leggat Brothers, 1883, App. I; texte intégral: archive.org, histnewmexico00prin.; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 195",
-    "note": "Located through the full text (OCR) on archive.org, to be checked in the book; location assigned by the atlas. According to Lecompte (1978), “Baptiste Charlefou” serves as a private in the volunteer company raised by Ceran St. Vrain in Santa Fe to put down the Taos revolt (January 1847), with other men from the Arkansas: Metcalf, Charles and Tom Autobees, Antoine Cournoyer, Baptiste Sabowrain and Charles Town.",
+    "sources": "L. Bradford Prince, Historical Sketches of New Mexico from the Earliest Records to the American Occupation, New York, Leggat Brothers, 1883, App. I; texte intégral: archive.org, histnewmexico00prin.; Lecompte, Janet (1978), Pueblo, Hardscrabble, Greenhorn: The Upper Arkansas, 1832-1856, Norman, University of Oklahoma Press, p. 195 ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "Located through the full text (OCR) on archive.org, to be checked in the book; location assigned by the atlas. According to Lecompte (1978), “Baptiste Charlefou” serves as a private in the volunteer company raised by Ceran St. Vrain in Santa Fe to put down the Taos revolt (January 1847), with other men from the Arkansas: Metcalf, Charles and Tom Autobees, Antoine Cournoyer, Baptiste Sabowrain and Charles Town. The Santa Fe New Mexican of August 3, 1894 prints the roster of St. Vrain's company (Jan. 23-Feb. 20, 1847; battles of La Cañada, Embudo and Taos), including “Batiste Chalifoux”, on the occasion of a bill finally granting these volunteers pay and pensions.",
     "type": "lieu",
-    "images": [],
+    "images": [
+     {
+      "src": "images/journaux/1894-08-03-santa-fe-new-mexican-volontaires-st-vrain.jpg",
+      "legende": "Santa Fe New Mexican, Aug. 3, 1894: “Tardy Justice” and the roster of St. Vrain's company",
+      "lien": "https://www.newspapers.com/image/600359556/"
+     }
+    ],
     "reseau": "VU-chalifoux-batiste-santa-fe"
    }
   },
@@ -888,10 +916,16 @@
     "certitude": "certaine",
     "categorie": "chaguanosos",
     "description": "Los Angeles, 1837-1840. Charlefoux, “Canadian from N. Mex.,” leads a party of trappers and traders to the aid of Bandini and the sureños against Alvarado. According to Bancroft, California II (1885).",
-    "sources": "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, Pioneer Register (entrée “Charlefoux”); texte intégral: archive.org, worksofhuberthow19bancrich.",
-    "note": "Located through the full text (OCR) on archive.org, to be checked in the book; location assigned by the atlas.",
+    "sources": "H. H. Bancroft, History of California, vol. II (1885), Pioneer Register, Pioneer Register (entrée “Charlefoux”); texte intégral: archive.org, worksofhuberthow19bancrich. ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "Located through the full text (OCR) on archive.org, to be checked in the book; location assigned by the atlas. The Los Angeles Herald of November 15, 1891 (B. A. Stephens, “North and South”) says Los Angeles raised in May 1837 a company of twenty-five American riflemen under the command of Charlefoux.",
     "type": "lieu",
-    "images": [],
+    "images": [
+     {
+      "src": "images/journaux/1891-11-15-los-angeles-herald-charlefoux-fusiliers.jpg",
+      "legende": "Los Angeles Herald, Nov. 15, 1891: twenty-five American riflemen under Charlefoux",
+      "lien": "https://www.newspapers.com/image/42218920/"
+     }
+    ],
     "reseau": "YY-charlefoux-los-angele"
    }
   },
@@ -1174,10 +1208,21 @@
     "certitude": "hypothetique",
     "categorie": "famille",
     "description": "In the Costilla valley, a “Jean Bautista Chalifoux II,” called Juan Bautista by his Hispano neighbors, founds the Plaza de los Chalifoux. The Chalifu Ditch No. 10 draws its water from the east bank of Costilla Creek, opposite the Placita de los Madrilles, and irrigates 400 acres; its 1889 decree names twenty parciantes, including “Juan B. Chalifu,” husband of Mariana Lucero, also a parciante of the Trujillo acequia.",
-    "sources": "V. Sanchez, “Chalifu Ditch No. 10, Costilla County, Colorado” (2012), folder de l'auteur.",
-    "note": "The sketch attributes to this “Chalifoux II” the 1791 Quebec birth that belongs to the trapper: he is no doubt the son John B. (Juan Bautista), present with his mother Mariana Lucero in the 1860 census (entry L22). Point placed on Costilla Creek, near the former Placita de los Madrilles; location to be refined.",
+    "sources": "V. Sanchez, “Chalifu Ditch No. 10, Costilla County, Colorado” (2012), folder de l'auteur. ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
+    "note": "The sketch attributes to this “Chalifoux II” the 1791 Quebec birth that belongs to the trapper: he is no doubt the son John B. (Juan Bautista), present with his mother Mariana Lucero in the 1860 census (entry L22). Point placed on Costilla Creek, near the former Placita de los Madrilles; location to be refined. La Revista de Taos names “Don Juan B. Chalifu, of Garcia, Colo.”, right next to Costilla, in 1917, and lists him among the donors to a subscription in 1913. In 1917 Don Jesús M. Varela of Pina is called his brother: a half-brother, which suggests that Mariana Lucero remarried.",
     "type": "lieu",
-    "images": [],
+    "images": [
+     {
+      "src": "images/journaux/1917-11-16-revista-de-taos-juan-b-chalifu-garcia.jpg",
+      "legende": "La Revista de Taos, Nov. 16, 1917: Don Juan B. Chalifu of Garcia, Colorado",
+      "lien": "https://www.newspapers.com/image/168100122/"
+     },
+     {
+      "src": "images/journaux/1913-11-07-revista-de-taos-suscripcion-juan-b-chalifu.jpg",
+      "legende": "La Revista de Taos, Nov. 7, 1913: Juan B. Chalifu in a subscription list",
+      "lien": "https://www.newspapers.com/image/168081474/"
+     }
+    ],
     "reseau": null
    }
   },
@@ -1361,6 +1406,134 @@
     "type": "lieu",
     "images": [],
     "reseau": "CA-chalifoux-chilifaux-lac-pend-o"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.43,
+     38.04
+    ]
+   },
+   "properties": {
+    "id": "L54",
+    "nom": "Fort Bent: departure of Wootton's great expedition, with “Charlefou” keeping the calendar (fall 1838)",
+    "debut": 1838.7055,
+    "fin": 1840.5,
+    "date_edtf": "1838-09/1840",
+    "precision": "mois",
+    "certitude": "hypothetique",
+    "categorie": "compagnons",
+    "description": "According to Uncle Dick Wootton's recollections, summarized by the Pueblo Chieftain in 1952, twenty trappers left Fort Bent in the fall of 1838 on a two-year hunt that took them to the Pacific. A Frenchman named Charlefou kept count of the days on a notched square stick; he lost it when, chased by Blackfeet, his horse crashed into an arroyo. With both legs broken, he was carried for two months on a litter.",
+    "sources": "Pueblo Star-Journal and Sunday Chieftain, Jan. 6, 1952, p. 8 (R. C. Taylor, “Colorful Colorado”), after H. L. Conard, “Uncle Dick” Wootton (1890); Newspapers.com (author's subscription), accessed November 20, 2026.",
+    "note": "The route crossed Ute country and California, which fits Chalifoux at Fort Uintah in the fall of 1839 (L48) and in California in the winter of 1839-1840 (L15). Family tradition places the broken legs in the Dakotas (L49).",
+    "type": "lieu",
+    "images": [
+     {
+      "src": "images/journaux/1952-01-06-pueblo-chieftain-wootton-charlefou.jpg",
+      "legende": "Pueblo Chieftain, Jan. 6, 1952: the 1838 expedition, Charlefou's calendar and the sleeping juror",
+      "lien": "https://www.newspapers.com/image/1251818427/"
+     }
+    ],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.219,
+     34.047
+    ]
+   },
+   "properties": {
+    "id": "L55",
+    "nom": "Rancho San Bernardino: troops against the “Chaguanoso Indians” of Cajon Pass (1851)",
+    "debut": 1851.3685,
+    "fin": 1851.3685,
+    "date_edtf": "1851-05",
+    "precision": "mois",
+    "certitude": "certaine",
+    "categorie": "chaguanosos",
+    "description": "In his memoirs, José del Carmen Lugo recalls that in May 1851 a detachment was stationed on his San Bernardino ranch to guard the valley against “the Indian Chaguanosos” and other thieves coming in through Cajon Pass. Eleven years after the great raid, the name of Chalifoux's band still meant horse thieves from the desert.",
+    "sources": "Redlands Daily Facts, Apr. 4, 1951, p. 6, and Mar. 11, 1961, p. 10 (F. and B. Moore, “With a Grain of Salt”); Newspapers.com (author's subscription), accessed November 20, 2026.",
+    "note": "Point at the San Bernardino Asistencia (Barton Road, Redlands), where Lugo lived. The only uses of the word “Chaguanosos” found in Newspapers.com.",
+    "type": "lieu",
+    "images": [
+     {
+      "src": "images/journaux/1951-04-04-redlands-daily-facts-lugo-chaguanosos.jpg",
+      "legende": "Redlands Daily Facts, Apr. 4, 1951: Lugo and the Chaguanoso Indians",
+      "lien": "https://www.newspapers.com/image/995121274/"
+     }
+    ],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.008,
+     37.505
+    ]
+   },
+   "properties": {
+    "id": "L56",
+    "nom": "La Veta: death of Don Leo Chalifu, the trapper's son (Dec. 1917)",
+    "debut": 1917.9548,
+    "fin": 1917.9548,
+    "date_edtf": "1917-12",
+    "precision": "mois",
+    "certitude": "certaine",
+    "categorie": "famille",
+    "description": "On January 3, 1918, the Santa Fe New Mexican, quoting a Walsenburg paper, reported the recent death of Don Leo Chalifu of La Veta: born at Embudo in 1846, the son of a French Canadian, he had gone with his father in 1858 to the site of present-day Trinidad.",
+    "sources": "Santa Fe New Mexican, Jan. 3, 1918, p. 5 (“New Mexico Old-Timer”); Newspapers.com (author's subscription), accessed November 20, 2026.",
+    "note": "This is José León Chalifoux (1846-1917). The Walsenburg paper has not been found.",
+    "type": "lieu",
+    "images": [
+     {
+      "src": "images/journaux/1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg",
+      "legende": "Santa Fe New Mexican, Jan. 3, 1918: “New Mexico Old-Timer”",
+      "lien": "https://www.newspapers.com/image/583672848/"
+     }
+    ],
+    "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.87,
+     37.469
+    ]
+   },
+   "properties": {
+    "id": "L57",
+    "nom": "Alamosa and the San Luis Valley: the Charlifus (1944-1962)",
+    "debut": 1944.5,
+    "fin": 1962.5,
+    "date_edtf": "1944/1962",
+    "precision": "annee",
+    "certitude": "approximative",
+    "categorie": "famille",
+    "description": "In the twentieth century José León's descendants spelled the name “Charlifu”. The Pueblo Chieftain mentions Donald Charlifu of Alamosa (1948), Jake Charlifu, painter at Adams State College (1956), Ursulita Charlifu of La Veta (1959-1960), Daniel and Ellen Charlifu of Alamosa and Henry Charlifu of Pueblo (1962).",
+    "sources": "Pueblo Chieftain, Aug. 26, 1948; July 16, 1956; July 7, 1959; Nov. 30, 1960; June 9 and 13, Aug. 21, 1962; Newspapers.com (author's subscription), accessed November 20, 2026.",
+    "note": "Point on Alamosa; the mentions also concern La Veta and Pueblo.",
+    "type": "lieu",
+    "images": [
+     {
+      "src": "images/journaux/1948-08-26-pueblo-chieftain-donald-charlifu.jpg",
+      "legende": "Pueblo Chieftain, Aug. 26, 1948: Donald Charlifu of Alamosa",
+      "lien": "https://www.newspapers.com/image/1251812458/"
+     }
+    ],
+    "reseau": null
    }
   }
  ]

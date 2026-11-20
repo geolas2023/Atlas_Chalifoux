@@ -72,6 +72,21 @@ ol.etapes .lieu { font-weight: bold; }
 .note { font-size: .9rem; background: #efe9dd; border-left: 3px solid #c8903e; padding: .5rem .8rem; }
 ul.biblio li { font-size: .92rem; margin-bottom: .3rem; }
 .maplibregl-popup-content { font-family: Georgia, serif; font-size: .85rem; background: #fffdf8; }
+/* Onglet « Dans les journaux » */
+.art-jx { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1rem 1.2rem; background: #fffdf8; border: 1px solid #e0d5c2; border-left: 4px solid #9a3322; padding: 1rem; margin: 1rem 0 1.4rem; scroll-margin-top: 120px; }
+.art-jx figure { margin: 0 0 .6rem; }
+.art-jx figure img { width: 100%; height: auto; display: block; border: 1px solid #d6cbb8; background: #fff; box-shadow: 0 1px 3px rgba(60,40,20,.15); }
+.art-jx figcaption { font-size: .78rem; color: #6b604f; margin-top: .3rem; }
+.art-jx p { margin: 0 0 .65rem; }
+.art-jx .jx-tete { font-size: .92rem; border-bottom: 1px solid #e0d5c2; padding-bottom: .45rem; }
+.art-jx .jx-tete b { font-family: "IM Fell English SC", Georgia, serif; font-weight: normal; font-size: 1.12rem; color: #7a2a1c; display: block; }
+.art-jx .jx-lieu { font-size: .85rem; color: #4f6a4a; }
+.art-jx ul li { font-size: .95rem; }
+.art-jx.large { grid-template-columns: 1fr; }
+.art-jx.large .jx-figs { display: flex; flex-wrap: wrap; gap: .8rem; align-items: flex-start; }
+.art-jx.large figure img { width: auto; max-width: 100%; }
+.art-jx.cible { box-shadow: 0 0 0 3px #c8903e; }
+@media (max-width: 760px) { .art-jx { grid-template-columns: 1fr; } }
 footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; border-top: 1px solid #d6cbb8; }
 @media (max-width: 760px) { .onglets { top: 0; position: relative; } .barre { position: relative; } main { padding: 1rem 16px 3rem; } #carte { height: 320px; } }
 </style>
@@ -92,6 +107,7 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
   <button type="button" role="tab" data-onglet="chaguanosos">Les Chaguanosos<small>La bande, 1837-1840</small></button>
   <button type="button" role="tab" data-onglet="califa">La capture de « Califa »<small>Hiver 1839-1840</small></button>
   <button type="button" role="tab" data-onglet="genealogie">L'arbre de la famille<small>Généalogie</small></button>
+  <button type="button" role="tab" data-onglet="journaux">Dans les journaux<small>Presse, 1891-1963</small></button>
 </nav>
 
 <main>
@@ -115,6 +131,10 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <div class="carte-salle" data-ouvrir="genealogie">
       <b>L'arbre de la famille</b>
       <span>Parents, femme et enfants de Jean-Baptiste Chalifoux, du Québec au Colorado, avec la fiabilité de chaque donnée.</span>
+    </div>
+    <div class="carte-salle" data-ouvrir="journaux">
+      <b>Dans les journaux</b>
+      <span>Dix articles de 1891 à 1963, avec leurs découpures : la compagnie de Los Angeles, les souvenirs de Wootton, les volontaires de 1847, la première cabane de Trinidad et les descendants.</span>
     </div>
   </div>
 </section>
@@ -360,6 +380,161 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <li>Arbre « Perea Family of New Mexico » (Ancestry, arbre 904590) et arbre 18047447, consultés le 19 novembre 2026. Ce sont des sources secondaires à vérifier.</li>
   </ul>
 </section>
+
+<!-- ============================ DANS LES JOURNAUX ============================ -->
+<section class="panneau" id="journaux" role="tabpanel" hidden>
+  <h2>« Charlefou » dans les journaux</h2>
+  <p class="date">Dépouillement de Newspapers.com · 1820-1963 · Californie, Nouveau-Mexique, Colorado</p>
+  <p class="chapo">Aucun journal n'a parlé de Jean-Baptiste Chalifoux de son vivant. La Californie n'a pas de presse avant 1846, le Colorado avant 1859, et Taos n'aura de journal qu'au XX<sup>e</sup> siècle. Son nom revient plus tard, sous des graphies toujours changeantes : dans les histoires de la Californie, dans les souvenirs d'Uncle Dick Wootton et de Charles Autobees, dans le rôle d'une compagnie de 1847, dans les débuts de Trinidad. Puis viennent ses enfants et petits-enfants, de Taos à La Veta et Alamosa. Voici les articles retrouvés, avec leur découpure, leur contexte et le lieu dont ils parlent.</p>
+
+  <h3>La méthode</h3>
+  <p>J'ai interrogé l'index de Newspapers.com (abonnement de l'auteur) de 1820 à 1963 avec treize graphies : Chalifoux, Chalifou, Chalifu, Charlifu, Charlifoux, Charlifou, Charlefou, Charlefoux, Chalifaux, Shalifoux, Chaguanosos, Chaguanoso et Chaguanos. Chaque graphie a été cherchée dans tout le fonds, puis État par État pour douze États de l'Ouest (Colorado, Nouveau-Mexique, Californie, Missouri, Kansas, Texas, Utah, Arizona, Nebraska, Wyoming, Oklahoma, Oregon). Cela donne environ 3 500 pages. Pour chaque page plausible, j'ai lu le passage autour du mot trouvé par la reconnaissance de texte. Plus de 95 % des pages concernent des homonymes (voir plus bas). Il reste les dix articles ci-dessous et une poignée de mentions de descendants.</p>
+
+  <div id="carte-jx" class="carte-tab" role="img" aria-label="Carte des lieux évoqués par les articles"></div>
+  <p class="note">Pastilles rouges : Jean-Baptiste Chalifoux lui-même. Orange : les Chaguanosos. Vertes : ses enfants et descendants. Pastille vide : position approximative. Cliquez une pastille pour aller à l'article.</p>
+
+  <h3>Les articles, dans l'ordre des événements</h3>
+
+  <article class="art-jx large" id="jx-1891">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1891-11-15-los-angeles-herald-charlefoux-fusiliers.jpg" target="_blank" rel="noopener"><img src="images/journaux/1891-11-15-los-angeles-herald-charlefoux-fusiliers.jpg" alt="Découpure du Los Angeles Herald, 15 novembre 1891 : titre « North and South » et paragraphe sur la compagnie de fusiliers de Charlefoux" loading="lazy"></a>
+      <figcaption>Los Angeles Herald, 15 nov. 1891, p. 12 (titre et passage).</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1837 · Los Angeles</b> — <i>Los Angeles Herald</i>, 15 novembre 1891, p. 12 · <a href="https://www.newspapers.com/image/42218920/" target="_blank" rel="noopener">page sur Newspapers.com ↗</a></p>
+      <p><b>Ce que dit l'article.</b> Dans la deuxième partie de « North and South », une histoire des querelles entre le nord et le sud de la Californie, B. A. Stephens raconte le soulèvement du sud contre le gouverneur Alvarado. Fin mai 1837, après le coup de Zamorano et Bandini à San Diego, Los Angeles lève à son tour une compagnie de vingt-cinq fusiliers américains placée sous le commandement de « Charlefoux », puis approuve le plan de San Diego. Le journal imprime « 1873 » par erreur pour 1837.</p>
+      <p><b>Contexte.</b> C'est l'épisode qu'Agustín Janssens a vécu de l'intérieur (<a href="#janssens" data-lien="janssens">onglet Janssens</a>). Stephens suit sans doute Bancroft, qui nomme lui aussi « Charlefoux » dans son <i>Pioneer Register</i>. L'article montre que, cinquante ans plus tard, les Angelenos se souviennent encore du chef des Chaguanosos comme d'un capitaine de leurs troupes.</p>
+      <p class="jx-lieu">Lieu : pueblo de Los Angeles (fiche L28 de l'atlas) · position certaine.</p>
+    </div>
+  </article>
+
+  <article class="art-jx large" id="jx-1952">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1952-01-06-pueblo-chieftain-wootton-charlefou.jpg" target="_blank" rel="noopener"><img src="images/journaux/1952-01-06-pueblo-chieftain-wootton-charlefou.jpg" alt="Découpure du Pueblo Chieftain, 6 janvier 1952 : colonnes sur la grande expédition de Wootton, le calendrier de Charlefou et le juré endormi" loading="lazy"></a>
+      <figcaption>Pueblo Star-Journal and Sunday Chieftain, 6 janv. 1952, p. 8 (moitié droite de l'article).</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1838-1840 et 1847 · Fort Bent, Californie, Taos</b> — <i>Pueblo Star-Journal and Sunday Chieftain</i>, 6 janvier 1952, p. 8 (« Colorful Colorado : Uncle Dick Wootton Lived Thru Great Transition of Colorado ») · <a href="https://www.newspapers.com/image/1251818427/" target="_blank" rel="noopener">page ↗</a></p>
+      <p><b>Ce que dit l'article.</b> La chronique radiophonique de Ralph C. Taylor résume la vie de Richens Lacy « Uncle Dick » Wootton. À l'automne 1838, Wootton et dix-neuf hommes partent de Fort Bent pour une expédition de trappe de deux ans qui les mène jusqu'au Pacifique. Un Français du groupe, « Charlefou », tient le calendrier en entaillant chaque jour un bâton carré. Il le perd le jour où une bande de Pieds-Noirs le prend en chasse : son cheval nez-percé tente de sauter un arroyo et s'écrase au fond. Les compagnons le retrouvent le lendemain, les deux jambes brisées, lui remettent les os et le portent deux mois sur une litière tendue entre deux chevaux. Le chroniqueur ajoute qu'avant cet accident Charlefou trouvait les Américains injustes envers les Indiens. Quelques années plus tard, juré dans un procès pour meurtre à Taos, il dort pendant toute l'audience et, réveillé pour délibérer, répond qu'il faut pendre l'accusé.</p>
+      <p><b>Contexte.</b> Taylor reprend le livre de H. L. Conard, <i>« Uncle Dick » Wootton</i> (1890), dicté par Wootton à plus de soixante-dix ans. Deux recoupements donnent du poids au récit. D'abord, l'expédition de 1838-1840 passe par le pays ute et la Californie, comme Chalifoux qu'on retrouve au fort Uintah à l'automne 1839 (fiche L48) puis en Californie à l'hiver 1839-1840 (<a href="#califa" data-lien="califa">onglet Califa</a>). Ensuite, Lecompte compte « Jean-Baptiste Charlefou » parmi les jurés du procès des insurgés de Taos en avril 1847 (fiche L18). L'accident des jambes brisées est aussi connu par la tradition familiale, mais Bouchard et Lévesque le placent dans la jeunesse de Chalifoux, au Dakota. Il est possible que deux souvenirs se soient confondus.</p>
+      <p class="jx-lieu">Lieux : Fort Bent (départ, position certaine) ; Taos (le procès, position certaine) ; le lieu de l'accident n'est pas précisé.</p>
+    </div>
+  </article>
+
+  <article class="art-jx" id="jx-1951">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1951-04-04-redlands-daily-facts-lugo-chaguanosos.jpg" target="_blank" rel="noopener"><img src="images/journaux/1951-04-04-redlands-daily-facts-lugo-chaguanosos.jpg" alt="Découpure du Redlands Daily Facts, 4 avril 1951 : chronique With a Grain of Salt citant José del Carmen Lugo sur les Indiens Chaguanosos du col Cajon" loading="lazy"></a>
+      <figcaption>Redlands Daily Facts, 4 avril 1951, p. 6 (début de la chronique et passage sur les Chaguanosos).</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1851 · Rancho San Bernardino et col Cajon</b> — <i>Redlands Daily Facts</i>, 4 avril 1951, p. 6 (« With a Grain of Salt », par Frank et Bill Moore) ; repris le 11 mars 1961, p. 10 · <a href="https://www.newspapers.com/image/995121274/" target="_blank" rel="noopener">page 1951 ↗</a> · <a href="https://www.newspapers.com/image/2089478/" target="_blank" rel="noopener">page 1961 ↗</a></p>
+      <p><b>Ce que dit l'article.</b> Les chroniqueurs citent les souvenirs de José del Carmen Lugo, « Life of a Rancher », que M<sup>me</sup> George W. Beattie, de Redlands, venait de traduire. En mai 1851, une bande de Texans venus des placers menace le ranch des Lugo à San Bernardino. Lugo cherche l'aide de la troupe postée sur son ranch, mais ce détachement est là pour garder la vallée contre « les Indiens Chaguanosos » et les autres voleurs qui entrent par le col Cajon, et son lieutenant refuse de le suivre.</p>
+      <p><b>Contexte.</b> Ce sont les deux seules mentions du mot « Chaguanosos » trouvées dans tout Newspapers.com. Elles montrent qu'en 1851, onze ans après la grande razzia de 1840, le nom désignait encore, à San Bernardino, les voleurs de chevaux qui passaient le Cajon. Le mot s'était détaché de la bande de Chalifoux pour s'appliquer aux pillards utes de Walkara et à leurs alliés (<a href="#chaguanosos" data-lien="chaguanosos">onglet Chaguanosos</a>).</p>
+      <p class="jx-lieu">Lieux : Asistencia de San Bernardino, chemin Barton à Redlands (position certaine) ; col Cajon (position certaine).</p>
+    </div>
+  </article>
+
+  <article class="art-jx large" id="jx-1894">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1894-08-03-santa-fe-new-mexican-volontaires-st-vrain.jpg" target="_blank" rel="noopener"><img src="images/journaux/1894-08-03-santa-fe-new-mexican-volontaires-st-vrain.jpg" alt="Découpure du Santa Fe New Mexican, 3 août 1894 : article Tardy Justice et rôle de la compagnie de Ceran St. Vrain où figure Batiste Chalifoux" loading="lazy"></a>
+      <figcaption>Santa Fe New Mexican, 3 août 1894, p. 4 (article complet, recomposé en trois colonnes).</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>Janvier-février 1847 · La Cañada, Embudo, Taos</b> — <i>Santa Fe Daily New Mexican</i>, 3 août 1894, p. 4 (« Tardy Justice ») · <a href="https://www.newspapers.com/image/600359556/" target="_blank" rel="noopener">page ↗</a></p>
+      <p><b>Ce que dit l'article.</b> La Chambre des représentants vient d'adopter le projet du délégué Antonio Joseph pour les volontaires de Ceran St. Vrain. La compagnie, levée à Santa Fe le 23 janvier 1847 et licenciée le 20 février, s'était battue à La Cañada (24 janvier), à Embudo (29 janvier) et à Taos (4 février) contre l'insurrection où le gouverneur Bent avait été tué. Le département de la Guerre ne l'avait jamais reconnue. Le projet donne à ses hommes la même solde, les mêmes primes et la même pension qu'aux volontaires réguliers. Le journal publie le rôle de la compagnie : parmi les simples soldats figure « Batiste Chalifoux », à côté de Charles et Thomas Autobees, C. Robidoux, Batiste Sabourain, Charles et Benal Leroux, Vidal Bergeron et Papin.</p>
+      <p><b>Contexte.</b> La bataille du 29 janvier 1847 s'est livrée dans le cañon d'Embudo, à deux pas de sa maison : Ruxton avait dîné chez lui à Embudo un mois plus tôt (fiche L17). En 1894, Chalifoux était mort depuis trente-quatre ans. La loi pouvait toutefois profiter à ses héritiers. C'est la seule liste nominative d'époque (le rôle de février 1847) reproduite dans la presse où il apparaît.</p>
+      <p class="jx-lieu">Lieux : Santa Fe (levée de la compagnie, fiche L27) ; La Cañada (Santa Cruz), Embudo et le pueblo de Taos (batailles) · positions certaines.</p>
+    </div>
+  </article>
+
+  <article class="art-jx" id="jx-1963">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1963-03-10-pueblo-chieftain-autobees-charlefou.jpg" target="_blank" rel="noopener"><img src="images/journaux/1963-03-10-pueblo-chieftain-autobees-charlefou.jpg" alt="Découpure du Pueblo Chieftain, 10 mars 1963 : Autobees Settled On Huerfano In 1853, liste de ses amis dont Jean-Baptiste Charlefou" loading="lazy"></a>
+      <figcaption>Pueblo Chieftain, 10 mars 1963, p. 41 (titre et passage).</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>Années 1850 · la Huerfano</b> — <i>Pueblo Chieftain</i>, 10 mars 1963, p. 41 (« Colorful Colorado : Autobees Settled On Huerfano In 1853 ») · <a href="https://www.newspapers.com/image/1252703016/" target="_blank" rel="noopener">page ↗</a></p>
+      <p><b>Ce que dit l'article.</b> La même chronique raconte la vie de Charles Autobees, fondateur d'un des premiers établissements de la Huerfano. Elle donne la liste de ses amis, « les légendaires combattants, trappeurs, traiteurs et éclaireurs de l'époque » : Kit Carson, Jim Bridger, Tom Tobin, A. G. Boone, Carlos Beaubien, Antoine Laforet, Charles Nadeau, Jim Beckwourth, Chat Dubray… et Jean-Baptiste Charlefou, qui ferme la liste. Elle rappelle aussi qu'Autobees fut juré au procès de Taos en 1847.</p>
+      <p><b>Contexte.</b> Chalifoux a vécu ses dernières années chez Autobees et y est mort le 12 décembre 1860 (fiche L23).</p>
+      <p class="jx-lieu">Lieu : ranch et placita d'Autobees, près du confluent de la Huerfano et de l'Arkansas · position approximative.</p>
+    </div>
+  </article>
+
+  <article class="art-jx large" id="jx-1916">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1916-06-24-denver-labor-bulletin-trinidad-charlefou.jpg" target="_blank" rel="noopener"><img src="images/journaux/1916-06-24-denver-labor-bulletin-trinidad-charlefou.jpg" alt="Découpure du Denver Labor Bulletin, 24 juin 1916 : fondation de Trinidad et première cabane de Charlefou à l'embouchure du Gray's Creek" loading="lazy"></a>
+      <figcaption>Denver Labor Bulletin, 24 juin 1916, p. 10.</figcaption></figure>
+    <figure><a href="images/journaux/1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg" target="_blank" rel="noopener"><img src="images/journaux/1918-01-03-santa-fe-new-mexican-leo-chalifu.jpg" alt="Découpure du Santa Fe New Mexican, 3 janvier 1918 : New Mexico Old-Timer, mort de Don Leo Chalifu de La Veta" loading="lazy"></a>
+      <figcaption>Santa Fe New Mexican, 3 janv. 1918, p. 5.</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1858-1859 · Gray's Creek et Trinidad</b> — <i>Denver Labor Bulletin</i>, 24 juin 1916, p. 10 · <a href="https://www.newspapers.com/image/897888797/" target="_blank" rel="noopener">page ↗</a> — et <i>Santa Fe New Mexican</i>, 3 janvier 1918, p. 5 (« New Mexico Old-Timer ») · <a href="https://www.newspapers.com/image/583672848/" target="_blank" rel="noopener">page ↗</a></p>
+      <p><b>Ce que disent les articles.</b> Le bulletin syndical de Denver publie un portrait promotionnel du comté de Las Animas. Trinidad y est fondée en 1860 par Riley Dunton, William Frazier, U. P. Curtis et les frères Archibald. Mais l'année précédente, « Charlefou, un vieux trappeur canadien des Rocheuses », avait bâti la première cabane à l'embouchure du Gray's Creek. Dix-huit mois plus tard, le <i>New Mexican</i> annonce la mort de Don Leo Chalifu, de La Veta. Il était né à Embudo en 1846, fils d'un Canadien français, et en 1858 il avait accompagné son père sur le site de l'actuelle Trinidad. Le journal cite un journal de Walsenburg.</p>
+      <p><b>Contexte.</b> Les deux textes, indépendants, s'accordent sur 1858-1859 et confirment ce que disaient le D<sup>r</sup> Beshoar (1882) et les carnets de Cragin (fiche L20). Le second est aussi le seul document de presse où un fils parle, indirectement, de son père. Il confirme la naissance de José León à Embudo en 1846 et sa mort à La Veta à la fin de 1917 (<a href="#genealogie" data-lien="genealogie">onglet Généalogie</a>).</p>
+      <p class="jx-lieu">Lieux : embouchure du Gray Creek sur la Purgatoire, en aval de Trinidad (coordonnées USGS : 37,2067 N, 104,4675 O) · position approximative. La Veta (mort de León) · position certaine.</p>
+    </div>
+  </article>
+
+  <article class="art-jx" id="jx-1913">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1913-11-07-revista-de-taos-suscripcion-juan-b-chalifu.jpg" target="_blank" rel="noopener"><img src="images/journaux/1913-11-07-revista-de-taos-suscripcion-juan-b-chalifu.jpg" alt="Découpure de La Revista de Taos, 7 novembre 1913 : Suscrición Popular, liste où figure Juan B. Chalifu" loading="lazy"></a>
+      <figcaption>La Revista de Taos, 7 nov. 1913, p. 1 (titre et fin de la liste).</figcaption></figure>
+    <figure><a href="images/journaux/1917-11-16-revista-de-taos-juan-b-chalifu-garcia.jpg" target="_blank" rel="noopener"><img src="images/journaux/1917-11-16-revista-de-taos-juan-b-chalifu-garcia.jpg" alt="Découpure de La Revista de Taos, 16 novembre 1917 : Don Jesus M. Varela et son frère Don Juan B. Chalifu, de Garcia" loading="lazy"></a>
+      <figcaption>La Revista de Taos, 16 nov. 1917, p. 1.</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1913-1917 · Costilla, Garcia, Taos</b> — <i>La Revista de Taos</i>, 7 novembre 1913, p. 1 · <a href="https://www.newspapers.com/image/168081474/" target="_blank" rel="noopener">page ↗</a> — et 16 novembre 1917, p. 1 · <a href="https://www.newspapers.com/image/168100122/" target="_blank" rel="noopener">page ↗</a></p>
+      <p><b>Ce que disent les articles.</b> En 1913, l'hebdomadaire hispanophone de Taos publie une « suscrición popular » ouverte par Antonio B. Trujillo, d'Arroyo Seco, beau-frère de la victime, pour récompenser celui qui a arrêté Juan de Dios Roybal, meurtrier de Melquiades Rael à Questa. Les donateurs sont classés par village (Questa, Cerro, Costilla) ; Juan B. Chalifu donne 50 cents. En 1917, la chronique locale note que Don Jesús M. Varela, de Pina, « et son frère Don Juan B. Chalifu, de Garcia, Colorado » étaient en ville pour affaires le samedi.</p>
+      <p><b>Contexte.</b> Juan Bautista, né en 1853 ou 1854, est le dernier fils du trappeur présent au recensement de 1860. Garcia est le village voisin de Costilla, de l'autre côté de la frontière du Colorado, sur le ruisseau où la tradition place la Plaza de los Chalifoux et l'acequia Chalifu (fiche L45). Les deux articles le situent donc exactement là. Le mot « hermano » pose une question : Varela ne peut être qu'un demi-frère. Mariana Lucero se serait remariée avec un Varela après 1860. C'est une piste à vérifier dans les registres de Taos et de Costilla.</p>
+      <p class="jx-lieu">Lieux : Garcia (Colorado) · position certaine ; Costilla et Questa (Nouveau-Mexique) · positions certaines. « Pina » n'a pas été localisé.</p>
+    </div>
+  </article>
+
+  <article class="art-jx" id="jx-desc">
+    <div class="jx-figs">
+    <figure><a href="images/journaux/1948-08-26-pueblo-chieftain-donald-charlifu.jpg" target="_blank" rel="noopener"><img src="images/journaux/1948-08-26-pueblo-chieftain-donald-charlifu.jpg" alt="Découpure du Pueblo Chieftain, 26 août 1948 : Army Inducts Eight, avec Donald Charlifu d'Alamosa" loading="lazy"></a>
+      <figcaption>Pueblo Chieftain, 26 août 1948.</figcaption></figure>
+    </div>
+    <div>
+      <p class="jx-tete"><b>1944-1962 · les Charlifu de la vallée de San Luis</b> — <i>Pueblo Chieftain</i> et autres</p>
+      <p><b>Ce que disent les articles.</b> Au XX<sup>e</sup> siècle, la graphie « Charlifu », déjà portée par des enfants de José León aux recensements de 1900 et 1910, l'emporte chez les descendants. On la retrouve dans de brèves mentions du <i>Pueblo Chieftain</i> :</p>
+      <ul>
+        <li>26 août 1948 : Donald Charlifu, 20 ans, d'Alamosa, s'engage dans l'armée au bureau de Pueblo (<a href="https://www.newspapers.com/image/1251812458/" target="_blank" rel="noopener">page ↗</a>).</li>
+        <li>16 juillet 1956 : Jake Charlifu, peintre en chef, dirige la rénovation des dortoirs de l'Adams State College à Alamosa (<a href="https://www.newspapers.com/image/1252337645/" target="_blank" rel="noopener">page ↗</a>).</li>
+        <li>7 juillet 1959 et 30 novembre 1960 : M<sup>lle</sup> Ursulita Charlifu, de La Veta, hospitalisée à Pueblo. Elle porte le prénom de sa grand-tante Ursula (<a href="https://www.newspapers.com/image/1251995747/" target="_blank" rel="noopener">page 1959 ↗</a> · <a href="https://www.newspapers.com/image/1252014887/" target="_blank" rel="noopener">page 1960 ↗</a>).</li>
+        <li>9 juin 1962 : Daniel Charlifu, diplômé de l'école secondaire d'Alamosa (<a href="https://www.newspapers.com/image/1253365948/" target="_blank" rel="noopener">page ↗</a>).</li>
+        <li>13 juin 1962 : M<sup>me</sup> Ellen Charlifu, d'Alamosa, fille d'Angelo Manos de Trinchera (<a href="https://www.newspapers.com/image/1253367485/" target="_blank" rel="noopener">page ↗</a>) ; 21 août 1962 : Henry Charlifu, de Pueblo, hospitalisé (<a href="https://www.newspapers.com/image/1252106091/" target="_blank" rel="noopener">page ↗</a>).</li>
+      </ul>
+      <p><b>Lien non établi.</b> Deux mentions restent incertaines : Joseph E. Charlifoux, 59 ans, tué par une automobile à Denver (<i>Fort Collins Coloradoan</i>, 1<sup>er</sup> mars 1948, <a href="https://www.newspapers.com/image/589066034/" target="_blank" rel="noopener">page ↗</a>), et une naissance chez Leo D. Charlifue à San Francisco (<i>San Francisco Call</i>, 24 août 1944, <a href="https://www.newspapers.com/image/1231511449/" target="_blank" rel="noopener">page ↗</a>).</p>
+      <p class="jx-lieu">Lieux : Alamosa, La Veta, Pueblo · positions certaines.</p>
+    </div>
+  </article>
+
+  <h3>Ce que la presse ne dit pas</h3>
+  <ul>
+    <li><b>Rien de son vivant.</b> Aucune page antérieure à 1860 ne le nomme de façon sûre. Les « Chalifou » et « Charlefoux » des listes de lettres non réclamées de Saint-Louis (1856, 1859, 1860) peuvent désigner n'importe quel Chalifoux de passage.</li>
+    <li><b>Rien sur les Chaguanosos en 1837-1840.</b> Les razzias ont eu lieu avant toute presse californienne. Le mot n'apparaît que dans les souvenirs de Lugo, en 1951 et 1961.</li>
+    <li><b>Peu de presse du sud du Colorado.</b> Newspapers.com n'a presque pas de journaux de Trinidad, de Walsenburg ou de La Veta d'avant 1920. Le journal de Walsenburg cité en 1918, qui contenait sans doute la vraie nécrologie de León, reste à trouver, par exemple dans les Colorado Historic Newspapers.</li>
+  </ul>
+
+  <h3>Homonymes écartés</h3>
+  <p>La grande majorité des pages concernent d'autres Chalifoux : des familles du Québec et de l'Ontario ; les Chalifoux de Lowell (Massachusetts), dont les nominations politiques ont circulé par dépêche dans tout l'Ouest en 1897, 1902, 1906, 1907 et 1918 ; le mariage d'Alice Burrage et de Harold L. Chalifoux, chronique mondaine de Redlands et de Los Angeles en 1916-1921 ; des médecins montréalais de passage à Los Angeles (1896) ; l'entrepreneur de pompes funèbres John Chalifoux, blessé à Chicago en 1883, dépêche reprise par une douzaine de journaux du Kansas (voir la fiche L47 pour cette famille) ; le lieutenant Vincent Chalifoux des volontaires du Missouri (1863) ; les Chalifoux de l'Oregon ; un feuilleton du <i>Kansas City Star</i> (1955) dont un personnage s'appelle Charlefoux ; et un « tunnel Chalifou » en France (1914).</p>
+
+  <h3>Sources</h3>
+  <ul class="biblio">
+    <li><i>Los Angeles Herald</i>, 15 nov. 1891, p. 12 : B. A. Stephens, « North and South », part II.</li>
+    <li><i>Santa Fe Daily New Mexican</i>, 3 août 1894, p. 4 : « Tardy Justice ».</li>
+    <li><i>Denver Labor Bulletin</i>, 24 juin 1916, p. 10 : portrait du comté de Las Animas et de Trinidad.</li>
+    <li><i>La Revista de Taos</i>, 7 nov. 1913, p. 1 : « Suscrición Popular » ; 16 nov. 1917, p. 1 : chronique locale.</li>
+    <li><i>Santa Fe New Mexican</i>, 3 janv. 1918, p. 5 : « New Mexico Old-Timer ».</li>
+    <li><i>Redlands Daily Facts</i>, 4 avril 1951, p. 6, et 11 mars 1961, p. 10 : F. et B. Moore, « With a Grain of Salt » (souvenirs de José del Carmen Lugo).</li>
+    <li><i>Pueblo Star-Journal and Sunday Chieftain</i>, 6 janv. 1952, p. 8, et <i>Pueblo Chieftain</i>, 10 mars 1963, p. 41 : R. C. Taylor, « Colorful Colorado ».</li>
+    <li><i>Pueblo Chieftain</i>, 26 août 1948 ; 16 juillet 1956 ; 7 juillet 1959 ; 30 nov. 1960 ; 9, 13 juin et 21 août 1962.</li>
+    <li>Tous les articles ont été consultés sur Newspapers.com (abonnement de l'auteur), le 20 novembre 2026. Les découpures sont des captures d'écran des pages numérisées.</li>
+    <li>USGS, Geographic Names Information System, « Gray Creek », Las Animas County, Colorado (n° 194754), via <a href="https://topoquest.com/place/colorado/stream/gray-creek/194754" target="_blank" rel="noopener">TopoQuest ↗</a>.</li>
+    <li>H. L. Conard, <i>« Uncle Dick » Wootton</i> (Chicago, 1890) ; J. Lecompte, <i>Pueblo, Hardscrabble, Greenhorn</i> (1978) ; S. Bouchard et M.-C. Lévesque, <i>Ils ont couru l'Amérique</i> (2014).</li>
+  </ul>
+</section>
 </main>
 
 <footer>Atlas Chalifoux · Olivier J. Caron, Département de géographie, UQAM</footer>
@@ -376,6 +551,7 @@ function ouvrir(id) {
   history.replaceState(null, '', id === 'accueil' ? location.pathname : '#' + id);
   if (id === 'janssens') initCarte();
   if (id === 'chaguanosos') initCarteChag();
+  if (id === 'journaux') initCarteJx();
   window.scrollTo({ top: 0 });
 }
 boutons.forEach(b => b.addEventListener('click', () => ouvrir(b.dataset.onglet)));
@@ -449,6 +625,51 @@ function initCarteChag() {
     });
   });
 }
+
+// Lieux évoqués par les articles de presse (onglet « Dans les journaux »).
+const JX = [
+  { nom: 'Los Angeles', c: [-118.243, 34.052], f: 'b', a: 'jx-1891', txt: "Mai 1837 : vingt-cinq fusiliers américains sous « Charlefoux » (LA Herald, 1891)." },
+  { nom: 'Fort Bent', c: [-103.430, 38.040], f: 'b', a: 'jx-1952', txt: "Automne 1838 : départ de l'expédition de Wootton, où Charlefou tient le calendrier (Pueblo Chieftain, 1952)." },
+  { nom: 'Taos', c: [-105.573, 36.407], f: 'b', a: 'jx-1952', txt: "Avril 1847 : le juré endormi (Pueblo Chieftain, 1952)." },
+  { nom: 'Asistencia de San Bernardino', c: [-117.219, 34.047], f: 'c', a: 'jx-1951', txt: "1851 : une troupe y garde la vallée contre les « Indiens Chaguanosos » (souvenirs de Lugo, Redlands Daily Facts, 1951 et 1961)." },
+  { nom: 'Col Cajon', c: [-117.44, 34.32], f: 'c', a: 'jx-1951', txt: "La porte d'entrée des voleurs de chevaux." },
+  { nom: 'Santa Fe', c: [-105.938, 35.687], f: 'b', a: 'jx-1894', txt: "23 janv. 1847 : levée de la compagnie de Ceran St. Vrain, où sert « Batiste Chalifoux » (Santa Fe New Mexican, 1894)." },
+  { nom: 'La Cañada (Santa Cruz)', c: [-105.966, 35.990], f: 'b', a: 'jx-1894', txt: "Bataille du 24 janv. 1847." },
+  { nom: 'Embudo', c: [-105.960, 36.210], f: 'b', a: 'jx-1894', txt: "Bataille du 29 janv. 1847, au village de Chalifoux ; naissance de León en 1846 (New Mexican, 1918)." },
+  { nom: 'Pueblo de Taos', c: [-105.545, 36.439], f: 'b', a: 'jx-1894', txt: "Assaut du 4 févr. 1847." },
+  { nom: 'Ranch d\'Autobees (Huerfano)', c: [-104.30, 38.18], f: 'b', a: 'jx-1963', approx: true, txt: "Les amis d'Autobees, dont « Jean-Baptiste Charlefou » (Pueblo Chieftain, 1963)." },
+  { nom: 'Embouchure du Gray Creek', c: [-104.4675, 37.2067], f: 'b', a: 'jx-1916', approx: true, txt: "1859 : première cabane, bâtie par « Charlefou » (Denver Labor Bulletin, 1916) ; León y vient avec son père en 1858 (New Mexican, 1918)." },
+  { nom: 'La Veta', c: [-105.008, 37.505], f: 'f', a: 'jx-1916', txt: "Décembre 1917 : mort de Don Leo Chalifu (New Mexican, 1918). Ursulita Charlifu y vit en 1959-1960." },
+  { nom: 'Questa', c: [-105.595, 36.704], f: 'f', a: 'jx-1913', txt: "1913 : meurtre de Melquiades Rael ; souscription où donne Juan B. Chalifu (Revista de Taos)." },
+  { nom: 'Costilla', c: [-105.532, 36.983], f: 'f', a: 'jx-1913', txt: "Village de la liste de 1913 ; Chalifoux y est recensé en 1860." },
+  { nom: 'Garcia (Colorado)', c: [-105.536, 37.002], f: 'f', a: 'jx-1913', txt: "1917 : « Don Juan B. Chalifu, de Garcia, Colo. » (Revista de Taos)." },
+  { nom: 'Alamosa', c: [-105.870, 37.469], f: 'f', a: 'jx-desc', txt: "1948-1962 : les Charlifu d'Alamosa (Pueblo Chieftain)." },
+  { nom: 'Pueblo', c: [-104.609, 38.254], f: 'f', a: 'jx-desc', txt: "Le Pueblo Chieftain, principale source sur les descendants." }
+];
+const COUL_JX = { b: '#9a3322', c: '#c8903e', f: '#4f7a4a' };
+let carteJx = null;
+function initCarteJx() {
+  if (carteJx || typeof maplibregl === 'undefined') return;
+  const B = [[-118.9, 33.6], [-103.0, 38.6]];
+  carteJx = new maplibregl.Map({ container: 'carte-jx', style: 'https://tiles.openfreemap.org/styles/positron', bounds: B, fitBoundsOptions: { padding: 30 }, attributionControl: { compact: true } });
+  carteJx.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  carteJx.on('load', () => {
+    carteJx.resize(); carteJx.fitBounds(B, { padding: 30, duration: 0 });
+    JX.forEach(e => {
+      const el = document.createElement('div'), k = COUL_JX[e.f];
+      el.style.cssText = `width:13px;height:13px;border-radius:50%;border:2px solid ${k};background:${e.approx ? '#f4efe6' : k};box-shadow:0 0 0 2px #fffdf8;cursor:pointer`;
+      const pop = new maplibregl.Popup({ offset: 10 }).setHTML(`<b>${e.nom}</b><br>${e.txt}<br><a href="#${e.a}" class="vers-art" data-art="${e.a}">Voir l'article ↓</a>`);
+      new maplibregl.Marker({ element: el }).setLngLat(e.c).setPopup(pop).addTo(carteJx);
+    });
+  });
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('.vers-art'); if (!a) return;
+  e.preventDefault();
+  const art = document.getElementById(a.dataset.art); if (!art) return;
+  art.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  art.classList.add('cible'); setTimeout(() => art.classList.remove('cible'), 2200);
+});
 ouvrir(location.hash.slice(1) || 'accueil');
 </script>
 </body>
