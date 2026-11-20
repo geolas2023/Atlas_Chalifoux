@@ -43,7 +43,13 @@ blockquote cite { display: block; font-style: normal; font-size: .82rem; color: 
 .trait b { display: block; font-family: "IM Fell English SC", Georgia, serif; font-weight: normal; font-size: 1.05rem; color: #7a2a1c; margin-bottom: .2rem; }
 .trait p { font-size: .95rem; margin: 0; }
 .trait .src { font-size: .78rem; color: #6b604f; margin-top: .35rem; }
-#carte { height: 420px; border: 1px solid #c9bba3; background: #e8e0cf; }
+#carte, .carte-tab { margin: .4rem 0 1rem; }
+table.chrono { border-collapse: collapse; width: 100%; font-size: .92rem; background: #fffdf8; margin: .5rem 0 1rem; }
+table.chrono th, table.chrono td { border-bottom: 1px solid #e0d5c2; padding: .45rem .55rem; text-align: left; vertical-align: top; line-height: 1.45; }
+table.chrono th { background: #e6dccb; font-weight: normal; font-family: "IM Fell English SC", Georgia, serif; }
+table.chrono td:first-child { white-space: nowrap; color: #7a2a1c; }
+table.chrono td:last-child { font-size: .8rem; color: #6b604f; }
+#carte, .carte-tab { height: 420px; border: 1px solid #c9bba3; background: #e8e0cf; }
 ol.etapes { padding-left: 1.3rem; }
 ol.etapes li { margin-bottom: .45rem; }
 ol.etapes .lieu { font-weight: bold; }
@@ -67,6 +73,7 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
 <nav class="onglets" role="tablist" aria-label="Documents de la salle de lecture">
   <button type="button" role="tab" data-onglet="accueil" class="actif">La salle<small>Présentation</small></button>
   <button type="button" role="tab" data-onglet="janssens">La rencontre avec Janssens<small>Californie, mai-juin 1837</small></button>
+  <button type="button" role="tab" data-onglet="chaguanosos">Les Chaguanosos<small>La bande, 1837-1840</small></button>
 </nav>
 
 <main>
@@ -78,6 +85,10 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <div class="carte-salle" data-ouvrir="janssens">
       <b>La rencontre avec Agustín Janssens</b>
       <span>Californie, mai-juin 1837 · le seul portrait de Chalifoux par un témoin qui a marché à ses côtés pendant la guerre civile californienne.</span>
+    </div>
+    <div class="carte-salle" data-ouvrir="chaguanosos">
+      <b>Les Chaguanosos</b>
+      <span>Qui étaient-ils, d'où vient leur nom, leurs raids de 1837 à 1840, et comment les autorités californiennes les ont pourchassés.</span>
     </div>
   </div>
 </section>
@@ -128,7 +139,7 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
 
   <h3>Ce que vaut ce témoignage</h3>
   <p>Janssens raconte ces événements quarante et un ans plus tard, à un âge avancé, et il se donne volontiers le beau rôle. Plusieurs points sont pourtant solides : son récit concorde avec les autres sources sur la présence des Chaguanosos dans le camp du sud en 1837 (Bancroft, Lecompte). Ses notations sur Chalifoux, sa langue, son infirmité et son autorité ne servent aucun intérêt particulier de l'auteur : elles ont toutes les chances d'être exactes.</p>
-  <p class="note">L'emplacement d'Agua Caliente reste incertain. Janssens parle de « bois » au-delà du rancho Chino, ce qui convient mieux aux sources chaudes au pied des montagnes de San Bernardino qu'à l'Agua Caliente du désert (Palm Springs). Le point de la carte est donc hypothétique.</p>
+  <p class="note">L'emplacement d'Agua Caliente reste incertain. Janssens parle de « bois » dans les montagnes au-delà du rancho Chino, ce qui convient aux sources chaudes au pied des monts San Bernardino. Le National Park Service la place plutôt à Warner Hot Springs (l'Agua Caliente du comté de San Diego), et la carte principale de l'atlas retient Palm Springs. Le point de cette carte est donc hypothétique.</p>
 
   <h3>Sources</h3>
   <ul class="biblio">
@@ -136,6 +147,68 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <li>William H. Ellison et Francis Price (dir.), <i>The Life and Adventures in California of Don Agustín Janssens, 1834-1856</i>, trad. Francis Price, San Marino, Huntington Library, 1953, ch. VI, p. 73-80 (préface, p. vii-xi, pour la vie de Janssens). <a href="https://archive.org/details/lifeandadventure012526mbp" target="_blank" rel="noopener">Exemplaire numérisé sur Internet Archive ↗</a></li>
     <li>Janet Lecompte, « Jean-Baptiste Chalifoux », dans LeRoy R. Hafen (dir.), <i>French Fur Traders and Voyageurs in the American West</i>, Lincoln, University of Nebraska Press, 1995, p. 58-75.</li>
     <li>Hubert Howe Bancroft, <i>History of California</i>, vol. III, San Francisco, 1885, p. 515-523 (le plan de San Diego et la campagne de 1837).</li>
+  </ul>
+</section>
+
+<!-- ============================ CHAGUANOSOS ============================ -->
+<section class="panneau" id="chaguanosos" role="tabpanel" hidden>
+  <h2>Les Chaguanosos</h2>
+  <p class="date">Californie et Vieille piste espagnole · 1837-1840</p>
+  <p class="chapo">Pour les Californiens des années 1830, les « Chaguanosos » sont la terreur des missions : des cavaliers venus du Nouveau-Mexique, armés de fusils et d'arcs, qui achètent des chevaux, en volent davantage et se louent aux factions de la guerre civile. Leur chef le plus connu est Jean-Baptiste Chalifoux, que les archives californiennes appellent « Monsier Shalifu » ou « Califa ».</p>
+
+  <h3>D'où vient le nom ?</h3>
+  <p>« Chaguanoso » est la forme espagnole du nom des <b>Shawnees</b> (les Chaouanons des Français). Les documents californiens écrivent aussi « Shauanoos » ou parlent simplement des « Shawnees ». Le nom vient des Autochtones de l'Est, Shawnees et Delawares, qui formaient une partie visible de la bande et dont les Californiens ont fait le nom de tout le groupe. Avec le temps, « Chaguanosos » finit par désigner tous les voleurs de chevaux venus de l'est par la Vieille piste espagnole, qu'ils soient trappeurs, Néo-Mexicains ou Autochtones.</p>
+
+  <h3>Qui étaient-ils ?</h3>
+  <div class="portrait">
+    <div class="trait"><b>Une bande mêlée</b><p>En 1837, la bande réunit des Canadiens français, des Néo-Mexicains, des Shawnees et des Delawares, soit trente à quarante hommes autour de Chalifoux. Les Canadiens y parlent français entre eux.</p><div class="src">Lecompte, 1995, p. 66 ; Janssens, 1953, p. 74</div></div>
+    <div class="trait"><b>Des trappeurs des Rocheuses</b><p>En 1840, la bande s'est grossie de trappeurs des montagnes : Levin Mitchell, Philip Thompson, Dick Owens, un certain Kelly, Belcour, Xavier Malona, Calvin Jones, Bill Williams et Pegleg Smith, entre autres.</p><div class="src">Lecompte, 1995, p. 69</div></div>
+    <div class="trait"><b>Armés comme une petite armée</b><p>Chaque homme porte un fusil, un poignard et une hachette, en plus de l'arc et des flèches. Les Californiens les jugent intrépides, et c'est pour cela que les deux camps de la guerre civile veulent les avoir avec eux.</p><div class="src">Janssens, 1953, p. 75 ; Lecompte, 1995, p. 66-67</div></div>
+    <div class="trait"><b>Un commerce devenu pillage</b><p>Depuis au moins 1833, des caravanes du Nouveau-Mexique apportent des lainages en Californie et repartent avec des chevaux et des mules, achetés, troqués ou volés. Les Chaguanosos poussent cette pratique jusqu'au raid organisé, parfois avec l'aide d'Autochtones de l'intérieur (les Tulares) incités à voler pour eux.</p><div class="src">Lecompte, 1995, p. 66 ; chronologie de l'Old Spanish Trail Association</div></div>
+  </div>
+  <p class="note">On associe souvent les Chaguanosos au chef ute Walkara, qui menait lui aussi de grandes razzias en Californie et que la tradition relie à Pegleg Smith et à Jim Beckwourth. Les sources de 1840 ne permettent pas de dire si Walkara a participé au raid de cette année-là. On sait seulement que les deux mondes se côtoyaient sur la piste et que les Utes ont fini par voler à leur tour les chevaux de la bande.</p>
+
+  <h3>Chronologie</h3>
+  <div id="carte-chag" class="carte-tab" aria-label="Carte des raids des Chaguanosos"></div>
+  <table class="chrono">
+    <tr><th>Date</th><th>Événement</th><th>Source</th></tr>
+    <tr><td>Janvier 1837</td><td>La mission San Gabriel signale trente hommes du Nouveau-Mexique conduits par « Monsier Shalifu ». San Fernando se plaint d'une bande d'Indiens et d'une soixantaine de Blancs.</td><td>Lecompte, p. 66</td></tr>
+    <tr><td>Janvier 1837</td><td>Antonio María Osio enrôle « Monsier Chalifu » et ses quarante « Shauanoos » contre Alvarado. Il leur offre la chasse au castor sans taxe et des rations, mais aucune solde. Le 21 janvier, la garnison de San Fernando se rend à Alvarado sans combattre, et la bande retourne dans les montagnes.</td><td>Lecompte, p. 66-67 ; Osio, ms.</td></tr>
+    <tr><td>Mai-juillet 1837</td><td>Bandini les rappelle contre Alvarado, par l'intermédiaire de Janssens. Ils marchent sur San Diego, mettent en fuite l'avant-garde du nord près du rancho Santa Ana et rejoignent les troupes à San Fernando le 21 juin. Le 4 juillet, Alvarado accepte la constitution mexicaine et la campagne s'arrête.</td><td>Janssens, p. 73-80 ; Lecompte, p. 67-68</td></tr>
+    <tr><td>Août 1837</td><td>Les troupes sont licenciées. Les Chaguanosos, qui ne devaient être que nourris, menacent de lancer leur propre révolution s'ils ne sont pas payés. Alvarado leur envoie de l'argent avec <b>l'ordre de quitter la Californie</b>.</td><td>Lecompte, p. 68 ; Tays, 1935</td></tr>
+    <tr><td>Oct.-nov. 1837</td><td>Ils ne partent pas : ils volent des chevaux à la mission Santa Inés et aux ranchos voisins, puis trois ou quatre cents chevaux et mules à San Luis Obispo. En tout, 1 400 à 1 500 bêtes hivernent dans la vallée des Tulares avant de partir pour le Nouveau-Mexique.</td><td>Lecompte, p. 68 ; Lawrence, 1931</td></tr>
+    <tr><td>Déc. 1837 - févr. 1838</td><td>La <i>Sandwich Islands Gazette</i> dénonce les Néo-Mexicains qui se réunissent dans les Tulares et poussent les Autochtones à voler. En février 1838, une caravane du Nouveau-Mexique est interdite de commerce au sud de San Fernando.</td><td>Old Spanish Trail Assoc., chronologie</td></tr>
+    <tr><td>Été 1838</td><td>Au rendez-vous des trappeurs de la Wind River, John Sutter cherche des hommes pour la Californie. Ceux qui se présentent veulent y aller « comme une bande de brigands » et proposent de piller les églises des missions.</td><td>Lecompte, p. 69</td></tr>
+    <tr><td>Nov. 1839 - févr. 1840</td><td>Le général Vallejo envoie des troupes dans la vallée de San Joaquin contre les voleurs de chevaux. Elles capturent quatorze voleurs, dont « le fameux chef de bandits Califa » : Chalifoux.</td><td>Lecompte, p. 69 ; Tays, 1938</td></tr>
+    <tr><td>26 avril 1840</td><td>Une circulaire de Santa Barbara signale qu'une troupe de Chaguanosos a forcé de nuit le corral de San Luis Obispo, emmené un millier de juments et presque tous les chevaux, ligoté les domestiques et annoncé d'autres méfaits.</td><td>Lecompte, p. 69 (Departmental State Papers)</td></tr>
+    <tr><td>14 mai 1840</td><td>Trois troupeaux de juments sont volés à San Gabriel. Le juge de paix de Los Angeles, Felipe Lugo, lève des hommes sous peine d'amende ; le préfet Tiburcio Tapia fait même libérer des prisonniers sur parole pour grossir la poursuite.</td><td>Lecompte, p. 70 ; Beattie, 1939</td></tr>
+    <tr><td>15-19 mai 1840</td><td>La première troupe, celle d'Ygnacio Palomares, rattrape les voleurs et tombe dans une embuscade : deux morts et presque toutes ses montures perdues.</td><td>Lecompte, p. 70 ; Beattie, 1939</td></tr>
+    <tr><td>23-25 mai 1840</td><td>José Antonio Carrillo part avec 75 hommes, 49 fusils et 225 chevaux. Il suit par le col Cajon et le désert Mojave la piste de poussière de quelque 3 000 chevaux. À Agua de Ramón, il surprend vingt-six tireurs qui s'enfuient en abandonnant leurs affaires et environ 1 500 chevaux mourant de soif. Ses propres montures épuisées, il abandonne la poursuite.</td><td>Lecompte, p. 70 ; Beattie, 1939</td></tr>
+    <tr><td>Après mai 1840</td><td>Selon Calvin Jones, lui et Bill Williams auraient volé les chevaux des poursuivants, puis les auraient rendus contre l'abandon de la poursuite, en recevant en prime la selle du commandant. D'après Kit Carson, les Indiens volent ensuite tous les chevaux de la bande, qui rentre à pied à Santa Fe.</td><td>Lecompte, p. 70-71 ; Van Tramp, 1868</td></tr>
+  </table>
+  <p class="note">On lit souvent que le raid de 1840 fut le plus grand vol de bétail de l'histoire de la Californie. Les chiffres viennent des rapports californiens et sont probablement gonflés : le commandant Carrillo avait intérêt à grossir la troupe qu'il avait laissée filer.</p>
+
+  <h3>Des bandits ? Étaient-ils recherchés ?</h3>
+  <p><b>Pour les autorités californiennes, oui, sans ambiguïté.</b> Les missions les reconnaissent et les signalent dès janvier 1837. Les archives parlent d'eux avec hostilité, et en 1840 un rapport militaire qualifie Chalifoux de « fameux chef de bandits ». On ne connaît pas d'avis de recherche nominatif au sens moderne, mais les mesures prises contre eux sont nombreuses :</p>
+  <ul>
+    <li>en août 1837, Alvarado les paie pour qu'ils <b>quittent la Californie</b>, ce qui revient à un ordre d'expulsion ;</li>
+    <li>dès 1838, les caravanes du Nouveau-Mexique voient leur commerce limité, puis, à partir des années 1840, leurs troupeaux sont inspectés à leur départ par le col Cajon ;</li>
+    <li>pendant l'hiver 1839-1840, des troupes de Vallejo partent à la chasse aux voleurs de chevaux et <b>capturent Chalifoux</b>. On ignore comment il a été libéré ou s'est évadé ;</li>
+    <li>en 1840, les autorités diffusent des circulaires d'alerte, mobilisent les habitants sous peine d'amende et lancent trois expéditions armées successives.</li>
+  </ul>
+  <p><b>Au Nouveau-Mexique, en revanche, personne ne les poursuit.</b> Les chevaux volés y trouvent acheteur, et Chalifoux y vit ouvertement : marié à Taos en 1836 avec María Anita Lucero, il s'installe ensuite à Embudo comme éleveur. En 1847, il siège même comme juré au procès des insurgés de Taos. Le chef de bandits redouté des Californiens est devenu, aux yeux d'un témoin américain, un « petit Français » paisible.</p>
+  <p>Il faut aussi nuancer l'étiquette. Les Chaguanosos ont été des <b>mercenaires recherchés</b> avant d'être des bandits poursuivis : les deux camps de la guerre civile ont fait appel à eux, et ils ont servi le gouvernement mexicain sans solde. Leurs raids s'inscrivent dans une économie plus large, où les marchands du Nouveau-Mexique, les trappeurs américains et les nations autochtones se disputaient les immenses troupeaux des missions sécularisées.</p>
+
+  <h3>Sources</h3>
+  <ul class="biblio">
+    <li>Janet Lecompte, « Jean-Baptiste Chalifoux », dans LeRoy R. Hafen (dir.), <i>French Fur Traders and Voyageurs in the American West</i>, Lincoln, University of Nebraska Press, 1995, p. 58-75. Lecompte s'appuie sur les Departmental State Papers des Archivo de California (Bancroft Library), sur Osio, Janssens et Bancroft.</li>
+    <li>William H. Ellison et Francis Price (dir.), <i>The Life and Adventures in California of Don Agustín Janssens, 1834-1856</i>, San Marino, Huntington Library, 1953, p. 73-80.</li>
+    <li>Antonio María Osio, « Historia de California », ms., Bancroft Library, p. 321-340 ; trad. R. M. Beebe et R. M. Senkewicz, <i>The History of Alta California</i>, 1996.</li>
+    <li>Eleanor Lawrence, « Mexican Trade between Santa Fe and Los Angeles, 1830-1848 », <i>California Historical Society Quarterly</i>, X, 1931 ; et « Horse Thieves on the Spanish Trail », <i>Touring Topics</i>, janvier 1931.</li>
+    <li>George Tays, « Mariano Guadalupe Vallejo and Sonoma », <i>California Historical Society Quarterly</i>, XVII, 1938, p. 149 (la capture de « Califa »).</li>
+    <li>George W. Beattie et Helen P. Beattie, <i>Heritage of the Valley: San Bernardino's First Century</i>, 1939 (la poursuite de mai 1840), extrait reproduit par <a href="https://desertgazette.com/blog/?p=3377" target="_blank" rel="noopener">Desert Gazette ↗</a>.</li>
+    <li>National Park Service, <a href="https://www.nps.gov/articles/000/jean-baptiste-chalifoux-the-old-spanish-trail.htm" target="_blank" rel="noopener">« Jean Baptiste Chalifoux: The Old Spanish Trail » ↗</a>.</li>
+    <li>Old Spanish Trail Association, <a href="https://oldspanishtrail.org/chronology/" target="_blank" rel="noopener">chronologie des expéditions entre le Nouveau-Mexique et la Californie ↗</a> (d'après l'étude de faisabilité du NPS, 2001).</li>
   </ul>
 </section>
 </main>
@@ -153,6 +226,7 @@ function ouvrir(id) {
   document.querySelectorAll('.panneau').forEach(p => p.hidden = p.id !== id);
   history.replaceState(null, '', id === 'accueil' ? location.pathname : '#' + id);
   if (id === 'janssens') initCarte();
+  if (id === 'chaguanosos') initCarteChag();
   window.scrollTo({ top: 0 });
 }
 boutons.forEach(b => b.addEventListener('click', () => ouvrir(b.dataset.onglet)));
@@ -191,6 +265,37 @@ function initCarte() {
       el.style.cssText = `width:${e.cle ? 18 : 12}px;height:${e.cle ? 18 : 12}px;border-radius:50%;border:2px solid #9a3322;background:${plein ? '#9a3322' : '#f4efe6'};box-shadow:0 0 0 2px #fffdf8;cursor:pointer`;
       new maplibregl.Marker({ element: el }).setLngLat(e.c)
         .setPopup(new maplibregl.Popup({ offset: 10 }).setHTML(`<b>${e.nom}</b><br>${e.txt}`)).addTo(carte);
+    });
+  });
+}
+
+// Raids et poursuites des Chaguanosos (Lecompte, 1995 ; Beattie, 1939).
+const RAIDS = [
+  { nom: 'Mission San Gabriel', c: [-118.107, 34.097], txt: "Janv. 1837 : arrivée de « Monsier Shalifu ». 14 mai 1840 : vol de trois troupeaux de juments." },
+  { nom: 'Mission San Fernando', c: [-118.461, 34.273], txt: "Janv. 1837 : la garnison se rend à Alvarado ; la bande d'Osio se disperse. Juin 1837 : la bande y rejoint les troupes du sud." },
+  { nom: 'Mission Santa Inés', c: [-120.137, 34.594], txt: "Oct. 1837 : vols de chevaux à la mission et aux ranchos voisins." },
+  { nom: 'Mission San Luis Obispo', c: [-120.664, 35.28], txt: "Nov. 1837 : 300 à 400 chevaux et mules. 26 avril 1840 : corral forcé, un millier de juments emmenées." },
+  { nom: 'Vallée des Tulares', c: [-119.6, 36.1], txt: "Hiver 1837-1838 : 1 400 à 1 500 bêtes y hivernent. Hiver 1839-1840 : les troupes de Vallejo capturent « Califa ». Position approximative.", approx: true },
+  { nom: 'San Bernardino', c: [-117.29, 34.11], txt: "Mai 1840 : Palomares, battu, s'y replie ; Leandry l'y rejoint." },
+  { nom: 'Col Cajon', c: [-117.44, 34.32], txt: "Mai 1840 : la bande passe le col avec quelque 3 000 chevaux." },
+  { nom: 'Agua de Tomasa (Salt Spring)', c: [-116.32, 35.63], txt: "Mai 1840 : Carrillo y laisse ses bagages et ses chevaux de réserve." },
+  { nom: 'Agua de Ramón', c: [-116.0, 35.85], txt: "25 mai 1840 : vingt-six tireurs s'enfuient en abandonnant environ 1 500 chevaux. Fin de la poursuite. Position hypothétique.", approx: true }
+];
+let carteChag = null;
+function initCarteChag() {
+  if (carteChag || typeof maplibregl === 'undefined') return;
+  carteChag = new maplibregl.Map({ container: 'carte-chag', style: 'https://tiles.openfreemap.org/styles/positron',
+    bounds: [[-121.2, 33.7], [-115.4, 36.6]], fitBoundsOptions: { padding: 30 }, attributionControl: { compact: true } });
+  carteChag.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  carteChag.on('load', () => {
+    carteChag.resize(); carteChag.fitBounds([[-121.2, 33.7], [-115.4, 36.6]], { padding: 30, duration: 0 });
+    const fuite = [RAIDS[0].c, RAIDS[5].c, RAIDS[6].c, [-117.03, 34.85], [-116.6, 35.0], RAIDS[7].c, RAIDS[8].c];
+    carteChag.addSource('fuite', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: fuite } } });
+    carteChag.addLayer({ id: 'fuite', type: 'line', source: 'fuite', paint: { 'line-color': '#9a3322', 'line-width': 2.5, 'line-dasharray': [2, 1.5] } });
+    RAIDS.forEach(e => {
+      const el = document.createElement('div');
+      el.style.cssText = `width:13px;height:13px;border-radius:50%;border:2px solid #9a3322;background:${e.approx ? '#f4efe6' : '#9a3322'};box-shadow:0 0 0 2px #fffdf8;cursor:pointer`;
+      new maplibregl.Marker({ element: el }).setLngLat(e.c).setPopup(new maplibregl.Popup({ offset: 10 }).setHTML(`<b>${e.nom}</b><br>${e.txt}`)).addTo(carteChag);
     });
   });
 }
