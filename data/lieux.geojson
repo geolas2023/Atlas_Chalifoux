@@ -1336,6 +1336,32 @@
     "images": [],
     "reseau": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.4,
+     48.1
+    ]
+   },
+   "properties": {
+    "id": "L53",
+    "nom": "Lac Pend Oreille (Idaho) : Chalifoux (« Chilifaux »)",
+    "debut": 1826.56,
+    "fin": 1826.56,
+    "date_edtf": "1826-07-24",
+    "precision": "jour",
+    "certitude": "approximative",
+    "categorie": "homonymes",
+    "description": "Lac Pend Oreille (Idaho), 24 juillet 1826. Un Chalifoux (« Chilifaux »), employé de la Compagnie de la Baie d'Hudson, y est signalé avec Dechamp dans un journal de traite publié par le Washington Historical Quarterly. C'est sans doute le même homme qu'à Spokane House, au fort Colvile et au fort Okanogan (voir ces fiches).",
+    "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928 : V, p. 277, 281 ; VI, p. 42-43 (journals.lib.washington.edu/index.php/WHQ).",
+    "note": "Homonyme : rien ne permet de l'identifier à Jean-Baptiste Chalifoux de Taos, établi au Nouveau-Mexique à la même date. Repérage dans la transcription en ligne, à vérifier dans l'original ; position au centre du lac.",
+    "type": "lieu",
+    "images": [],
+    "reseau": "CA-chalifoux-chilifaux-lac-pend-o"
+   }
   }
  ]
 }

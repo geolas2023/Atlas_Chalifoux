@@ -1336,6 +1336,32 @@
     "images": [],
     "reseau": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.4,
+     48.1
+    ]
+   },
+   "properties": {
+    "id": "L53",
+    "nom": "Lake Pend Oreille (Idaho): Chalifoux (“Chilifaux”)",
+    "debut": 1826.56,
+    "fin": 1826.56,
+    "date_edtf": "1826-07-24",
+    "precision": "jour",
+    "certitude": "approximative",
+    "categorie": "homonymes",
+    "description": "Lake Pend Oreille (Idaho), July 24, 1826. A Chalifoux (“Chilifaux”), a Hudson's Bay Company employee, is recorded there with Dechamp in a trading journal published by the Washington Historical Quarterly. He is probably the same man as at Spokane House, Fort Colvile and Fort Okanogan (see those entries).",
+    "sources": "The Washington Historical Quarterly, vol. I-XIX, Seattle, 1906-1928: V, p. 277, 281; VI, p. 42-43 (journals.lib.washington.edu/index.php/WHQ).",
+    "note": "Namesake: nothing allows him to be identified with Jean-Baptiste Chalifoux of Taos, settled in New Mexico at the same date. Located through the online transcription, to be checked in the original; point placed in the middle of the lake.",
+    "type": "lieu",
+    "images": [],
+    "reseau": "CA-chalifoux-chilifaux-lac-pend-o"
+   }
   }
  ]
 }
