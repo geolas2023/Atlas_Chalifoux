@@ -68,14 +68,16 @@ const ENCRE_MER = '#9a3322', ENCRE_TERRE = '#1f2f3a';
 const estMer = ['in', ['get', 'mode'], ['literal', ['mer', 'cote']]];
 
 carte.on('load', async () => {
-  const [lieux, trajets] = await Promise.all([
+  const [lieux, trajets, parcours] = await Promise.all([
     fetch(`data/lieux${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json()),
-    fetch(`data/trajets${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json())
+    fetch(`data/trajets${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json()),
+    fetch(`data/parcours.geojson?v=${VERSION}`).then(r => r.json())
   ]);
   window.DONNEES = { lieux, trajets }; // utilisé par la visite animée (visite.js)
   const couchesDeBase = carte.getStyle().layers.map(l => l.id);
   carte.addSource('lieux', { type: 'geojson', data: lieux });
   carte.addSource('trajets', { type: 'geojson', data: trajets });
+  carte.addSource('parcours', { type: 'geojson', data: parcours });
 
   // Fond satellite (Esri World Imagery), masqué par défaut
   carte.addSource('satellite', {
@@ -135,6 +137,26 @@ carte.on('load', async () => {
     paint: { 'text-color': '#1f2f3a', 'text-halo-color': '#eff0e4', 'text-halo-width': 1.6 }
   });
 
+  // Parcours de Jean-Baptiste : les 23 étapes de la notice de Lecompte, reliées et numérotées dans l'ordre du récit
+  carte.addLayer({
+    id: 'parcours-ligne', type: 'line', source: 'parcours', filter: ['==', ['geometry-type'], 'LineString'],
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: { 'line-color': COULEURS.baptiste, 'line-width': 1.6, 'line-opacity': 0.55 }
+  }, 'lieux');
+  carte.addLayer({
+    id: 'parcours-num', type: 'symbol', source: 'parcours', filter: ['==', ['geometry-type'], 'Point'],
+    layout: { 'text-field': ['to-string', ['get', 'ordre']], 'text-size': 11, 'text-font': ['Noto Sans Italic'],
+              'text-offset': [-0.95, -0.95], 'text-allow-overlap': true, 'text-ignore-placement': true },
+    paint: { 'text-color': '#fff', 'text-halo-color': COULEURS.baptiste, 'text-halo-width': 2.2 }
+  });
+  carte.on('click', 'parcours-num', e => {
+    const id = e.features[0].properties.lieu;
+    const f = lieux.features.find(x => x.properties.id === id);
+    if (f) { afficherFiche(f.properties, f.geometry.type); zoomerSur(f); }
+  });
+  carte.on('mouseenter', 'parcours-num', () => { carte.getCanvas().style.cursor = 'pointer'; });
+  carte.on('mouseleave', 'parcours-num', () => { carte.getCanvas().style.cursor = ''; });
+
   ['lieux', 'trajets-mer', 'trajets-terre'].forEach(id => {
     carte.on('click', id, e => {
       const f = e.features[0];
@@ -147,7 +169,7 @@ carte.on('load', async () => {
 
   // clic ailleurs que sur un lieu ou une route : le journal se referme
   carte.on('click', e => {
-    if (!carte.queryRenderedFeatures(e.point, { layers: ['lieux', 'trajets-mer', 'trajets-terre'] }).length) fermerFiche();
+    if (!carte.queryRenderedFeatures(e.point, { layers: ['lieux', 'trajets-mer', 'trajets-terre', 'parcours-num'] }).length) fermerFiche();
   });
 
   appliquerFond = installerFonds(carte, couchesDeBase, 'satellite');
@@ -238,6 +260,9 @@ let appliquerFond = null;
 document.querySelectorAll('input[name=fond]').forEach(r => r.addEventListener('change', e => { if (appliquerFond) appliquerFond(e.target.value); }));
 document.getElementById('c-lieux').addEventListener('change', e => {
   ['lieux', 'lieux-anneau', 'lieux-noms'].forEach(id => carte.setLayoutProperty(id, 'visibility', e.target.checked ? 'visible' : 'none'));
+});
+document.getElementById('c-parcours').addEventListener('change', e => {
+  ['parcours-ligne', 'parcours-num'].forEach(id => carte.setLayoutProperty(id, 'visibility', e.target.checked ? 'visible' : 'none'));
 });
 document.getElementById('c-trajets').addEventListener('change', e => {
   ['trajets-halo', 'trajets-mer', 'trajets-terre', 'trajet-actif'].forEach(id => carte.setLayoutProperty(id, 'visibility', e.target.checked ? 'visible' : 'none'));

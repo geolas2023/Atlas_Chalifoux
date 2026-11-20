@@ -1,0 +1,433 @@
+{
+ "type": "FeatureCollection",
+ "name": "parcours",
+ "description": "Parcours de Jean-Baptiste Chalifoux : les 23 étapes de la notice de Janet Lecompte (Hafen, French Fur Traders and Voyageurs in the American West, 1995, p. 58-75), dans l'ordre du récit ; chaque étape renvoie à la fiche de l'atlas (propriété lieu).",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.27,
+      46.86
+     ],
+     [
+      -90.199,
+      38.627
+     ],
+     [
+      -108.21,
+      43.65
+     ],
+     [
+      -106.48,
+      31.74
+     ],
+     [
+      -110.97,
+      32.22
+     ],
+     [
+      -108.19,
+      30.89
+     ],
+     [
+      -108.85,
+      40.85
+     ],
+     [
+      -105.573,
+      36.407
+     ],
+     [
+      -109.44,
+      39.56
+     ],
+     [
+      -118.107,
+      34.097
+     ],
+     [
+      -118.461,
+      34.273
+     ],
+     [
+      -116.55,
+      33.82
+     ],
+     [
+      -117.87,
+      33.77
+     ],
+     [
+      -120.664,
+      35.28
+     ],
+     [
+      -120.5,
+      37.3
+     ],
+     [
+      -116.32,
+      35.63
+     ],
+     [
+      -105.96,
+      36.21
+     ],
+     [
+      -105.569,
+      36.407
+     ],
+     [
+      -104.27,
+      38.2
+     ],
+     [
+      -104.45,
+      37.2
+     ],
+     [
+      -105.43,
+      37.08
+     ],
+     [
+      -105.42,
+      37.2
+     ],
+     [
+      -104.3,
+      38.18
+     ]
+    ]
+   },
+   "properties": {
+    "ordre": 0,
+    "lieu": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -71.27,
+     46.86
+    ]
+   },
+   "properties": {
+    "ordre": 1,
+    "lieu": "L01"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.199,
+     38.627
+    ]
+   },
+   "properties": {
+    "ordre": 2,
+    "lieu": "L02"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.21,
+     43.65
+    ]
+   },
+   "properties": {
+    "ordre": 3,
+    "lieu": "L03"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.48,
+     31.74
+    ]
+   },
+   "properties": {
+    "ordre": 4,
+    "lieu": "L04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.97,
+     32.22
+    ]
+   },
+   "properties": {
+    "ordre": 5,
+    "lieu": "L05"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.19,
+     30.89
+    ]
+   },
+   "properties": {
+    "ordre": 6,
+    "lieu": "L06"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.85,
+     40.85
+    ]
+   },
+   "properties": {
+    "ordre": 7,
+    "lieu": "L07"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.573,
+     36.407
+    ]
+   },
+   "properties": {
+    "ordre": 8,
+    "lieu": "L08"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.44,
+     39.56
+    ]
+   },
+   "properties": {
+    "ordre": 9,
+    "lieu": "L09"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.107,
+     34.097
+    ]
+   },
+   "properties": {
+    "ordre": 10,
+    "lieu": "L10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.461,
+     34.273
+    ]
+   },
+   "properties": {
+    "ordre": 11,
+    "lieu": "L11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.55,
+     33.82
+    ]
+   },
+   "properties": {
+    "ordre": 12,
+    "lieu": "L12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.87,
+     33.77
+    ]
+   },
+   "properties": {
+    "ordre": 13,
+    "lieu": "L13"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -120.664,
+     35.28
+    ]
+   },
+   "properties": {
+    "ordre": 14,
+    "lieu": "L14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -120.5,
+     37.3
+    ]
+   },
+   "properties": {
+    "ordre": 15,
+    "lieu": "L15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.32,
+     35.63
+    ]
+   },
+   "properties": {
+    "ordre": 16,
+    "lieu": "L16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.96,
+     36.21
+    ]
+   },
+   "properties": {
+    "ordre": 17,
+    "lieu": "L17"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.569,
+     36.407
+    ]
+   },
+   "properties": {
+    "ordre": 18,
+    "lieu": "L18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.27,
+     38.2
+    ]
+   },
+   "properties": {
+    "ordre": 19,
+    "lieu": "L19"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.45,
+     37.2
+    ]
+   },
+   "properties": {
+    "ordre": 20,
+    "lieu": "L20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.43,
+     37.08
+    ]
+   },
+   "properties": {
+    "ordre": 21,
+    "lieu": "L21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.42,
+     37.2
+    ]
+   },
+   "properties": {
+    "ordre": 22,
+    "lieu": "L22"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.3,
+     38.18
+    ]
+   },
+   "properties": {
+    "ordre": 23,
+    "lieu": "L23"
+   }
+  }
+ ]
+}
