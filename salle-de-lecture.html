@@ -36,6 +36,22 @@ p, li { line-height: 1.65; font-size: 1.03rem; }
 .carte-salle:hover { background: #f7efe0; }
 .carte-salle b { font-family: "IM Fell English", Georgia, serif; font-weight: normal; font-size: 1.2rem; display: block; }
 .carte-salle span { font-size: .88rem; color: #6b604f; }
+.arbre { background: #fffdf8; border: 1px solid #e0d5c2; padding: 1rem; margin: 1rem 0; overflow-x: auto; }
+.arbre .gen { display: flex; gap: .6rem; align-items: stretch; justify-content: center; flex-wrap: wrap; }
+.arbre .pers { background: #f7f1e5; border: 1px solid #c9bba3; border-top: 4px solid #8a7a60; padding: .5rem .65rem; width: 13.5rem; font-size: .82rem; line-height: 1.35; display: flex; flex-direction: column; gap: .2rem; }
+.arbre .pers b { font-family: "IM Fell English", Georgia, serif; font-weight: normal; font-size: 1.02rem; color: #2b2620; }
+.arbre .pers span { color: #4d4436; }
+.arbre .p-ego { border-top-color: #9a3322; background: #f6e6d8; width: 16rem; }
+.arbre .p-doc { border-top-color: #4f7a4a; } .arbre .p-lit { border-top-color: #c8903e; } .arbre .p-arbre { border-top-color: #9a8f7c; }
+.arbre .et { align-self: center; font-size: 1.3rem; color: #9a3322; }
+.arbre .couple { display: flex; gap: .4rem; align-items: stretch; padding: .4rem; border: 1px dashed #d6cbb8; }
+.arbre .couple .pers { width: 10.5rem; }
+.arbre .gen + .gen { margin-top: 0; }
+.arbre .gen:first-child { gap: 1.5rem; }
+.arbre .trait-v { width: 2px; height: 1.2rem; background: #8a7a60; margin: .3rem auto; }
+.arbre .enfants .pers { width: 11.5rem; }
+.fiab { font-style: normal; font-size: .68rem; padding: .05rem .4rem; border-radius: 3px; align-self: flex-start; }
+.f-doc { background: #d6e8d0; } .f-lit { background: #f3e3c3; } .f-arbre { background: #e6e0d5; }
 blockquote { margin: .8rem 0; padding: .5rem .9rem; background: #fffdf8; border-left: 3px solid #9a3322; font-style: italic; }
 blockquote cite { display: block; font-style: normal; font-size: .82rem; color: #6b604f; margin-top: .3rem; }
 .portrait { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8rem; }
@@ -75,6 +91,7 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
   <button type="button" role="tab" data-onglet="janssens">La rencontre avec Janssens<small>Californie, mai-juin 1837</small></button>
   <button type="button" role="tab" data-onglet="chaguanosos">Les Chaguanosos<small>La bande, 1837-1840</small></button>
   <button type="button" role="tab" data-onglet="califa">La capture de « Califa »<small>Hiver 1839-1840</small></button>
+  <button type="button" role="tab" data-onglet="genealogie">L'arbre de la famille<small>Généalogie</small></button>
 </nav>
 
 <main>
@@ -94,6 +111,10 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <div class="carte-salle" data-ouvrir="califa">
       <b>La capture de « Califa »</b>
       <span>Hiver 1839-1840 : les troupes de Vallejo prennent un « fameux chef de bandits ». Était-ce Chalifoux, et comment s'en est-il sorti ?</span>
+    </div>
+    <div class="carte-salle" data-ouvrir="genealogie">
+      <b>L'arbre de la famille</b>
+      <span>Parents, femme et enfants de Jean-Baptiste Chalifoux, du Québec au Colorado, avec la fiabilité de chaque donnée.</span>
     </div>
   </div>
 </section>
@@ -275,6 +296,68 @@ footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; bo
     <li>George Tays, « Mariano Guadalupe Vallejo and Sonoma: A Biography and a History », <i>California Historical Society Quarterly</i>, XVII, 1938, p. 149 (<a href="https://online.ucpress.edu/ch/article-abstract/17/1/50/26641/Mariano-Guadalupe-Vallejo-and-Sonoma-A-Biography" target="_blank" rel="noopener">notice ↗</a>).</li>
     <li>Hubert Howe Bancroft, <i>History of California</i>, vol. IV (1840-1845), San Francisco, 1886, ch. I (l'affaire Graham) et ch. II, p. 74-77 (« Horse-thieves of the interior », « The Chaguanosos ») (<a href="https://archive.org/details/worksofhuberthow21bancrich" target="_blank" rel="noopener">Internet Archive ↗</a>).</li>
     <li>National Park Service, <a href="https://www.nps.gov/articles/000/jean-baptiste-chalifoux-the-old-spanish-trail.htm" target="_blank" rel="noopener">« Jean Baptiste Chalifoux: The Old Spanish Trail » ↗</a>.</li>
+  </ul>
+</section>
+
+<!-- ============================ GÉNÉALOGIE ============================ -->
+<section class="panneau" id="genealogie" role="tabpanel" hidden>
+  <h2>L'arbre de la famille Chalifoux</h2>
+  <p class="date">Québec · Nouveau-Mexique · Colorado · v. 1767-1917</p>
+  <p class="chapo">Arbre reconstitué à partir du recensement fédéral de 1860, du chapitre de Janet Lecompte et des arbres en ligne d'Ancestry. Chaque personne porte une pastille de fiabilité : <span class="fiab f-doc">document</span> quand un document d'époque la confirme, <span class="fiab f-lit">historien</span> quand elle vient d'un travail publié, <span class="fiab f-arbre">arbre en ligne</span> quand elle ne repose que sur un arbre généalogique sans source primaire visible.</p>
+
+  <div class="arbre">
+    <div class="gen">
+      <div class="couple"><div class="pers p-arbre"><b>Jean-Baptiste Chalifoux</b><span>n. v. 1767, Québec</span><i class="fiab f-arbre">arbre</i></div>
+      <span class="et">∞</span>
+      <div class="pers p-arbre"><b>Marie-Rose « Dieplesa »</b><span>(Duplessis ?)</span><i class="fiab f-arbre">arbre</i></div></div>
+      <div class="couple"><div class="pers p-arbre"><b>José Francisco Vigil Lucero de Godoy</b><span>1790-1870</span><i class="fiab f-arbre">arbre</i></div>
+      <span class="et">∞</span>
+      <div class="pers p-arbre"><b>María Josefa Martín</b><span>n. 1802</span><i class="fiab f-arbre">arbre</i></div></div>
+    </div>
+    <div class="trait-v"></div>
+    <div class="gen">
+      <div class="pers p-lit"><b>Pierre (Pedro) Chalifu</b><span>frère ; ∞ 1) Victoria Curset ; ∞ 2) María Dolores Apodaca, Taos, 29 déc. 1829 ; † av. août 1833</span><i class="fiab f-doc">document</i></div>
+      <div class="pers p-ego"><b>Jean-Baptiste Chalifoux</b><span>n. v. 1791-1815, Canada · † 12 déc. 1860, rivière Huerfano (Colorado)</span><i class="fiab f-doc">recensement 1860</i></div>
+      <span class="et">∞</span>
+      <div class="pers p-arbre"><b>María Anita (Mariana de Jesús) Lucero</b><span>n. 14 août 1819, Embudo · ∞ 1836 (Taos, selon Lecompte) ou sept. 1838 (San Juan, selon un arbre)</span><i class="fiab f-lit">historien + arbre</i></div>
+    </div>
+    <div class="trait-v"></div>
+    <div class="gen enfants">
+      <div class="pers p-doc"><b>Ursula</b><span>n. 1840 (Lecompte), 21 janv. 1841 ou v. 1843 (arbres) · ∞ José Evaristo Gonzales, Costilla, 4 févr. 1859 · † 1887 ou 1888, Walsenburg</span><i class="fiab f-doc">recensement 1860</i></div>
+      <div class="pers p-doc"><b>José León</b><span>n. 11 oct. 1846, Embudo · ∞ Rita Romero (1863-1941) · au moins neuf enfants · † 12 déc. 1917, La Veta (Colorado)</span><i class="fiab f-doc">recensements 1860, 1900, 1910</i></div>
+      <div class="pers p-arbre"><b>María Margarita</b><span>n. 7 oct. 1850, Embudo · † 1888 ?</span><i class="fiab f-arbre">arbre</i></div>
+      <div class="pers p-doc"><b>Juan Bautista (fils)</b><span>n. 2 déc. 1853 ou 1854, Rio Arriba</span><i class="fiab f-doc">recensement 1860</i></div>
+      <div class="pers p-arbre"><b>María Emilia</b><span>n. 6 nov. 1856, Arroyo Hondo</span><i class="fiab f-arbre">arbre</i></div>
+      <div class="pers p-arbre"><b>María Petra</b><span>n. mai 1858, Arroyo Hondo</span><i class="fiab f-arbre">arbre</i></div>
+      <div class="pers p-arbre"><b>María Pascuala</b><span>n. 9 oct. 1860, Arroyo Hondo</span><i class="fiab f-arbre">arbre</i></div>
+    </div>
+  </div>
+
+  <h3>Ce que disent les documents</h3>
+  <table class="chrono">
+    <tr><th>Document</th><th>Ce qu'il apporte</th><th>Fiabilité</th></tr>
+    <tr><td>Mariage de Pierre Chalifu, Taos, 29 déc. 1829</td><td>Pierre Chalifu, veuf de Victoria Curset, du barrio de San Francisco del Rancho, épouse María Dolores Apodaca. D'après Lecompte, les actes de Pierre le disent fils de Pedro Chalifu et de Marie Veltran : c'est la seule indication publiée sur les parents de la fratrie. La veuve se remarie le 12 août 1833, ce qui situe la mort de Pierre avant cette date. Son fils José Pablo se marie en 1854 à Taos.</td><td>Transcription des registres de Taos (kmitch.com) ; Lecompte, p. 65</td></tr>
+    <tr><td>Recensement fédéral de 1860, Costilla (comté de Taos), logement 1440</td><td>« Batis Chalifoux », 60 ans, né au Canada, fermier, illettré, 500 $ de biens immobiliers et 500 $ de biens mobiliers, bureau de poste Fernando de Taos. Au même lieu : Ursula (v. 1843), Leon (v. 1847) et John B. (v. 1854). Lecompte y signale aussi sa femme, Mariana Lucero, 41 ans.</td><td>Document d'époque (NARA M653, rouleau 715, p. 127)</td></tr>
+    <tr><td>Recensements de 1900 et 1910 (Huerfano, Colorado)</td><td>José León Chalifoux, sa femme Rita Romero et leurs enfants. Les enfants portent des graphies très variées : Charlifu, Chalifu, Chalipia.</td><td>Documents d'époque, cités par l'arbre « Perea Family of New Mexico »</td></tr>
+    <tr><td>Arbre « Perea Family of New Mexico » (Ancestry)</td><td>Dates précises de naissance des enfants, entre 1846 et 1860, qui proviennent sans doute de relevés de baptêmes. Mariage en septembre 1838 à San Juan de los Caballeros. Parents de Mariana : José Francisco Vigil Lucero de Godoy et María Josefa Martín. Parents de Jean-Baptiste : Jean-Baptiste Chalifoux (n. v. 1767) et Marie-Rose « Dieplesa ».</td><td>Arbre en ligne ; les baptêmes cités ne sont pas joints</td></tr>
+  </table>
+
+  <h3>Les contradictions à résoudre</h3>
+  <ul>
+    <li><b>Son âge.</b> L'atlas retient une naissance vers 1791. Le recensement de 1860 lui donne 60 ans (né vers 1800), et l'arbre Perea le fait naître en 1815. Une naissance en 1815 cadre mal avec un trappeur actif à Taos dès 1827.</li>
+    <li><b>Son mariage.</b> Lecompte, d'après une lettre de sa descendante Genoveva Naranjo (1934), le marie à Taos en 1836. L'arbre Perea donne San Juan de los Caballeros en septembre 1838. Mariana aurait eu 17 ou 19 ans. Seul l'acte de mariage peut trancher.</li>
+    <li><b>Ses parents.</b> Lecompte donne Pedro Chalifu et Marie Veltran (d'après les actes de son frère Pierre) ; l'arbre Perea donne Jean-Baptiste Chalifoux et Marie-Rose « Dieplesa ». Les deux versions ne s'accordent pas. Les registres du Québec (collection Drouin) devraient permettre de retrouver le baptême.</li>
+    <li><b>Sa mort.</b> Lecompte donne le 12 décembre 1860, au ranch de Charles Autobees sur la Huerfano. L'arbre Perea donne le 12 décembre 1861 et une autre localité. Un autre arbre le fait même mourir en 1876.</li>
+    <li><b>Ursula.</b> Elle naît en 1840 selon Lecompte, le 21 janvier 1841 ou vers 1843 selon les arbres. Sa date de mort se confond avec celle de sa sœur Margarita (23 avril 1887 ou 1888, Walsenburg). Les deux sœurs ont sans doute été mélangées dans les arbres.</li>
+  </ul>
+  <p class="note">Les dates précises des enfants nés entre 1846 et 1860 ont tout l'air de venir des registres de baptêmes de Santa Cruz de la Cañada (pour Embudo) et de Taos (pour Arroyo Hondo). Ces registres sont numérisés sur FamilySearch, mais je n'ai pas pu les consulter sans compte connecté.</p>
+
+  <h3>Sources</h3>
+  <ul class="biblio">
+    <li>1860 United States Federal Census, Costilla, Taos County, New Mexico Territory, roll M653_715, p. 127, dwelling 1440 (Ancestry, collection 7667).</li>
+    <li>Janet Lecompte, « Jean-Baptiste Chalifoux », dans LeRoy R. Hafen (dir.), <i>French Fur Traders and Voyageurs in the American West</i>, 1995, p. 65, 72-75.</li>
+    <li>Taos County Marriages, transcriptions de Pat, Angela et Karen Mitchell, <a href="https://www.kmitch.com/Taos/marrc.html" target="_blank" rel="noopener">kmitch.com ↗</a>.</li>
+    <li>Arbre « Perea Family of New Mexico » (Ancestry, arbre 904590) et arbre 18047447, consultés le 19 novembre 2026. Ce sont des sources secondaires à vérifier.</li>
   </ul>
 </section>
 </main>
