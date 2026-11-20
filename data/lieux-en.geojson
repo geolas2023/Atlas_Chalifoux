@@ -678,8 +678,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -104.3,
-     38.18
+     -104.28717,
+     38.20992
     ]
    },
    "properties": {
@@ -691,9 +691,9 @@
     "precision": "jour",
     "certitude": "certaine",
     "categorie": "baptiste",
-    "description": "He dies during a last visit to Autobees's ranch, in the second settlement founded two miles upstream on the Huerfano, and lies in the small cemetery without a headstone; his descendants know which grave is his.",
-    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur: Luz Gonzales à Sterling Cawlfield, 27 April 1937; J. Lecompte, “Charles Autobees”, The Colorado Magazine, vol. XXXIV, no. 3 (July 1957), p. 167-168, n. 28-29 (folder de l'auteur) ; press: Newspapers.com (author's subscription), accessed November 20, 2026",
-    "note": "In 1957, Lecompte still had him dying at Autobees's ranch “in the late 1860s” and credited him with “probably the first house” in Trinidad (1860); her later sketch in The Mountain Men (vol. 7) sets the death on December 12, 1860. The Pueblo Chieftain of March 10, 1963 lists him among the friends of Charles Autobees, with Carson, Bridger, Beaubien and Beckwourth.",
+    "description": "He dies during a last visit to Autobees's ranch, in the second settlement founded two miles upstream on the Huerfano, and lies in the small cemetery without a headstone; his descendants know which grave is his. This cemetery is very probably today's St. Vrain Cemetery (\"Autobees' cemetery\") near Avondale, where the 2007 listing records him as \"reportedly buried here\".",
+    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur: Luz Gonzales à Sterling Cawlfield, 27 April 1937; J. Lecompte, “Charles Autobees”, The Colorado Magazine, vol. XXXIV, no. 3 (July 1957), p. 167-168, n. 28-29 (folder de l'auteur) ; press: Newspapers.com (author's subscription), accessed November 20, 2026; K. Mitchell, \"St. Vrain Cemetery\", kmitch.com (2007 listing, Pueblo Chieftain, Aug. 10, 2010); Columbine Genealogy, Pueblo County Cemeteries",
+    "note": "In 1957, Lecompte still had him dying at Autobees's ranch “in the late 1860s” and credited him with “probably the first house” in Trinidad (1860); her later sketch in The Mountain Men (vol. 7) sets the death on December 12, 1860. The Pueblo Chieftain of March 10, 1963 lists him among the friends of Charles Autobees, with Carson, Bridger, Beaubien and Beckwourth. The only source cited for the burial is a letter from his granddaughter Luz Gonzales (1937). Point placed on St. Vrain Cemetery (38° 12.595′ N, 104° 17.230′ W, Columbine Genealogy); identification probable, not proven. Details in the reading room, tab \"The granddaughters and the grave\".",
     "type": "lieu",
     "images": [
      {
@@ -1534,6 +1534,32 @@
      }
     ],
     "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.78,
+     37.624
+    ]
+   },
+   "properties": {
+    "id": "L58",
+    "nom": "Walsenburg: the granddaughters tell of their grandfather (1934-1941)",
+    "debut": 1934.2,
+    "fin": 1941.19,
+    "date_edtf": "1934-03/1941-03-10",
+    "precision": "mois",
+    "certitude": "certaine",
+    "categorie": "famille",
+    "description": "Luz Gonzales and Genovera C. Naranjo, granddaughters of Jean-Baptiste, live in Walsenburg. Between 1934 and 1941 they write to Carolyn Sporleder (1934), Sterling Cawlfield (1937) and the historian LeRoy Hafen (1941); Luz is also interviewed by L. Sporleder for the CWA pioneer interviews (1933-1934). They are the source for his birth in Quebec, the legend of the two hundred Frenchmen, Ursula's rescue by Padre Martínez and the location of the grave.",
+    "sources": "Janet Lecompte, in Hafen, LeRoy R. (ed.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995, p. 62-64, 72-75, n. 12, 18, 19, 46, 47, 52, 60 (letters lent by LeRoy Hafen; CWA interviews 363/10, 363/13 and 363/19, History Colorado)",
+    "note": "Bouchard and Lévesque (2014) speak of interviews from the 1950s; the documents cited by Lecompte date from 1933 to 1941. See the reading room, tab \"The granddaughters and the grave\".",
+    "type": "lieu",
+    "images": [],
+    "reseau": ""
    }
   }
  ]

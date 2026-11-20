@@ -678,8 +678,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -104.3,
-     38.18
+     -104.28717,
+     38.20992
     ]
    },
    "properties": {
@@ -691,9 +691,9 @@
     "precision": "jour",
     "certitude": "certaine",
     "categorie": "baptiste",
-    "description": "Il meurt lors d'une dernière visite au ranch d'Autobees, dans le second établissement fondé deux milles en amont sur la Huerfano, et repose au petit cimetière sans stèle ; ses descendants savent quelle tombe est la sienne.",
-    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur : Luz Gonzales à Sterling Cawlfield, 27 avril 1937 ; J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur) ; presse : Newspapers.com (abonnement de l'auteur), consulté le 20 novembre 2026",
-    "note": "En 1957, Lecompte le faisait encore mourir au ranch d'Autobees « à la fin des années 1860 » et lui attribuait « probablement la première maison » de Trinidad (1860) ; sa notice ultérieure des Mountain Men (vol. 7) fixe la mort au 12 décembre 1860. Le Pueblo Chieftain du 10 mars 1963 le range parmi les amis de Charles Autobees, avec Carson, Bridger, Beaubien et Beckwourth.",
+    "description": "Il meurt lors d'une dernière visite au ranch d'Autobees, dans le second établissement fondé deux milles en amont sur la Huerfano, et repose au petit cimetière sans stèle ; ses descendants savent quelle tombe est la sienne. Ce cimetière est très probablement l'actuel cimetière St. Vrain (« cimetière d'Autobees »), près d'Avondale, où le relevé de 2007 l'inscrit comme « reportedly buried here ».",
+    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 75 — note de l'auteur : Luz Gonzales à Sterling Cawlfield, 27 avril 1937 ; J. Lecompte, « Charles Autobees », The Colorado Magazine, vol. XXXIV, n° 3 (juillet 1957), p. 167-168, n. 28-29 (dossier de l'auteur) ; presse : Newspapers.com (abonnement de l'auteur), consulté le 20 novembre 2026 ; K. Mitchell, « St. Vrain Cemetery », kmitch.com (relevé 2007, Pueblo Chieftain, 10 août 2010) ; Columbine Genealogy, Pueblo County Cemeteries",
+    "note": "En 1957, Lecompte le faisait encore mourir au ranch d'Autobees « à la fin des années 1860 » et lui attribuait « probablement la première maison » de Trinidad (1860) ; sa notice ultérieure des Mountain Men (vol. 7) fixe la mort au 12 décembre 1860. Le Pueblo Chieftain du 10 mars 1963 le range parmi les amis de Charles Autobees, avec Carson, Bridger, Beaubien et Beckwourth. La seule source citée pour l'inhumation est une lettre de sa petite-fille Luz Gonzales (1937). Point placé sur le cimetière St. Vrain (38° 12,595′ N, 104° 17,230′ O, Columbine Genealogy) ; identification probable, non prouvée. Détails dans la salle de lecture, onglet « Les petites-filles et la tombe ».",
     "type": "lieu",
     "images": [
      {
@@ -1508,6 +1508,32 @@
      }
     ],
     "reseau": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.78,
+     37.624
+    ]
+   },
+   "properties": {
+    "id": "L58",
+    "nom": "Walsenburg : les petites-filles racontent leur grand-père (1934-1941)",
+    "debut": 1934.2,
+    "fin": 1941.19,
+    "date_edtf": "1934-03/1941-03-10",
+    "precision": "mois",
+    "certitude": "certaine",
+    "categorie": "famille",
+    "description": "Luz Gonzales et Genovera C. Naranjo, petites-filles de Jean-Baptiste, vivent à Walsenburg. Entre 1934 et 1941, elles écrivent à Carolyn Sporleder (1934), à Sterling Cawlfield (1937) et à l'historien LeRoy Hafen (1941) ; Luz est aussi interrogée par L. Sporleder pour les entrevues de pionniers de la CWA (1933-1934). On leur doit la naissance à Québec, la légende des deux cents Français, le sauvetage d'Ursula par le padre Martínez et le lieu de la tombe.",
+    "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995, p. 62-64, 72-75, n. 12, 18, 19, 46, 47, 52, 60 (lettres prêtées par LeRoy Hafen ; entrevues CWA 363/10, 363/13 et 363/19, History Colorado)",
+    "note": "Bouchard et Lévesque (2014) parlent d'entrevues des années 1950 ; les documents cités par Lecompte datent de 1933 à 1941. Voir la salle de lecture, onglet « Les petites-filles et la tombe ».",
+    "type": "lieu",
+    "images": [],
+    "reseau": ""
    }
   }
  ]
