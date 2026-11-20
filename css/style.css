@@ -278,3 +278,6 @@ body:not(.fond-parchemin) .parchemin { display: none; }
 /* Lien de langue English / Français (pages jumelles index.html / index-en.html) */
 .barre .lien-reseau + .lien-langue { margin-left: .6rem; }
 .barre .lien-langue + .credit { margin-left: .9rem; }
+
+/* Parcours numéroté de Jean-Baptiste (légende) */
+.legende-carte .ln.parcours { border-top: 2px solid #9a3322; opacity: .6; }
