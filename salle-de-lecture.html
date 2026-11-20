@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salle de lecture — Atlas Chalifoux</title>
+<meta name="author" content="Olivier J. Caron, Département de géographie, UQAM">
+<link rel="icon" href="images/coureur-des-bois.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #2b2620; background: #f4efe6; }
+a { color: #7a4f1d; }
+.barre { display: flex; align-items: center; gap: 1rem; padding: .5rem 1rem; background: #3b3328; color: #f4efe6; flex-wrap: wrap; position: sticky; top: 0; z-index: 20; }
+.barre img { height: 40px; }
+.barre h1 { font-family: "IM Fell English", Georgia, serif; font-size: 1.25rem; margin: 0; font-weight: normal; }
+.barre h1 span { opacity: .7; }
+.barre a { color: #f0d9a8; font-size: .9rem; }
+.barre .esp { flex: 1; }
+.onglets { position: sticky; top: 56px; z-index: 15; background: #e6dccb; border-bottom: 1px solid #c9bba3; display: flex; gap: .25rem; overflow-x: auto; padding: .45rem .6rem 0; }
+.onglets button { flex: 0 0 auto; font: inherit; font-size: .9rem; background: #efe9dd; color: #4d4436; border: 1px solid #c9bba3; border-bottom: 0; border-radius: 5px 5px 0 0; padding: .35rem .8rem .4rem; cursor: pointer; text-align: left; line-height: 1.15; }
+.onglets button small { display: block; font-size: .72rem; color: #7a6d59; }
+.onglets button.actif { background: #f4efe6; color: #2b2620; font-weight: bold; position: relative; top: 1px; }
+main { max-width: 64rem; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+.panneau[hidden] { display: none; }
+h2 { font-family: "IM Fell English", Georgia, serif; font-weight: normal; font-size: 1.9rem; margin: .4rem 0 .3rem; }
+h3 { font-family: "IM Fell English SC", Georgia, serif; font-weight: normal; font-size: 1.25rem; margin: 2rem 0 .6rem; border-bottom: 1px solid #c9bba3; padding-bottom: .2rem; }
+p, li { line-height: 1.65; font-size: 1.03rem; }
+.chapo { font-size: 1.1rem; font-style: italic; border-left: 3px solid #c8903e; padding: .2rem 0 .2rem .9rem; }
+.date { color: #6b604f; margin: 0 0 .8rem; }
+.cartes-salle { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.carte-salle { background: #fffdf8; border: 1px solid #e0d5c2; border-left: 4px solid #9a3322; padding: .8rem 1rem; cursor: pointer; }
+.carte-salle:hover { background: #f7efe0; }
+.carte-salle b { font-family: "IM Fell English", Georgia, serif; font-weight: normal; font-size: 1.2rem; display: block; }
+.carte-salle span { font-size: .88rem; color: #6b604f; }
+blockquote { margin: .8rem 0; padding: .5rem .9rem; background: #fffdf8; border-left: 3px solid #9a3322; font-style: italic; }
+blockquote cite { display: block; font-style: normal; font-size: .82rem; color: #6b604f; margin-top: .3rem; }
+.portrait { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8rem; }
+.trait { background: #fffdf8; border: 1px solid #e0d5c2; padding: .7rem .9rem; }
+.trait b { display: block; font-family: "IM Fell English SC", Georgia, serif; font-weight: normal; font-size: 1.05rem; color: #7a2a1c; margin-bottom: .2rem; }
+.trait p { font-size: .95rem; margin: 0; }
+.trait .src { font-size: .78rem; color: #6b604f; margin-top: .35rem; }
+#carte { height: 420px; border: 1px solid #c9bba3; background: #e8e0cf; }
+ol.etapes { padding-left: 1.3rem; }
+ol.etapes li { margin-bottom: .45rem; }
+ol.etapes .lieu { font-weight: bold; }
+.note { font-size: .9rem; background: #efe9dd; border-left: 3px solid #c8903e; padding: .5rem .8rem; }
+ul.biblio li { font-size: .92rem; margin-bottom: .3rem; }
+.maplibregl-popup-content { font-family: Georgia, serif; font-size: .85rem; background: #fffdf8; }
+footer { font-size: .8rem; color: #6b604f; text-align: center; padding: 1rem; border-top: 1px solid #d6cbb8; }
+@media (max-width: 760px) { .onglets { top: 0; position: relative; } .barre { position: relative; } main { padding: 1rem 16px 3rem; } #carte { height: 320px; } }
+</style>
+</head>
+<body>
+<header class="barre">
+  <img src="images/coureur-des-bois-clair.svg" alt="" width="29" height="40">
+  <h1>Atlas Chalifoux <span>· Salle de lecture</span></h1>
+  <span class="esp"></span>
+  <a href="index.html">🗺 Carte de l'atlas</a>
+  <a href="inscriptions.html">🪨 Les inscriptions</a>
+  <a href="https://geolas2023.github.io/Atlas-Les-Canadiens-Fran-ais-de-l-Ouest/">⚜ Atlas de l'Amérique française</a>
+</header>
+
+<nav class="onglets" role="tablist" aria-label="Documents de la salle de lecture">
+  <button type="button" role="tab" data-onglet="accueil" class="actif">La salle<small>Présentation</small></button>
+  <button type="button" role="tab" data-onglet="janssens">La rencontre avec Janssens<small>Californie, mai-juin 1837</small></button>
+</nav>
+
+<main>
+<!-- ============================ ACCUEIL ============================ -->
+<section class="panneau" id="accueil" role="tabpanel">
+  <h2>La salle de lecture</h2>
+  <p class="chapo">Jean-Baptiste Chalifoux ne savait pas écrire et n'a laissé aucun récit. On ne le connaît que par ce que d'autres ont dit de lui : des Californiens, des trappeurs, des fonctionnaires mexicains, des pionniers du Colorado. Cette salle réunit ces témoignages, un par onglet, avec leur contexte et leurs sources.</p>
+  <div class="cartes-salle">
+    <div class="carte-salle" data-ouvrir="janssens">
+      <b>La rencontre avec Agustín Janssens</b>
+      <span>Californie, mai-juin 1837 · le seul portrait de Chalifoux par un témoin qui a marché à ses côtés pendant la guerre civile californienne.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ JANSSENS ============================ -->
+<section class="panneau" id="janssens" role="tabpanel" hidden>
+  <h2>« Un Canadien nommé Chalifoux »</h2>
+  <p class="date">Agua Caliente, Los Angeles et la route de San Diego · fin mai et juin 1837</p>
+  <p class="chapo">En 1837, en pleine guerre civile californienne, le jeune Agustín Janssens est envoyé de nuit à la recherche d'une bande de cavaliers venus du Nouveau-Mexique. Il trouve leur camp dans les bois d'Agua Caliente. Leur chef est un Canadien boiteux qui parle français : Jean-Baptiste Chalifoux. Janssens racontera la scène quarante ans plus tard.</p>
+
+  <h3>Qui est Agustín Janssens ?</h3>
+  <p>Victor Eugène Auguste Janssens, dit « Agustín », est le fils d'un colonel de l'armée impériale né à Paris et d'une mère originaire de Bruxelles. Il arrive en Californie en 1834, à dix-sept ans, avec la colonie Híjar-Padres envoyée par le gouvernement mexicain. Il fera ensuite carrière comme éleveur et administrateur de la mission de San Juan Capistrano, puis comme fonctionnaire à Santa Barbara, où il meurt en 1894.</p>
+  <p>En 1878, il dicte ses souvenirs en espagnol à Thomas Savage, l'assistant de l'historien Hubert Howe Bancroft. Le manuscrit, intitulé « Vida y Aventuras », compte 210 pages, plus 13 pages ajoutées en avril 1878. Il est conservé à la Bancroft Library (Berkeley). Ellison et Price en ont publié la traduction anglaise intégrale en 1953. Le passage sur Chalifoux occupe les pages 73 à 80 de cette édition.</p>
+  <p class="note">Janssens parle le français, sa langue familiale. C'est pour cette raison qu'on le choisit comme intermédiaire : Chalifoux et les autres Canadiens de la bande parlent français, et peu de Californiens peuvent leur parler.</p>
+
+  <h3>Le contexte : la Californie en guerre civile</h3>
+  <p>En novembre 1836, Juan Bautista Alvarado, appuyé par le nord de la province (Monterey), chasse le gouverneur mexicain et proclame la Californie « libre ». Le sud, autour de Los Angeles et de San Diego, refuse son autorité et reste fidèle au gouvernement de Mexico. Au printemps 1837, Juan Bandini lance à San Diego le « plan de San Diego » : il rétablit l'autorité mexicaine et traite les partisans d'Alvarado en « frères égarés ». Vers le 26 mai 1837, Bandini, Janssens et une poignée d'hommes s'emparent des canons du corps de garde de Los Angeles et y font accepter ce plan.</p>
+  <p>Ils sont très peu nombreux, et des troupes du nord sont signalées à Santa Barbara. C'est alors qu'on apprend, par Chalifoux lui-même, qu'une troupe de Chaguanosos et d'autres hommes venus du Nouveau-Mexique campe près de San Bernardino. Bandini y envoie Janssens, accompagné de José María Alvarado et d'un Français nommé Binet, pour demander leur aide.</p>
+  <p>Les « Chaguanosos » sont une bande mêlée de trappeurs canadiens et américains, de Néo-Mexicains et d'Autochtones de l'Est (des Shawnees et des Delawares) qui descend par la Vieille piste espagnole pour faire commerce de chevaux et de mules en Californie. Chalifoux y est arrivé à l'automne 1836, depuis Taos.</p>
+
+  <h3>Le récit de la rencontre</h3>
+  <div id="carte" aria-label="Carte de l'itinéraire de Janssens et de Chalifoux en 1837"></div>
+  <ol class="etapes">
+    <li><span class="lieu">San Gabriel.</span> Janssens et ses compagnons partent de nuit pour ne pas être vus. Chez les Coronel, Janssens entre par erreur dans la chambre où dort l'espion d'Alvarado, Victor Linares, et ressort sans le réveiller.</li>
+    <li><span class="lieu">Rancho Chino.</span> On leur apprend que la troupe qu'ils cherchent est dans les bois d'Agua Caliente. Ils continuent par des sentiers à l'écart.</li>
+    <li><span class="lieu">Agua Caliente.</span> En entrant dans les bois, deux Chaguanosos les mettent en joue. Janssens leur parle en français et prononce le nom de Chalifoux : les fusils se baissent et on les conduit au camp. Les chefs acceptent de soutenir le gouvernement légitime et promettent vingt-cinq hommes. Les envoyés dorment sur place, à même le sol.</li>
+    <li><span class="lieu">Los Angeles.</span> Le lendemain, Chalifoux et ses hommes entrent avec eux dans le pueblo. Aucune solde n'est promise : on doit seulement les nourrir, et ils offrent gratuitement leurs services au gouvernement mexicain. Leurs adversaires tentent de les enivrer pour faire échouer le départ, si bien qu'il faut charger les ivrognes dans les charrettes.</li>
+    <li><span class="lieu">Route de San Diego.</span> La troupe escorte les canons. Chalifoux impose une surveillance constante, de peur d'une attaque des forces de Monterey et de Santa Barbara. Janssens reste en arrière, à Los Nietos et San Gabriel, pour espionner l'avance ennemie.</li>
+    <li><span class="lieu">Santa Ana et la poursuite.</span> Une armée de 125 hommes repart de San Diego. Janssens est placé auprès des Chaguanosos, puisqu'il peut parler avec Chalifoux. Après le rancho Santa Ana de Tomás Yorba, l'avant-garde du nord se montre sur une hauteur. Les Chaguanosos, impatients de se battre, chargent avec les volontaires ; l'ennemi s'enfuit jusqu'à San Fernando, en abandonnant ses bagages.</li>
+    <li><span class="lieu">La trêve.</span> Peu après, Alvarado envoie un drapeau parlementaire, reconnaît le gouvernement mexicain et jure la constitution devant le commissaire Andrés Castillero. Chacun rentre chez soi. Janssens ne dit plus rien des Chaguanosos.</li>
+  </ol>
+
+  <h3>Le portrait de Chalifoux</h3>
+  <p>Janssens ne consacre pas de portrait suivi à Chalifoux, mais les détails qu'il donne au fil du récit dessinent le personnage.</p>
+  <div class="portrait">
+    <div class="trait"><b>Un Canadien, chef de bande</b><p>Janssens le présente comme « un Canadien nommé Chalifoux » qui mène les Indiens chaguanosos venus en Californie avec les marchands du Nouveau-Mexique.</p><div class="src">p. 74</div></div>
+    <div class="trait"><b>Commerçant et voleur de chevaux</b><p>Ces visites sont officiellement commerciales, mais Janssens note qu'en général les Chaguanosos volaient plus de chevaux qu'ils n'en achetaient. Trois ans plus tard, en 1840, la bande mènera l'une des plus grandes razzias de chevaux de la Californie mexicaine.</p><div class="src">p. 74</div></div>
+    <div class="trait"><b>Un francophone</b><p>Chalifoux et les autres Canadiens de la bande parlent français. Ce trait décide de toute la mission : seul un francophone peut négocier avec eux.</p><div class="src">p. 74</div></div>
+    <div class="trait"><b>Un nom qui ouvre le camp</b><p>Son nom sert de laissez-passer : dès que Janssens le prononce, les sentinelles baissent leurs fusils. Chalifoux a manifestement une autorité reconnue par ses hommes.</p><div class="src">p. 75</div></div>
+    <div class="trait"><b>« Somewhat crippled »</b><p>Janssens le décrit comme un peu estropié. C'est la seule indication physique sur Chalifoux dans ce témoignage. Il chevauche pourtant le lendemain jusqu'à Los Angeles avec ses hommes.</p><div class="src">p. 75</div></div>
+    <div class="trait"><b>Le « capitaine » Chalifoux</b><p>Janssens finit par l'appeler « Capt. Chalifoux ». Il insiste sur la discipline et l'obéissance qu'il exige de ses hommes, et sur la vigilance qu'il impose pendant la marche.</p><div class="src">p. 75-76</div></div>
+    <div class="trait"><b>Des hommes audacieux et bien armés</b><p>Avec eux, écrit Janssens, on ne craint plus personne. Chacun porte un fusil, une hachette et un poignard, en plus de l'arc et des flèches, leur arme habituelle.</p><div class="src">p. 75</div></div>
+    <div class="trait"><b>Un allié sans solde</b><p>Aucun paiement n'est convenu : les Chaguanosos servent le gouvernement mexicain contre leur seul entretien. D'après Janet Lecompte, la bande se paiera plus tard en chevaux, une fois démobilisée.</p><div class="src">p. 75 ; Lecompte, 1995</div></div>
+  </div>
+
+  <blockquote>« Chalifoux was somewhat crippled. »<cite>A. Janssens, trad. F. Price, dans Ellison et Price (dir.), 1953, p. 75.</cite></blockquote>
+  <blockquote>« his people were bold and well armed »<cite>Ibid., p. 75.</cite></blockquote>
+
+  <h3>Ce que vaut ce témoignage</h3>
+  <p>Janssens raconte ces événements quarante et un ans plus tard, à un âge avancé, et il se donne volontiers le beau rôle. Plusieurs points sont pourtant solides : son récit concorde avec les autres sources sur la présence des Chaguanosos dans le camp du sud en 1837 (Bancroft, Lecompte). Ses notations sur Chalifoux, sa langue, son infirmité et son autorité ne servent aucun intérêt particulier de l'auteur : elles ont toutes les chances d'être exactes.</p>
+  <p class="note">L'emplacement d'Agua Caliente reste incertain. Janssens parle de « bois » au-delà du rancho Chino, ce qui convient mieux aux sources chaudes au pied des montagnes de San Bernardino qu'à l'Agua Caliente du désert (Palm Springs). Le point de la carte est donc hypothétique.</p>
+
+  <h3>Sources</h3>
+  <ul class="biblio">
+    <li>Agustín Janssens, « Vida y Aventuras », manuscrit dicté à Thomas Savage, 1878, Bancroft Library, University of California, Berkeley.</li>
+    <li>William H. Ellison et Francis Price (dir.), <i>The Life and Adventures in California of Don Agustín Janssens, 1834-1856</i>, trad. Francis Price, San Marino, Huntington Library, 1953, ch. VI, p. 73-80 (préface, p. vii-xi, pour la vie de Janssens). <a href="https://archive.org/details/lifeandadventure012526mbp" target="_blank" rel="noopener">Exemplaire numérisé sur Internet Archive ↗</a></li>
+    <li>Janet Lecompte, « Jean-Baptiste Chalifoux », dans LeRoy R. Hafen (dir.), <i>French Fur Traders and Voyageurs in the American West</i>, Lincoln, University of Nebraska Press, 1995, p. 58-75.</li>
+    <li>Hubert Howe Bancroft, <i>History of California</i>, vol. III, San Francisco, 1885, p. 515-523 (le plan de San Diego et la campagne de 1837).</li>
+  </ul>
+</section>
+</main>
+
+<footer>Atlas Chalifoux · Olivier J. Caron, Département de géographie, UQAM</footer>
+
+<script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+<script>
+// Onglets : l'onglet actif est gardé dans l'adresse (#janssens) pour qu'un lien direct l'ouvre.
+const boutons = [...document.querySelectorAll('.onglets button')];
+let carte = null;
+function ouvrir(id) {
+  if (!document.getElementById(id)) id = 'accueil';
+  boutons.forEach(b => b.classList.toggle('actif', b.dataset.onglet === id));
+  document.querySelectorAll('.panneau').forEach(p => p.hidden = p.id !== id);
+  history.replaceState(null, '', id === 'accueil' ? location.pathname : '#' + id);
+  if (id === 'janssens') initCarte();
+  window.scrollTo({ top: 0 });
+}
+boutons.forEach(b => b.addEventListener('click', () => ouvrir(b.dataset.onglet)));
+document.querySelectorAll('[data-ouvrir]').forEach(c => c.addEventListener('click', () => ouvrir(c.dataset.ouvrir)));
+
+// Étapes de 1837 d'après Janssens (Ellison et Price, 1953, p. 73-80).
+const ETAPES = [
+  { nom: 'San Diego', c: [-117.196, 32.758], txt: "Point de départ et de retour : quartier général de Bandini et du camp du sud.", cert: 'certaine' },
+  { nom: 'Los Angeles', c: [-118.239, 34.057], txt: "Vers le 26 mai 1837, Bandini et Janssens prennent les canons du corps de garde. Chalifoux et ses hommes y entrent le lendemain de la rencontre.", cert: 'certaine' },
+  { nom: 'Mission San Gabriel', c: [-118.107, 34.097], txt: "Halte de nuit chez les Coronel ; l'espion Victor Linares dort dans la pièce voisine.", cert: 'certaine' },
+  { nom: 'Rancho Chino', c: [-117.69, 34.01], txt: "On y apprend que la troupe est dans les bois d'Agua Caliente.", cert: 'approximative' },
+  { nom: 'Agua Caliente', c: [-117.263, 34.186], txt: "Le camp des Chaguanosos : rencontre avec Chalifoux. Position hypothétique (sources chaudes au pied des monts San Bernardino).", cert: 'hypothetique', cle: true },
+  { nom: 'Rancho Los Nietos', c: [-118.08, 33.95], txt: "Janssens y reste en arrière pour guetter l'armée du nord.", cert: 'approximative' },
+  { nom: 'Rancho Santa Ana (Yorba)', c: [-117.80, 33.84], txt: "L'avant-garde du nord s'enfuit devant la charge des Chaguanosos et des volontaires.", cert: 'approximative' },
+  { nom: 'Mission San Fernando', c: [-118.461, 34.273], txt: "Fin de la poursuite.", cert: 'certaine' }
+];
+function initCarte() {
+  if (carte || typeof maplibregl === 'undefined') return;
+  carte = new maplibregl.Map({
+    container: 'carte', style: 'https://tiles.openfreemap.org/styles/positron',
+    bounds: [[-118.75, 32.6], [-116.9, 34.45]], fitBoundsOptions: { padding: 30 }, attributionControl: { compact: true }
+  });
+  carte.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+  carte.on('load', () => {
+    const route = [ETAPES[0], ETAPES[1], ETAPES[2], ETAPES[3], ETAPES[4], ETAPES[1], ETAPES[5], ETAPES[0]].map(e => e.c);
+    const campagne = [ETAPES[0], ETAPES[6], ETAPES[1], ETAPES[7]].map(e => e.c);
+    carte.addSource('routes', { type: 'geojson', data: { type: 'FeatureCollection', features: [
+      { type: 'Feature', properties: { t: 'mission' }, geometry: { type: 'LineString', coordinates: route } },
+      { type: 'Feature', properties: { t: 'campagne' }, geometry: { type: 'LineString', coordinates: campagne } }] } });
+    carte.addLayer({ id: 'mission', type: 'line', source: 'routes', filter: ['==', 't', 'mission'], paint: { 'line-color': '#9a3322', 'line-width': 2.5, 'line-dasharray': [2, 1.5] } });
+    carte.addLayer({ id: 'campagne', type: 'line', source: 'routes', filter: ['==', 't', 'campagne'], paint: { 'line-color': '#2f4d63', 'line-width': 2, 'line-dasharray': [1, 1.5] } });
+    ETAPES.forEach(e => {
+      const el = document.createElement('div');
+      const plein = e.cert === 'certaine';
+      el.style.cssText = `width:${e.cle ? 18 : 12}px;height:${e.cle ? 18 : 12}px;border-radius:50%;border:2px solid #9a3322;background:${plein ? '#9a3322' : '#f4efe6'};box-shadow:0 0 0 2px #fffdf8;cursor:pointer`;
+      new maplibregl.Marker({ element: el }).setLngLat(e.c)
+        .setPopup(new maplibregl.Popup({ offset: 10 }).setHTML(`<b>${e.nom}</b><br>${e.txt}`)).addTo(carte);
+    });
+  });
+}
+ouvrir(location.hash.slice(1) || 'accueil');
+</script>
+</body>
+</html>
