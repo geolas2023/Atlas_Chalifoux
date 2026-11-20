@@ -125,7 +125,7 @@
     "categorie": "famille",
     "description": "Pierre « Chalifoure » épouse Victoire Coussot ; en 1818, il déclare connaître depuis vingt ans le confluent de l'Osage et du Missouri. Un Joseph et un Jean-Baptiste Challifoux vivent aussi près de Saint-Louis et Saint-Charles.",
     "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995 (notices tirées de The Mountain Men and the Fur Trade of the Far West, 1965-1972), p. 62 — note de l'auteur : contrat de mariage, St. Louis Archives, MHS ; déposition de « Peter Charlevoo », 30 juin 1818, Carter, Territorial Papers xv, p. 338",
-    "note": "",
+    "note": "Voir la fiche L59 : registres de Saint-Charles (1797-1808).",
     "type": "lieu",
     "images": [],
     "reseau": "F-chalifoux-02"
@@ -1531,6 +1531,32 @@
     "description": "Luz Gonzales et Genovera C. Naranjo, petites-filles de Jean-Baptiste, vivent à Walsenburg. Entre 1934 et 1941, elles écrivent à Carolyn Sporleder (1934), à Sterling Cawlfield (1937) et à l'historien LeRoy Hafen (1941) ; Luz est aussi interrogée par L. Sporleder pour les entrevues de pionniers de la CWA (1933-1934). On leur doit la naissance à Québec, la légende des deux cents Français, le sauvetage d'Ursula par le padre Martínez et le lieu de la tombe.",
     "sources": "Janet Lecompte, dans Hafen, LeRoy R. (dir.), French Fur Traders and Voyageurs in the American West, Spokane, Arthur H. Clark, 1995, p. 62-64, 72-75, n. 12, 18, 19, 46, 47, 52, 60 (lettres prêtées par LeRoy Hafen ; entrevues CWA 363/10, 363/13 et 363/19, History Colorado)",
     "note": "Bouchard et Lévesque (2014) parlent d'entrevues des années 1950 ; les documents cités par Lecompte datent de 1933 à 1941. Voir la salle de lecture, onglet « Les petites-filles et la tombe ».",
+    "type": "lieu",
+    "images": [],
+    "reseau": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.4818,
+     38.7842
+    ]
+   },
+   "properties": {
+    "id": "L59",
+    "nom": "Saint-Charles (Missouri) : Pierre et Joseph Chalifoux dans les registres (1797-1808)",
+    "debut": 1797.19,
+    "fin": 1808.12,
+    "date_edtf": "1797-03-12/1808-02-14",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "famille",
+    "description": "Les registres de Saint-Charles, sur le Missouri, suivent la famille du frère aîné Pierre. Avec Victoire Coussot (épousée en 1792, fiche L02), il fait baptiser Marie-Louise le 12 mars 1797 ; un fils Pierre naît le 12 décembre 1798, alors que sa mère est déjà morte, et l'enfant est inhumé le 14 octobre 1799. Veuf, Pierre épouse le 11 septembre 1799 Elizabeth Querre (Cerré) ; leur fille Victoire est baptisée le 10 janvier 1802, avec pour parrain « Joseph Chalifoux, oncle paternel de l'enfant ». Ce Joseph, « natif de la ville de Montréal » et fils de feu Pierre Chalifoux et de Marie Valoin, épouse en février 1804, dans la maison du père de la mariée à Portage des Sioux, Marie-Rose Poujolle, née à Saint-Louis des Illinois. Il est inhumé à Saint-Charles le 14 février 1808, « natif du Canada », âgé d'environ 40 ans. Une Eleanor Chalifou est marraine dans la même paroisse en 1808. C'est le monde que Jean-Baptiste rejoint vers 1804, à treize ans, selon la tradition (fiche L49).",
+    "sources": "Registres de la paroisse Saint-Charles-Borromée (Saint-Charles, Missouri), traduction anglaise, via FamilySearch (recherche plein texte) : baptême de Marie-Louise Chalifoux, 12 mars 1797 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49ZF-1) ; baptême de Pierre, 13 décembre 1798 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49ZV-H) ; mariage Pierre Chalifoux–Elizabeth Querre, 11 septembre 1799 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49ZK-S) ; sépulture de l'enfant Pierre, 14 octobre 1799 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49Z8-B) ; baptême de Victoire, 10 janvier 1802 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49CT-2) ; mariage Joseph Chalifoux–Marie-Rose Poujolle, Portage des Sioux, février 1804 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49CT-G) ; sépulture de Joseph Chalifoux, 14 février 1808 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49CK-H) ; Eleanor Chalifou marraine, 1808 (https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQJ-49CP-D).",
+    "note": "Point placé au vieux Saint-Charles, près de l'emplacement de la première église. Tension avec Lecompte : celle-ci fait de Pierre un natif de Charlesbourg, fils de Pierre et de Marie Bertrand (fiche L01) ; le registre de 1804 donne à son frère Joseph les parents Pierre Chalifoux et Marie Valoin, et la ville de Montréal. Si Joseph est bien l'oncle paternel, Pierre et Joseph ont les mêmes parents ; reste à savoir si Jean-Baptiste est un troisième fils ou un parent plus éloigné. À vérifier dans les registres originaux (Drouin, Montréal et Charlesbourg).",
     "type": "lieu",
     "images": [],
     "reseau": ""
