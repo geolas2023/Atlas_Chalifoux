@@ -52,6 +52,7 @@ function installerStreetView(carte, en) {
     m.hidden = false; m.style.display = 'flex';
   };
   window.ouvrirStreetView = ouvrir;
-  carte.on('click', e => { if (!actif) return; ouvrir(e.lngLat.lng, e.lngLat.lat); arret(); });
+  // clic sur la carte : Google Maps cherche le panorama le plus proche (nouvel onglet)
+  carte.on('click', e => { if (!actif) return; window.open(url(e.lngLat.lng, e.lngLat.lat), '_blank', 'noopener'); arret(); });
   document.addEventListener('keydown', e => { if (e.key !== 'Escape') return; if (actif) arret(); if (!m.hidden) fermer(); });
 }
