@@ -49,6 +49,7 @@ const carte = new maplibregl.Map({
   attributionControl: { compact: true }
 });
 carte.addControl(new maplibregl.NavigationControl(), 'top-left');
+if (typeof installerStreetView === 'function') installerStreetView(carte, EN);
 carte.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
 // Légende en cartouche dans le coin supérieur droit (contenu défini dans index.html)
 carte.addControl({
